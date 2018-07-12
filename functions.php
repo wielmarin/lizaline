@@ -13,6 +13,10 @@ function NAME_resources() {
 
 add_action('wp_enqueue_scripts', 'NAME_resources');
 
+// Navigation Menus
+register_nav_menus(array(
+'primary' => __( 'Primary Menu'),
+));
 
 // Featured images
 

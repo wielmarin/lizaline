@@ -2,7 +2,8 @@
 
 <!--- BASIC PAGES, INCLUDING HOME ---->
 
-
+<div class="banner">
+</div>
 
 <!----------------- THE CONTENT --------------->
 <div id="maintext">

@@ -1,0 +1,64 @@
+/*
+Theme Name: Liza line
+Author: Marin Wiellersen
+Author URI: https://www.linkedin.com/in/marinwiellersen/
+Version: 1.0
+*/
+
+/* Custom Fonts */
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('/wp-content/themes/lizaline/Fonts/BebasNeue Regular.otf') format('woff');
+	src: url('/wp-content/themes/lizaline/Fonts/BebasNeue Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('/wp-content/themes/Promover/Fonts/BebasNeue Bold.woff') format('woff');
+	src: url('/wp-content/themes/Promover/Fonts/BebasNeue Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: bold;
+}
+
+/* General Layout */
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #7a7979;
+}
+
+a:link,
+a:visited {
+	color: #7a7979;
+	text-decoration: none;	
+}
+
+a:hover {
+	color:#9b9a9a;
+}
+
+* {
+	margin: 0;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0 0;
+	font-weight: normal;
+	padding: 0;
+	line-height: 1.2em;
+}

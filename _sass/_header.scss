@@ -1,3 +1,130 @@
+/*
+Theme Name: Liza Line
+Author: Marin Wiellersen
+Author URI: https://www.linkedin.com/in/marinwiellersen/
+Version: 1.0
+*/
+
 .site-header {
-	display: none;
+	width: 100%;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	background: white;
 }
+
+/* navigation */
+
+.site-nav ul {
+	padding: 0;
+	font-family: 'Bebas', sans-serif;
+}
+
+.site-nav ul:before .frontnav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; } 
+
+.site-nav ul li {
+	list-style: none;
+	padding: 30px 15px 30px 15px;
+}
+
+.site-nav li a {
+	display:inline;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+li { 
+	display:inline-block; 
+	margin:0;
+}
+
+.site-nav li a:hover { 
+	text-decoration: none;
+	color:	#9b9a9a;
+}
+
+#menu-item-20 {
+	border-right: 1px solid #eee;
+}
+
+/* hamburgermenu */
+
+#mobilemenuopen {
+	margin: 20px 0px 20px 20px;
+	p {
+		
+		font-size: 14px;
+		display:inline;
+		width:100%;
+		text-align: center;
+	}
+	i {
+		font-size: 22px;
+	}
+}
+
+#mobilemenuclose {
+	margin: 20px 0px 20px 0px;
+	p {
+		font-size: 14px;
+		display:inline;
+		width:100%;
+		text-align: center;
+	}
+	i {
+		font-size: 22px;
+	}	
+}
+
+/* Logo */
+
+.logo {
+	position: absolute;
+	left: 50%; 
+	margin: 0 0 0 -89px;
+}
+
+/* Search */
+
+.search-box {
+	position: absolute;
+	right: 50px;
+	height: 80px;
+	padding: 0 20px 0 20px;
+}
+
+.search-boxmobile .hd-search {
+	width: 90%;
+	margin: right;
+}
+
+.hd-search #searchsubmit {
+	Display: none;
+}
+
+.hd-search #s {
+	vertical-align: top;
+	padding: 10px 25px;
+	margin: 20px 0px 0px 0px;
+	width: 100%;
+	border: none;
+	background: url(http://localhost/lizaline/wp-content/uploads/2018/07/314478-32-e1531305546358.png) no-repeat;
+	background-position: 95% 50%; 
+	background-color: #f8f8f8;
+}
+
+#searchresults {
+	width: 100%;
+	display: block;
+}
+
+.container-search {
+	border-top: 1px solid #f6f5f5;
+	padding: 60px 100px 60px 100px;
+}
+
+
+

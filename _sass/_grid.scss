@@ -1,0 +1,268 @@
+$grid-x-large: 1250px; // Container 1200
+$grid-large: 1050px;	// Container 1000 
+$grid-med: 850px; //800
+$grid-small: 600px; // 600
+
+#grid-container {
+	margin: 50px auto;
+	display:flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: $grid-x-large) { // Screen meer dan 1250
+		width: ($grid-x-large - 50px);
+		height: (($grid-x-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) { //Screen 1050 - 1249
+		width: ($grid-large - 50px);
+		height: (($grid-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) { // Screen 850 - 1049
+		width: ($grid-med - 50px);
+		height: (($grid-med - 50px) * (2/5));
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) { // Screen 600 - 849
+		width: ($grid-small - 20px);
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.grid-box {
+	margin: 0px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	//border: 1px solid black;
+	box-sizing: border-box;
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+.smallsquare {
+	@media screen and (min-width: $grid-x-large) {
+		width: (($grid-x-large - 50px) * 0.2 - 20px);
+		height: (($grid-x-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: (($grid-large - 50px) * 0.2 - 20px);
+		height: (($grid-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: (($grid-med - 50px) * 0.2 - 10px);
+		height: (($grid-med - 50px) * 0.2 - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+
+.largesquare {
+	@media screen and (min-width: $grid-x-large) {
+		width: calc(100% - 20px);
+		height: calc(100% - 20px);
+	}
+	/*@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: 380px;
+		height: 380px
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: 320px;
+		height: 320px;
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 280px;
+		height: 280px;
+		order: 0;
+	} */
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+
+.wide {
+	@media screen and (min-width: $grid-x-large) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: 100%;
+		height: calc(100% - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+
+}
+
+// 2nd level
+#grid-left {
+	width: 40%;
+	height: 100%;
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 1;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#grid-center {
+	width: 20%;
+	height: 100%;
+	align-content: space-between;
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		display:flex;
+		flex-wrap:wrap;
+		width: 100%;
+		height: 280px;
+		order: 2;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#grid-right {
+	width: 40%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-e1531399166346.jpg') no-repeat;
+	background-size: contain;
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 0;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100vw;
+		order: -1;
+	}
+}
+
+	// 3rd Level
+	#grid-left-top {
+		width: 100%;
+		height: 50%;
+		
+	}
+	
+	#grid-left-bottom {
+		width: 100%;
+		height: 50%;
+		align-content: flex-end;
+	}
+
+		//4th level
+			//Top
+			#grid-left-top-left {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			
+			}
+
+			#grid-left-top-middle {
+
+				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-1-e1531318071375.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+				// In centre
+			#grid-left-top-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Display-shelf-wooden-e1531322691367.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+			}
+			
+			//Bottom
+			#grid-left-bottom-left {
+				background:url(/lizaline/wp-content/uploads/2018/07/Wooden-tray-background-1-e1531405856892.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+	@media screen and (min-width: $grid-x-large) {
+		
+		height: (($grid-x-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		
+		height: (($grid-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+	
+		height: (($grid-med - 50px) * 0.2 - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+
+		width: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		background-size: contain;
+		height: 250px;
+		width: 100vw;
+	}
+			}
+			
+				// In centre
+			#grid-left-bottom-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-e1531321215316.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin: auto;
+			}
+			
+// Text Overlay
+
+.grid-right-title {
+	font-size: 140%;
+	top: 5%;
+}
+
+.grid-right-subtitle {
+	text-transform: uppercase;
+	font-size: 230%;
+	top: 10%;
+	font-weight: bold;
+}
+
+.grid-right-link {
+	top: 15%;
+	font-family: 'Bebas', sans-serif;
+	font-size: 90%;
+}
+
+.title-flexbox {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: #000;
+	font-family: 'Bebas', sans-serif;
+}
