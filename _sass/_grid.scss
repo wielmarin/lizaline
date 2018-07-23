@@ -36,6 +36,7 @@ $grid-small: 600px; // 600
 	justify-content: space-between;
 	//border: 1px solid black;
 	box-sizing: border-box;
+	position:relative;
 	@media screen and (max-width: $grid-small - 1) {
 		width: 100vw;
 		height: 100vw;
@@ -112,6 +113,30 @@ $grid-small: 600px; // 600
 
 }
 
+.tall {
+	@media screen and (min-width: $grid-x-large) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: 100%;
+		height: calc(100% - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+
+}
+
 // 2nd level
 #grid-left {
 	width: 40%;
@@ -147,7 +172,7 @@ $grid-small: 600px; // 600
 #grid-right {
 	width: 40%;
 	height: 100%;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-e1531399166346.jpg') no-repeat;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-no-window-e1532356788313.png') no-repeat;
 	background-size: contain;
 	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
 		width: 50%;
@@ -177,33 +202,72 @@ $grid-small: 600px; // 600
 		//4th level
 			//Top
 			#grid-left-top-left {
-				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
+				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-e1531321215316.jpg);
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-			
 			}
-
+			#grid-left-top-left:hover {
+			background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-wood-white-e1531480419396.jpg);
+			}
+			/*
+			#grid-left-top-left::after {
+				content: "White Shoe Rack with soft seat - £65.10";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
 			#grid-left-top-middle {
 
-				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-1-e1531318071375.jpg);
+				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-e1531481338216.jpg);
 				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				
+			}
+			#grid-left-top-middle:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-coffee-sack-e1531481383615.jpg);
 				background-repeat: no-repeat;
 				background-position: center;
 			}
 			
+		/*	#grid-left-top-middle::after {
+				content: "Wooden ladder shelf - £99";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+		*/
+
 				// In centre
 			#grid-left-top-right {
-				background: url(/lizaline/wp-content/uploads/2018/07/Display-shelf-wooden-e1531322691367.jpg);
+				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-2.jpg);
 				background-size: contain;
 				background-repeat: no-repeat;
 				margin: auto;
 			}
 			
+			#grid-left-top-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/wooden-ladder-shelf-front-1.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+			}
+			/*
+			#grid-left-top-right::after {
+				content: "Authentic cushion burlap - £45";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
 			//Bottom
 			#grid-left-bottom-left {
-				background:url(/lizaline/wp-content/uploads/2018/07/Wooden-tray-background-1-e1531405856892.jpg);
-				background-size: cover;
+				background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-e1531478844689.jpg);
 				background-repeat: no-repeat;
 				background-position: center;
 	@media screen and (min-width: $grid-x-large) {
@@ -228,34 +292,61 @@ $grid-small: 600px; // 600
 		width: 100vw;
 	}
 			}
-			
+			#grid-left-bottom-left:hover {
+			background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-empty-2-e1531481556565.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			}
+			/*
+			#grid-left-bottom-left::after {
+				content: "Wooden coffee table - £119";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
 				// In centre
 			#grid-left-bottom-right {
-				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-e1531321215316.jpg);
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
 				margin: auto;
 			}
-			
+			#grid-left-bottom-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-e1531480234706.jpg);
+			}
+			/*
+			#grid-left-bottom-right::after {
+				content: "Wooden Storage stool bench - £89";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
 // Text Overlay
 
 .grid-right-title {
-	font-size: 140%;
+	font-size: 150%;
 	top: 5%;
+	
 }
 
 .grid-right-subtitle {
 	text-transform: uppercase;
 	font-size: 230%;
-	top: 10%;
 	font-weight: bold;
+	font-family: 'Bebas', sans-serif;
+	top: -105px;
+	letter-spacing: 1.5px; 
 }
 
 .grid-right-link {
-	top: 15%;
 	font-family: 'Bebas', sans-serif;
 	font-size: 90%;
+	top: -200px;
 }
 
 .title-flexbox {
@@ -265,4 +356,27 @@ $grid-small: 600px; // 600
 	text-align: center;
 	color: #000;
 	font-family: 'Bebas', sans-serif;
+}
+
+// Action
+
+#grid-action {
+	position: absolute;
+	right: 0;
+	p {
+		color: white;
+		background: grey;
+		width:auto;
+		text-transform:uppercase;
+		padding: 3px;
+	}
+}
+
+.grid-description {
+	position: absolute;
+	bottom: -10px;
+	p {
+		font-size: 70%;
+		text-transform: uppercase;
+	}
 }

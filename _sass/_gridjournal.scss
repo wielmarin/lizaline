@@ -1,0 +1,360 @@
+$grid-journal-x-large: 1250px; // Container 1200
+$grid-journal-large: 1050px;	// Container 1000 
+$grid-journal-med: 850px; //800
+$grid-journal-small: 600px; // 600
+
+#grid-journal-container {
+	margin: 50px auto;
+	display:flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: $grid-journal-x-large) { // Screen meer dan 1250
+		width: ($grid-journal-x-large - 50px);
+		height: (($grid-journal-x-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-journal-large) and (max-width: $grid-journal-x-large - 1) { //Screen 1050 - 1249
+		width: ($grid-journal-large - 50px);
+		height: (($grid-journal-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-journal-med) and (max-width: $grid-journal-large - 1) { // Screen 850 - 1049
+		width: ($grid-journal-med - 50px);
+		height: (($grid-journal-med - 50px) * (2/5));
+	}
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) { // Screen 600 - 849
+		width: ($grid-journal-small - 20px);
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.grid-journal-box {
+	margin: 0px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	//border: 1px solid black;
+	box-sizing: border-box;
+	position:relative;
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+.smallsquare {
+	@media screen and (min-width: $grid-journal-x-large) {
+		width: (($grid-journal-x-large - 50px) * 0.2 - 20px);
+		height: (($grid-journal-x-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-journal-large) and (max-width: $grid-journal-x-large - 1) {
+		width: (($grid-journal-large - 50px) * 0.2 - 20px);
+		height: (($grid-journal-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-journal-med) and (max-width: $grid-journal-large - 1) {
+		width: (($grid-journal-med - 50px) * 0.2 - 10px);
+		height: (($grid-journal-med - 50px) * 0.2 - 10px);
+	}
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		width: 50%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+
+.largesquare {
+	@media screen and (min-width: $grid-journal-x-large) {
+		width: calc(100% - 20px);
+		height: calc(100% - 20px);
+	}
+	/*@media screen and (min-width: $grid-journal-large) and (max-width: $grid-journal-x-large - 1) {
+		width: 380px;
+		height: 380px
+	}
+	@media screen and (min-width: $grid-journal-med) and (max-width: $grid-journal-large - 1) {
+		width: 320px;
+		height: 320px;
+	}
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		width: 280px;
+		height: 280px;
+		order: 0;
+	} */
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+
+.wide {
+	@media screen and (min-width: $grid-journal-x-large) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-journal-large) and (max-width: $grid-journal-x-large - 1) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-journal-med) and (max-width: $grid-journal-large - 1) {
+		width: 100%;
+		height: calc(100% - 10px);
+	}
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+
+}
+
+// 2nd level
+#grid-journal-left {
+	width: 40%;
+	height: 100%;
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 1;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#grid-journal-center {
+	width: 20%;
+	height: 100%;
+	align-content: space-between;
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		display:flex;
+		flex-wrap:wrap;
+		width: 100%;
+		height: 280px;
+		order: 2;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#grid-journal-right {
+	width: calc(60% - 10px);
+	height: 100%;
+	background: url(/lizaline/wp-content/uploads/2018/07/Wooden-tray-background-e1531319244506.jpg);
+	background-size: cover;
+	order: -1;
+	@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 0;
+	}
+	@media screen and (max-width: $grid-journal-small - 1) {
+		width: 100%;
+		height: 100vw;
+		order: -1;
+	}
+}
+
+	// 3rd Level
+	#grid-journal-left-top {
+		width: 100%;
+		height: 50%;
+		
+	}
+	
+	#grid-journal-left-bottom {
+		width: 100%;
+		height: 50%;
+		align-content: flex-end;
+	}
+
+		//4th level
+			//Top
+			#grid-journal-left-top-left {
+				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-e1531321215316.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			#grid-journal-left-top-left:hover {
+			background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-wood-white-e1531480419396.jpg);
+			}
+			/*
+			#grid-journal-left-top-left::after {
+				content: "White Shoe Rack with soft seat - £65.10";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
+			#grid-journal-left-top-middle {
+
+				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-1-e1531318071375.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				
+			}
+			#grid-journal-left-top-middle:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/wooden-ladder-shelf-front-e1531480559826.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			
+		/*	#grid-journal-left-top-middle::after {
+				content: "Wooden ladder shelf - £99";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+		*/
+
+				// In centre
+			#grid-journal-left-top-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-e1531481338216.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+			}
+			
+			#grid-journal-left-top-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-coffee-sack-e1531481383615.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+			}
+			/*
+			#grid-journal-left-top-right::after {
+				content: "Authentic cushion burlap - £45";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
+			//Bottom
+			#grid-journal-left-bottom-left {
+				background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-e1531478844689.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				@media screen and (min-width: $grid-journal-x-large) {
+					
+					height: (($grid-journal-x-large - 50px) * 0.2 - 20px);
+				}
+				@media screen and (min-width: $grid-journal-large) and (max-width: $grid-journal-x-large - 1) {
+					
+					height: (($grid-journal-large - 50px) * 0.2 - 20px);
+				}
+				@media screen and (min-width: $grid-journal-med) and (max-width: $grid-journal-large - 1) {
+				
+					height: (($grid-journal-med - 50px) * 0.2 - 10px);
+				}
+				@media screen and (min-width: $grid-journal-small) and (max-width: $grid-journal-med - 1) {
+
+					width: 100%;
+				}
+				@media screen and (max-width: $grid-journal-small - 1) {
+					background-size: contain;
+					height: 250px;
+					width: 100vw;
+				}
+			}
+			
+			#grid-journal-left-bottom-left:hover {
+			background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-empty-2-e1531481556565.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			}
+			/*
+			#grid-journal-left-bottom-left::after {
+				content: "Wooden coffee table - £119";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
+				// In centre
+			#grid-journal-left-bottom-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin: auto;
+			}
+			#grid-journal-left-bottom-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-e1531480234706.jpg);
+			}
+			/*
+			#grid-journal-left-bottom-right::after {
+				content: "Wooden Storage stool bench - £89";
+				position: relative;
+				top:97%;
+				Font-size: 70%;
+				text-transform: uppercase;
+			}
+			*/
+// Text Overlay
+
+.grid-journal-right-title {
+	font-size: 150%;
+	top: 5%;
+	
+}
+
+.grid-journal-right-subtitle {
+	text-transform: uppercase;
+	font-size: 230%;
+	font-weight: bold;
+	font-family: 'Bebas', sans-serif;
+	top: -105px;
+	letter-spacing: 1.5px; 
+}
+
+.grid-journal-right-link {
+	font-family: 'Bebas', sans-serif;
+	font-size: 90%;
+	top: -200px;
+}
+
+.title-flexbox {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: #000;
+	font-family: 'Bebas', sans-serif;
+}
+
+// Action
+
+#grid-journal-action {
+	position: absolute;
+	right: 0;
+	p {
+		color: white;
+		background: grey;
+		width:auto;
+		text-transform:uppercase;
+		padding: 3px;
+	}
+}
+
+.grid-journal-description {
+	position: absolute;
+	bottom: -10px;
+	p {
+		font-size: 70%;
+		text-transform: uppercase;
+	}
+}

@@ -10,6 +10,8 @@
 			
 	<!---------- FONTS ---------->	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">	
+			
 		
 	</head>
 
@@ -21,12 +23,13 @@
 	<!--- Hamburger menu --->
 	<div id="mobilemenuopen">
 		<i class="fas fa-bars"></i>
-		<p>M</p>
+		<h4>Collection</h4>
 	</div>
+	<!--
 	<div id="mobilemenuclose">
 		<i class="fas fa-times"></i>
-		<p>C</p>
 	</div>
+	-->
 	
 	<!--- Primary navigation --->
 	<nav class="site-nav">
@@ -39,6 +42,7 @@
 				<?php wp_nav_menu( $args ); ?>	
 				
 	</nav>
+	
 	
 	<!--- Logo --->
 	
@@ -58,5 +62,14 @@
 	
 	</header>
 <!-- /site-header -->
+
+	<div id="categories-menu">
+			<?php
+				$args = array(
+				'theme_location' => 'secondary'
+				);
+			?>
+			<?php wp_nav_menu( $args ); ?>	
+	</div>
 
 <div class="container">

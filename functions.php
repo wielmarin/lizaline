@@ -6,8 +6,9 @@ function NAME_resources() {
 
 	wp_enqueue_style('style', get_stylesheet_uri());
 	
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
+
 
 }
 
@@ -16,6 +17,7 @@ add_action('wp_enqueue_scripts', 'NAME_resources');
 // Navigation Menus
 register_nav_menus(array(
 'primary' => __( 'Primary Menu'),
+'secondary' => __( 'Secondary Menu'),
 ));
 
 // Featured images

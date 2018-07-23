@@ -21,9 +21,47 @@
 	margin: auto;
 }
 
+.wpcf7-form-control {
+padding: 10px;
+background-color: #fff;
+border: 1px solid #dfdfdf;
+}
+
+.wpcf7-text, .wpcf7-textarea {
+	font-family: 'Bebas', sans-serif;
+	font-size: 12px;
+	line-height: 1.4em;
+	vertical-align: bottom;
+}
+
+
+.wpcf7-form p {
+display: inline;
+}
+.wpcf7-submit {
+	width: 100px;
+	display: inline;
+	background-color: #fff;
+	color: 000;
+	border: 1px solid #dfdfdf;
+	margin-top: 5px;
+	text-transform: uppercase;
+	transition: background-color 0.5s linear;
+}
+
+.wpcf7-submit:hover {
+	cursor: pointer;
+	background-color: black;
+	color: #fff;
+}
 .footer-social {
 	text-align: center;
-	padding: 30px;
+	width: 100%;
+	color: #000;
+}
+
+.footer-social i {
+	padding: 15px 30px 15px 30px;
 }
 
 .footer-social a {
@@ -33,3 +71,10 @@
 .footer-social a:hover {
 	color: #7a7979;
 } 
+
+.copyright {
+	width: 100%;
+	text-align: center;
+	font-size: 80%;
+	margin-top: 20px;
+}
