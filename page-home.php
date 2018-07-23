@@ -8,15 +8,6 @@
 	<h2 class="title-header2">Create a warm look with our handmade & wooden furniture<h2>
 </div>
 
-
-
-<div class="container-journal">
-	<h1 class="container-journal-title">Liza Line - The Journal</h1>
-	<h2 class="container-journal-title">11 July 2018</h2>
-</div>
-
-<?php get_template_part('gridjournal'); ?>
-
 <!----------------- THE CONTENT --------------->
 <!-- NOT IN USE---------------------------------------------------------
 <div id="journal_slider">
@@ -29,5 +20,7 @@
 ---------------------------------------------------------------------->
 
 <?php get_template_part('grid'); ?>
+
+<?php get_template_part('gridjournal'); ?>
 
 <?php get_footer(); ?>

@@ -54,8 +54,8 @@ li {
 /* hamburgermenu */
 
 #mobilemenuopen {
-	border-right: 1px solid black;
-	padding-top: 25px;
+	border-right: 1px solid #f8f8f8;
+	padding-top: 6px;
 	cursor: pointer;
 	width: 200px;
 	i {
@@ -75,7 +75,7 @@ li {
 }
 
 #mobilemenuopen:hover {
-	background: lightgrey;
+	background: #f8f8f8;
 }
 
 /*
@@ -93,6 +93,16 @@ li {
 	}	
 }
 */
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 30px!important;
+    height: 2px!important;
+}
+
+.hamburger--spring .hamburger-inner {
+    top: 10px!important;
+}
+
 
 /* Logo */
 
@@ -131,6 +141,10 @@ li {
 	background-color: #f8f8f8;
 }
 
+.hd-search #s:hover {
+	cursor: pointer
+}
+
 #searchresults {
 	width: 100%;
 	display: block;
@@ -140,6 +154,3 @@ li {
 	border-top: 1px solid #f6f5f5;
 	padding: 60px 100px 60px 100px;
 }
-
-
-

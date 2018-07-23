@@ -345,8 +345,13 @@ $grid-small: 600px; // 600
 
 .grid-right-link {
 	font-family: 'Bebas', sans-serif;
-	font-size: 90%;
+	font-size: 100%;
 	top: -200px;
+}
+
+.grid-right-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .title-flexbox {
@@ -362,13 +367,14 @@ $grid-small: 600px; // 600
 
 #grid-action {
 	position: absolute;
-	right: 0;
+	right: 4px;
+	top: 8px;
+	z-index: 2;
+	transform: rotate(45deg);
 	p {
 		color: white;
-		background: grey;
 		width:auto;
 		text-transform:uppercase;
-		padding: 3px;
 	}
 }
 
@@ -380,3 +386,16 @@ $grid-small: 600px; // 600
 		text-transform: uppercase;
 	}
 }
+
+ #triangle-topright { 
+ position:absolute;
+ top: 0;
+ right: 0;
+ width: 0; 
+ height: 0; 
+ z-index: 1;
+ border-top: 60px solid grey; 
+ border-left: 60px solid transparent;
+ opacity: 0.5;
+}
+

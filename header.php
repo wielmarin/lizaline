@@ -12,17 +12,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">	
 			
-		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css" />
+	
 	</head>
 
 <body <?php body_class(); ?>> 
 
 <!--- SITE HEADER --->
 	<header class="site-header">
+
 	
+
 	<!--- Hamburger menu --->
 	<div id="mobilemenuopen">
-		<i class="fas fa-bars"></i>
+		<button class="hamburger hamburger--spring" type="button">
+			<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+			</span>
+		</button>
 		<h4>Collection</h4>
 	</div>
 	<!--
@@ -62,7 +69,7 @@
 	
 	</header>
 <!-- /site-header -->
-
+	
 	<div id="categories-menu">
 			<?php
 				$args = array(
