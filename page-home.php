@@ -3,9 +3,11 @@
 <!--- Banner ---->
 
 <div class="banner">
-	<h3 class="cta-banner">Explore</h3>
-	<h1 class="title-header1">Home inspiration autumn<h1>
-	<h2 class="title-header2">Create a warm look with our handmade & wooden furniture<h2>
+	<div class="banner-text">
+		<div class="cta-banner"><h3 id="explorelink">Explore</h3></div>
+		<h1 class="title-header1">Home inspiration autumn<h1>
+		<h2 class="title-header2">Create a warm look with our handmade & wooden furniture<h2>
+	</div>
 </div>
 
 <!----------------- THE CONTENT --------------->

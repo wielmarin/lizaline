@@ -1,0 +1,100 @@
+#excerptcontainer {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	width:1200px;
+	margin: auto;
+	position:relative;
+	img {
+		width: 100%;
+		height: 220px;
+	}
+}
+
+#excerptblock {
+	position: relative;
+	height: 100%;
+}
+
+#posttitle {
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	background: white;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 80%;
+}
+
+#excerptblock {
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+#thumbnail {
+	transition: opacity 0.5s ease-in-out;
+}
+
+#thumbnail:hover {
+	opacity: 0.8;
+}
+
+#excerptblock:first-of-type {
+	grid-row: span 2;
+	grid-column: span 6;
+	img {
+		height: 500px;
+	}
+}
+
+#excerptblock:nth-of-type(10) {
+	grid-row: 3 / span 2;
+	grid-column: 7 / span 6;
+	img {
+		height: 500px;
+	}
+}
+
+#blognav {
+	width: 100%;
+	text-align: center;
+	font-size: 120%;
+	margin-top: 1rem;
+	font-size: 90%;
+	a, span {
+		color: white;
+		padding: 0px 5px;
+		background: rgba(0,0,0,0.5);
+		border-radius: 4px;
+	}
+}
+
+
+
+
+// Grid Size Classes
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}

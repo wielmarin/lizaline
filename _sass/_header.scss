@@ -37,6 +37,10 @@ Version: 1.0
 	font-size: 14px;
 }
 
+.site-nav li a:active {
+	color:	#9b9a9a;
+}
+
 li { 
 	display:inline-block; 
 	margin:0;
@@ -139,7 +143,23 @@ li {
 	background: url(http://localhost/lizaline/wp-content/uploads/2018/07/314478-32-e1531305546358.png) no-repeat;
 	background-position: 95% 50%; 
 	background-color: #f8f8f8;
+	font-family: 'Bebas', sans-serif;
 }
+
+.hd-search #s:hover {
+	vertical-align: top;
+	padding: 10px 25px;
+	margin: 20px 0px 0px 0px;
+	width: 100%;
+	border: none;
+	background: url(http:/lizaline/wp-content/uploads/2018/07/314478-321-e1532509716845.png) no-repeat;
+	background-position: 95% 50%; 
+	background-color: #f8f8f8;
+	font-family: 'Bebas', sans-serif;
+	
+}
+
+
 
 .hd-search #s:hover {
 	cursor: pointer

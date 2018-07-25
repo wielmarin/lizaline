@@ -4,20 +4,22 @@
 	<div id="grid-left" class="grid-box">
 		<!-- Boven -->
 		<div id="grid-left-top" class="grid-box">
-			<div id="grid-left-top-left" class="grid-box smallsquare">
-				<span id="grid-ltl-description" class="grid-description"><p>White Shoe Rack With Soft Seat - £65.10</p></span>
+			<div id="grid-left-top-left" class="grid-box smallsquare hoverunderline">
+				<span id="grid-ltl-description" class="grid-description"><p>Wooden Wall Shelf - £99</p></span>
 			</div>
-			<div id="grid-left-top-middle" class="grid-box smallsquare">
-				<?php get_template_part('salemarker'); ?>
-				<span id="grid-ltm-description" class="grid-description"><p>Burlap Floor Cushion</p></span>
-				<span id="triangle-topright"></span>
+			<div id="grid-left-top-middle" class="grid-box smallsquare hoverunderline">
+
+				<span id="grid-ltm-description" class="grid-description"><p>White Shoe Rack With Soft Seat - £65.10</p></span>
+				
 			</div>
 	
 		</div>
 		<!-- Onder -->
 		<div id="grid-left-bottom" class="grid-box">
-			<div id="grid-left-bottom-left" class="grid-box wide">		
+			<div id="grid-left-bottom-left" class="grid-box wide hoverunderline">	
+			<?php get_template_part('salemarker3'); ?>			
 				<span id="grid-lbl-description" class="grid-description"><p>Wooden Coffee Table - £119</p></span>
+				<span id="triangle-topright"></span>
 			</div>
 
 			
@@ -27,9 +29,9 @@
 	
 	<!-- Center column -->
 	<div id="grid-center" class="grid-box">
-			<div id="grid-left-top-right" class="grid-box tall">
-				<?php 		get_template_part('newmarker'); ?>
-				<span id="grid-ltr-description" class="grid-description"><p>Wooden Ladder Shelves - £99</p></span>
+			<div id="grid-left-top-right" class="grid-box tall hoverunderline">
+				<?php get_template_part('salemarker2'); ?>
+				<span id="grid-ltr-description" class="grid-description"><p>Wooden Ladder Shelve - £99</p></span>
 			</div>		
 	</div>
 	
