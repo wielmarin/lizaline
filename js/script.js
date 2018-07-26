@@ -30,6 +30,18 @@ jQuery( document ).ready(function() {
  jQuery('#grid-journal-left-bottom-middle-action').toggleClass('underline');
  });
  
+  
+  // Product list show CTA on Hover
+  
+ jQuery('.product-list-item').hover(function() {
+	jQuery('.product-list-item-cta', this).toggle();
+ });
+ 
+   // Product list show CTA on Hover
+  
+ jQuery('.product-list-item').hover(function() {
+	jQuery('.bsnav', this).toggleClass('opacityup');
+ });
  
 //END
 });

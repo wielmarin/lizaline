@@ -2,7 +2,7 @@
 
 
 
-function NAME_resources() {
+function lizaline_resources() {
 
 	wp_enqueue_style('style', get_stylesheet_uri());
 	
@@ -12,7 +12,7 @@ function NAME_resources() {
 
 }
 
-add_action('wp_enqueue_scripts', 'NAME_resources');
+add_action('wp_enqueue_scripts', 'lizaline_resources');
 
 // Navigation Menus
 register_nav_menus(array(
@@ -25,6 +25,7 @@ register_nav_menus(array(
 add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'excerpt-thumb', 400, 400 );
+add_image_size( 'journal-thumb', 800, 800 );
 
 // Widgets
 register_sidebar( array(

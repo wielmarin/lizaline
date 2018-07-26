@@ -12,7 +12,7 @@
 			<div id="thumbnail">
 			<?php 
 				if (has_post_thumbnail() ) {
-				the_post_thumbnail('excerpt-thumb'); }
+				the_post_thumbnail('journal-thumb'); }
 			?>
 			</div>
 			<div id="posttitle">
@@ -22,7 +22,7 @@
 					
 				</h2>
 		</a>	
-			<p class="postinfo"><?php the_time('d/m/y'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"> <?php the_author();?></a> </p>
+			<p class="postinfo"><?php the_time('d F Y'); ?> </p>
 		
 		</div>
 		
