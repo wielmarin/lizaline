@@ -3,6 +3,11 @@
 <!--- Blogs page ---->
 
 <!----------------- THE CONTENT --------------->
+<div id="title-journal">
+	<h1>The journal.</h1>
+	<h2>By Liza Line</h2>
+</div>
+
 <div id="excerptcontainer">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>

@@ -8,6 +8,7 @@ function lizaline_resources() {
 	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
+	wp_enqueue_script('backstretch', get_template_directory_uri() . '/js/backstretch.js');
 
 
 }
@@ -24,8 +25,20 @@ register_nav_menus(array(
 
 add_theme_support( 'post-thumbnails' );
 
+add_image_size( 'thumbnail-wide', 450, 300, true );
 add_image_size( 'excerpt-thumb', 400, 400 );
 add_image_size( 'journal-thumb', 800, 800 );
+
+// Categories on pages
+
+function myplugin_settings() {  
+    // Add tag metabox to page
+    register_taxonomy_for_object_type('post_tag', 'page'); 
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');  
+}
+ // Add to the admin_init hook of your theme functions.php file 
+add_action( 'init', 'myplugin_settings' );
 
 // Widgets
 register_sidebar( array(

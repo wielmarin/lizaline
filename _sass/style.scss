@@ -7,8 +7,10 @@
 @import "_gridjournal.scss";
 @import "_journal.scss";
 @import "_productslist.scss";
+@import "_individual.scss";
 @import "_footer.scss";
-
+@import "_about.scss";
+@import "_searchresults.scss";
 
 
 // Grid Size Classes
@@ -34,4 +36,8 @@
 
 .col-6 {
   grid-column: span 6;
+}
+
+.underline {
+	text-decoration: underline;
 }

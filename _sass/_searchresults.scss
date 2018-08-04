@@ -1,0 +1,41 @@
+#search-container {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+}
+
+.titel-search {
+	padding: 20px 0px;
+}
+
+#searchresults {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 50px;
+	h2 {
+		height: 54px;
+	}
+	p {
+		height: 96px;
+	}
+	img {
+		width: 100%;
+		height: auto;
+
+	}
+	a {
+		display: block;
+		position: absolute;
+		bottom: -20px;
+	}
+}
+
+#searchresults-block {
+	grid-column:span 1;
+	grid-row:span 1;
+	position:relative;
+	height: 100%;
+}

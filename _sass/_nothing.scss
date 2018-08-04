@@ -1,0 +1,390 @@
+$grid-x-large: 1250px; // Container 1200
+$grid-large: 1050px;	// Container 1000 
+$grid-med: 850px; //800
+$grid-small: 600px; // 600
+
+#grid-container {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 220px;
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 2rem;
+	width:1200px;
+	margin: auto;
+	position:relative;
+	padding: 20px 0px;
+}
+	/*
+	margin: 50px auto;
+	display:flex;
+	flex-wrap: wrap;
+	@media screen and (min-width: $grid-x-large) { // Screen meer dan 1250
+		width: ($grid-x-large - 50px);
+		height: (($grid-x-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) { //Screen 1050 - 1249
+		width: ($grid-large - 50px);
+		height: (($grid-large - 50px) * (2/5) - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) { // Screen 850 - 1049
+		width: ($grid-med - 50px);
+		height: (($grid-med - 50px) * (2/5));
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) { // Screen 600 - 849
+		width: ($grid-small - 20px);
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+*/
+.grid-box {
+	margin: 0px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	//border: 1px solid black;
+	box-sizing: border-box;
+	position:relative;
+}
+	/*@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+*/
+.smallsquare {
+	grid-column: span 1;
+}
+	/*
+	@media screen and (min-width: $grid-x-large) {
+		width: (($grid-x-large - 50px) * 0.2 - 20px);
+		height: (($grid-x-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: (($grid-large - 50px) * 0.2 - 20px);
+		height: (($grid-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: (($grid-med - 50px) * 0.2 - 10px);
+		height: (($grid-med - 50px) * 0.2 - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+*/
+.largesquare {
+	grid-column: 4 / span 2;
+	grid-row: span 2;
+}
+/*
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+}
+*/
+
+.wide {
+	grid-column: span 2;
+}
+/*
+	@media screen and (min-width: $grid-x-large) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: 100%;
+		height: calc(100% - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: 100%;
+		height: calc(100% - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+
+}
+*/
+
+.tall {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+/*
+	@media screen and (min-width: $grid-x-large) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100vw;
+		height: 100vw;
+	}
+
+}*/
+
+.extra-large {
+	grid-column: span 3;
+	grid-row: span 2;
+}
+/*
+// 2nd level
+#grid-left {
+	width: 40%;
+	height: 100%;
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 1;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#grid-center {
+	width: 20%;
+	height: 100%;
+	align-content: space-between;
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		display:flex;
+		flex-wrap:wrap;
+		width: 100%;
+		height: 280px;
+		order: 2;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100%;
+	}
+}
+ */
+#grid-right {
+	// width: 40%;
+	// height: 100%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-no-window-e1532356788313.png') no-repeat;
+	background-size: contain;
+}
+/*	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+		width: 50%;
+		height: 280px;
+		order: 0;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		width: 100%;
+		height: 100vw;
+		order: -1;
+	}
+}
+
+	// 3rd Level
+	#grid-left-top {
+		width: 100%;
+		height: 50%;
+	}
+	
+	#grid-left-bottom {
+		width: 100%;
+		height: 50%;
+		align-content: flex-end;
+	}
+*/
+		//4th level
+			//Top
+			#grid-left-top-left {
+				background: url(/lizaline/wp-content/uploads/2018/07/Wall-shelf-green-e1532521963986.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			#grid-left-top-left:hover {
+				box-shadow: 5px 5px 5px 5px grey;
+			
+			}
+
+			#grid-left-top-middle {
+				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-s.jpg);
+				
+				background-repeat: no-repeat;
+				background-position: center;
+				
+			}
+			#grid-left-top-middle:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-wood-white-e1531480419396.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+				box-shadow: 4px 4px 4px 4px #f8f8f8;
+				
+			}
+			
+
+
+				// In centre
+			#grid-left-top-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-2.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+				box-shadow: 10px 5px 5px 5px #f8f8f8;
+			}
+			
+			#grid-left-top-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/wooden-ladder-shelf-front-1.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin: auto;
+			}
+
+			//Bottom
+			#grid-left-bottom-left {
+				background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-empty-2-e1531481556565.jpg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+	/*
+	@media screen and (min-width: $grid-x-large) {
+		
+		height: (($grid-x-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
+		
+		height: (($grid-large - 50px) * 0.2 - 20px);
+	}
+	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
+	
+		height: (($grid-med - 50px) * 0.2 - 10px);
+	}
+	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
+
+		width: 100%;
+	}
+	@media screen and (max-width: $grid-small - 1) {
+		background-size: contain;
+		height: 250px;
+		width: 100vw;
+	}
+}*/
+			#grid-left-bottom-left:hover {
+			background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-2-e1532522424896.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			}
+
+				// In centre
+			#grid-left-bottom-right {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				margin: auto;
+			}
+			#grid-left-bottom-right:hover {
+				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-e1531480234706.jpg);
+			}
+
+// Text Overlay
+
+.title-flexbox {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+
+.grid-right-title {
+	font-size: 150%;
+	top: 5%;
+	font-family: 'Bebas', sans-serif;
+	color: #7a7979;
+}
+
+.grid-right-subtitle {
+	text-transform: uppercase;
+	font-size: 230%;
+	font-weight: bold;
+	top: -105px;
+	letter-spacing: 1.5px; 
+	color: #000;
+	font-family: 'Bebas', sans-serif;
+}
+
+.grid-right-link {
+	font-family: 'Bebas', sans-serif;
+	font-size: 110%;
+	top: -200px;
+	color: #000;
+}
+
+.grid-right-link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+// Action
+
+#grid-action {
+	position: absolute;
+	right: 4px;
+	top: 8px;
+	z-index: 2;
+	transform: rotate(45deg);
+	p {
+		color: white;
+		width:auto;
+		text-transform:uppercase;
+	}
+}
+
+.grid-description {
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+	background: white;
+	p {
+		font-size: 70%;
+		text-transform: uppercase;
+	}
+}
+
+ #triangle-topright { 
+ position:absolute;
+ top: 0;
+ right: 0;
+ width: 0; 
+ height: 0; 
+ z-index: 1;
+ border-top: 60px solid #7a7979; 
+ border-left: 60px solid transparent;
+ opacity: 0.7;
+}
+

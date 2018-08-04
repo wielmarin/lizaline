@@ -12,6 +12,7 @@ Version: 1.0
 	flex-wrap: wrap;
 	background: white;
 	z-index: 1000;
+	border-bottom: 1px solid #f8f8f8;
 }
 
 /* navigation */
@@ -19,6 +20,7 @@ Version: 1.0
 .site-nav ul {
 	padding: 0;
 	font-family: 'Bebas', sans-serif;
+	
 }
 
 .site-nav ul:before .frontnav ul:after { content: ""; display: table; }
@@ -142,7 +144,7 @@ li {
 	border: none;
 	background: url(http://localhost/lizaline/wp-content/uploads/2018/07/314478-32-e1531305546358.png) no-repeat;
 	background-position: 95% 50%; 
-	background-color: #f8f8f8;
+	background-color: #ebebeb;
 	font-family: 'Bebas', sans-serif;
 }
 

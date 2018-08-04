@@ -1,3 +1,24 @@
+#product-list-heading {
+	padding: 20px 0px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+
+#product-list-title {
+	
+}
+
+#product-list-subtitle {
+
+}
+
+#no-product {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+}
+
 #product-list-grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -7,57 +28,93 @@
 	width:1200px;
 	margin: auto;
 	position:relative;
+	padding: 20px 0px;
+	
 }
 
 .product-list-item {
 	height: 400px;
-	position:relative;
+	position: relative;
 	overflow: hidden;
 }
 
+.product-list-item:hover {
+box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				}
+
 .product-list-item-info {
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .product-list-item-title {
 	width: 100%;
 	background: white;
+	text-align: center;
+	font-family: 'Bebas', sans-serif;
+	color: #7a7979;
+	text-transform: uppercase;
+	font-size: 70%;
+	padding-bottom: 5px;
 }
 
 .product-list-item-description {
 	width: 100%;
 	background: white;
+	text-align: center;
+	font-family: 'Bebas', sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-size: 70%;
 }
 
 .product-list-item-cta {
-	display: none;
-	width: 100%;
-	background: rgba(255,255,255,0.9);
-	line-height: 4rem;
+	width: 70%;
+	background: #eee;
+	line-height: 2rem;
+	text-align: center;
+	opacity: 0;
+	margin: auto;
+	//margin-bottom: -100px;
 	a {
 		color: black;
-		padding-left: 15px;
-		font-size: 130%;
+		font-size: 70%;
+		text-transform: uppercase;
+		font-family: 'Bebas', sans-serif;
 	}
 }
 
+// For changing CTA on hover
+.opacity8 {
+	opacity: 0.8;
+}
+
 //////// Backstretch Navigation
+
 .bsnav {
-	position: absolute;
-	bottom: 200px;
-	padding: 3px 5px;
-	border-radius: 50%;
-	background: rgba(255,255,255,0.4);
+	color: black;
+	display: none;
 }
 
 .backstretchprev {
-	left: 10px;
+	position: absolute;
+	bottom: 150px;
+	left: 5px;
+	color: #7a7979;
 }
 
 .backstretchnext {
-	right: 10px;
+	position: absolute;
+	bottom: 150px;
+	right: 5px;
+	color: #7a7979;
 }
 
 .opacityup {

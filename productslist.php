@@ -6,14 +6,7 @@ Template Post Type: page
 
 get_header();
 
-	$productslides1 = get_field('product_list_1_images_array');
-		$productslides2 = get_field('product_list_2_images_array', $url);
-			$productslides3 = get_field('product_list_3_images_array');
-				$productslides4 = get_field('product_list_4_images_array');
-	$productslides5 = get_field('product_list_5_images_array');
-		$productslides6 = get_field('product_list_6_images_array');
-			$productslides7 = get_field('product_list_7_images_array');
-				$productslides8 = get_field('product_list_8_images_array');
+
 
 ?>
 
@@ -21,14 +14,14 @@ get_header();
 <script>
 
  jQuery(document).ready(function( $ ) { 
-  	$("#product-1").backstretch([<?php  echo $productslides1; ?>], {duration: 3000, fade: 750, paused: true});
-		$("#product-2").backstretch([<?php  echo $productslides2; ?>], {duration: 3000, fade: 750, paused: true});
-	$("#product-3").backstretch([<?php  echo $productslides3; ?>], {duration: 3000, fade: 750, paused: true});
-		$("#product-4").backstretch([<?php  echo $productslides4; ?>], {duration: 3000, fade: 750, paused: true});
-	$("#product-5").backstretch([<?php  echo $productslides5; ?>], {duration: 3000, fade: 750, paused: true});
-		$("#product-6").backstretch([<?php  echo $productslides6; ?>], {duration: 3000, fade: 750, paused: true});
-	$("#product-7").backstretch([<?php  echo $productslides7; ?>], {duration: 3000, fade: 750, paused: true});
-		$("#product-8").backstretch([<?php  echo $productslides8; ?>], {duration: 3000, fade: 750, paused: true});
+  	$("#product-1").backstretch([<?php the_field('product_list_1_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+		$("#product-2").backstretch([<?php the_field('product_list_2_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+	$("#product-3").backstretch([<?php the_field('product_list_3_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+		$("#product-4").backstretch([<?php the_field('product_list_4_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+	$("#product-5").backstretch([<?php the_field('product_list_5_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+		$("#product-6").backstretch([<?php the_field('product_list_6_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+	$("#product-7").backstretch([<?php the_field('product_list_7_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+		$("#product-8").backstretch([<?php the_field('product_list_8_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
 		
 		
 		
@@ -84,90 +77,118 @@ get_header();
 		});
 });
 
-
-
 </script>
 
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+	?>
+	
+	
+<div id="product-list-heading">
+	<h1 id="product-list-title">
+		<?php the_title(); ?>
+	</h1>
+	<h2 id="product-list-subtitle">
+		<?php the_content(); ?>
+	</h2>
+</div>
+
+
+ <?php
+	endwhile; else: ?>
+	<p>Sorry, no <?php the_title(); ?> available.</p>
+	<?php endif; ?>
+ <?php if ( get_field( 'on/off_1' ) ): ?>
 <!--- START PRODUCT GRID --->
 <div id="product-list-grid">
+
 	<div id="product-1" class="product-list-item col-3">
 		<div id="product-1-info" class="product-list-item-info">
-			<div id="product-1-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_1_cta'); ?></a>
-			</div>
+			
 			<div id="product-1-title" class="product-list-item-title">
 				<?php the_field('product_1_name'); ?>
 			</div>
 			<div id="product-1-description" class="product-list-item-description">
 				<?php the_field('product_1_description'); ?>
 			</div>
+			<div id="product-1-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_1_cta'); ?></a>
+			</div>
 						<!-- Nav Buttons -->
-			<span id="prev1" class="backstretchprev bsnav"><<</span>
-			<span id="next1" class="backstretchnext bsnav">>></span>
+			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next1" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
-	</div>
-
+	</div>	
+	
+<?php if ( get_field( 'on/off_2' ) ): ?>
 	<div id="product-2" class="product-list-item col-3">
 		<div id="product-2-info" class="product-list-item-info">
-			<div id="product-2-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_2_cta'); ?></a>
-			</div>
 			<div id="product-2-title" class="product-list-item-title">
 				<?php the_field('product_2_name'); ?>
 			</div>
 			<div id="product-2-description" class="product-list-item-description">
 				<?php the_field('product_2_description'); ?>
 			</div>
+			<div id="product-2-cta" class="product-list-item-cta">
+			<a href="#"><?php the_field('product_2_cta'); ?></a>
+			</div>
 			<!-- Nav Buttons -->
-			<span id="prev2" class="backstretchprev bsnav"><<</span>
-			<span id="next2" class="backstretchnext bsnav">>></span>
+			<span id="prev2" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next2" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>
-
+<?php endif; // end of if field_name logic ?>	
+	
+<?php if ( get_field( 'on/off_3' ) ): ?>
 	<div id="product-3" class="product-list-item col-3">
 		<div id="product-3-info" class="product-list-item-info">
-			<div id="product-3-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_3_cta'); ?></a>
-			</div>
+			
 			<div id="product-3-title" class="product-list-item-title">
 				<?php the_field('product_3_name'); ?>
 			</div>
 			<div id="product-3-description" class="product-list-item-description">
 				<?php the_field('product_3_description'); ?>
 			</div>
+			<div id="product-3-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_3_cta'); ?></a>
+			</div>
 						<!-- Nav Buttons -->
 			<span id="prev3" class="backstretchprev bsnav"><<</span>
 			<span id="next3" class="backstretchnext bsnav">>></span>
 		</div>
 	</div>
-
+<?php endif; // end of if field_name logic ?>	
+	
+<?php if ( get_field( 'on/off_4' ) ): ?>
 	<div id="product-4" class="product-list-item col-3">
 		<div id="product-4-info" class="product-list-item-info">
-			<div id="product-4-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_4_cta'); ?></a>
-			</div>
 			<div id="product-4-title" class="product-list-item-title">
 				<?php the_field('product_4_name'); ?>
 			</div>
 			<div id="product-4-description" class="product-list-item-description">
 				<?php the_field('product_4_description'); ?>
 			</div>
+			<div id="product-4-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_4_cta'); ?></a>
+			</div>
 						<!-- Nav Buttons -->
 			<span id="prev4" class="backstretchprev bsnav"><<</span>
 			<span id="next4" class="backstretchnext bsnav">>></span>
 		</div>
 	</div>	
+<?php endif; // end of if field_name logic ?>		
+	
 <?php if ( get_field( 'on/off_5' ) ): ?>
 	<div id="product-5" class="product-list-item col-3">
 		<div id="product-5-info" class="product-list-item-info">
-			<div id="product-5-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_5_cta'); ?></a>
-			</div>
 			<div id="product-5-title" class="product-list-item-title">
 				<?php the_field('product_5_name'); ?>
 			</div>
 			<div id="product-5-description" class="product-list-item-description">
 				<?php the_field('product_5_description'); ?>
+			</div>
+			<div id="product-5-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_5_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev5" class="backstretchprev bsnav"><<</span>
@@ -179,18 +200,18 @@ get_header();
 <?php if ( get_field( 'on/off_6' ) ): ?>
 	<div id="product-6" class="product-list-item col-3">
 		<div id="product-6-info" class="product-list-item-info">
-			<div id="product-6-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_6_cta'); ?></a>
-			</div>
 			<div id="product-6-title" class="product-list-item-title">
 				<?php the_field('product_6_name'); ?>
 			</div>
 			<div id="product-6-description" class="product-list-item-description">
 				<?php the_field('product_6_description'); ?>
 			</div>
+			<div id="product-6-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_6_cta'); ?></a>
+			</div>
 						<!-- Nav Buttons -->
-			<span id="prev6" class="backstretchprev bsnav"><<</span>
-			<span id="next6" class="backstretchnext bsnav">>></span>
+			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next1" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>	
 <?php endif; // end of if field_name logic ?>	
@@ -198,14 +219,14 @@ get_header();
 <?php if ( get_field( 'on/off_7' ) ): ?>
 	<div id="product-7" class="product-list-item col-3">
 		<div id="product-7-info" class="product-list-item-info">
-			<div id="product-7-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_7_cta'); ?></a>
-			</div>
 			<div id="product-7-title" class="product-list-item-title">
 				<?php the_field('product_7_name'); ?>
 			</div>
 			<div id="product-7-description" class="product-list-item-description">
 				<?php the_field('product_7_description'); ?>
+			</div>
+			<div id="product-7-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_7_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev7" class="backstretchprev bsnav"><<</span>
@@ -217,14 +238,14 @@ get_header();
 <?php if ( get_field( 'on/off_8' ) ): ?>
 	<div id="product-8" class="product-list-item col-3">
 		<div id="product-8-info" class="product-list-item-info">
-			<div id="product-8-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_8_cta'); ?></a>
-			</div>
 			<div id="product-8-title" class="product-list-item-title">
 				<?php the_field('product_8_name'); ?>
 			</div>
 			<div id="product-8-description" class="product-list-item-description">
 				<?php the_field('product_8_description'); ?>
+			</div>
+			<div id="product-8-cta" class="product-list-item-cta">
+				<a href="#"><?php the_field('product_8_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev8" class="backstretchprev bsnav"><<</span>
@@ -234,5 +255,8 @@ get_header();
 <?php endif; // end of if field_name logic ?>	
 </div>
 <!--- END PRODUCT GRID --->
+<?php else : ?>
+ 	<h2 id="no-product">Sorry, no <?php the_title(); ?> available.</h2>
+<?php endif; // end of if field_name logic ?>	
 
 <?php get_footer() ?>

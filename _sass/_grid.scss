@@ -1,224 +1,72 @@
-$grid-x-large: 1250px; // Container 1200
-$grid-large: 1050px;	// Container 1000 
-$grid-med: 850px; //800
-$grid-small: 600px; // 600
 
 #grid-container {
-	margin: 50px auto;
-	display:flex;
-	flex-wrap: wrap;
-	@media screen and (min-width: $grid-x-large) { // Screen meer dan 1250
-		width: ($grid-x-large - 50px);
-		height: (($grid-x-large - 50px) * (2/5) - 20px);
-	}
-	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) { //Screen 1050 - 1249
-		width: ($grid-large - 50px);
-		height: (($grid-large - 50px) * (2/5) - 20px);
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) { // Screen 850 - 1049
-		width: ($grid-med - 50px);
-		height: (($grid-med - 50px) * (2/5));
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) { // Screen 600 - 849
-		width: ($grid-small - 20px);
-		height: 100%;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100%;
-		height: 100%;
-	}
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 220px);
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 2rem;
+	margin: auto;
+	position:relative;
+	padding: 10px 0px;
+	width:90%;
 }
 
 .grid-box {
-	margin: 0px;
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	//border: 1px solid black;
-	box-sizing: border-box;
 	position:relative;
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100vw;
-		height: 100vw;
-	}
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
+
+// Box sizes
+
 .smallsquare {
-	@media screen and (min-width: $grid-x-large) {
-		width: (($grid-x-large - 50px) * 0.2 - 20px);
-		height: (($grid-x-large - 50px) * 0.2 - 20px);
-	}
-	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
-		width: (($grid-large - 50px) * 0.2 - 20px);
-		height: (($grid-large - 50px) * 0.2 - 20px);
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
-		width: (($grid-med - 50px) * 0.2 - 10px);
-		height: (($grid-med - 50px) * 0.2 - 10px);
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 50%;
-		height: 100%;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100vw;
-		height: 100vw;
-	}
+	grid-column: span 1;
+	grid-row: span 1;
 }
 
 .largesquare {
-	@media screen and (min-width: $grid-x-large) {
-		width: calc(100% - 20px);
-		height: calc(100% - 20px);
-	}
-	/*@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
-		width: 380px;
-		height: 380px
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
-		width: 320px;
-		height: 320px;
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 280px;
-		height: 280px;
-		order: 0;
-	} */
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100vw;
-		height: 100vw;
-	}
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.extra-large {
+	grid-column: span 3;
+	grid-row: span 2;
 }
 
 .wide {
-	@media screen and (min-width: $grid-x-large) {
-		width: 100%;
-		height: calc(100% - 20px);
-	}
-	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
-		width: 100%;
-		height: calc(100% - 20px);
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
-		width: 100%;
-		height: calc(100% - 10px);
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 100%;
-		height: 100%;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100vw;
-		height: 100vw;
-	}
-
+	grid-column: span 2;
+	grid-row: span 1;
 }
 
 .tall {
-	@media screen and (min-width: $grid-x-large) {
-		width: 100%;
-		height: 100%;
-	}
-	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
-		width: 100%;
-		height: 100%;
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
-		width: 100%;
-		height: 100%;
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 100%;
-		height: 100%;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100vw;
-		height: 100vw;
-	}
-
+	grid-column: span 1;
+	grid-row: span 2;
 }
 
-// 2nd level
-#grid-left {
-	width: 40%;
-	height: 100%;
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 50%;
-		height: 280px;
-		order: 1;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100%;
-		height: 100%;
-	}
-}
-
-#grid-center {
-	width: 20%;
-	height: 100%;
-	align-content: space-between;
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		display:flex;
-		flex-wrap:wrap;
-		width: 100%;
-		height: 280px;
-		order: 2;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100%;
-		height: 100%;
-	}
-}
+// Grid items 
 
 #grid-right {
-	width: 40%;
-	height: 100%;
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-no-window-e1532356788313.png') no-repeat;
 	background-size: contain;
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-		width: 50%;
-		height: 280px;
-		order: 0;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		width: 100%;
-		height: 100vw;
-		order: -1;
-	}
 }
 
-	// 3rd Level
-	#grid-left-top {
-		width: 100%;
-		height: 50%;
-		
-	}
-	
-	#grid-left-bottom {
-		width: 100%;
-		height: 50%;
-		align-content: flex-end;
-	}
-
-		//4th level
-			//Top
 			#grid-left-top-left {
 				background: url(/lizaline/wp-content/uploads/2018/07/Wall-shelf-green-e1532521963986.jpg);
-				background-size: contain;
+				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
 			}
 			#grid-left-top-left:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 			
 			}
-			/*
-			#grid-left-top-left::after {
-				content: "White Shoe Rack with soft seat - £65.10";
-				position: relative;
-				top:97%;
-				Font-size: 70%;
-				text-transform: uppercase;
-			}
-			*/
+
 			#grid-left-top-middle {
 				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-s.jpg);
 				
@@ -230,20 +78,13 @@ $grid-small: 600px; // 600
 				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-wood-white-e1531480419396.jpg);
 				background-repeat: no-repeat;
 				background-position: center;
-			
+					box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 				
 			}
 			
-		/*	#grid-left-top-middle::after {
-				content: "Wooden ladder shelf - £99";
-				position: relative;
-				top:97%;
-				Font-size: 70%;
-				text-transform: uppercase;
-			}
-		*/
-
-				// In centre
 			#grid-left-top-right {
 				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-2.jpg);
 				background-size: contain;
@@ -256,58 +97,28 @@ $grid-small: 600px; // 600
 				background-size: contain;
 				background-repeat: no-repeat;
 				margin: auto;
+				box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 			}
-			/*
-			#grid-left-top-right::after {
-				content: "Authentic cushion burlap - £45";
-				position: relative;
-				top:97%;
-				Font-size: 70%;
-				text-transform: uppercase;
-			}
-			*/
-			//Bottom
+
 			#grid-left-bottom-left {
 				background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-empty-2-e1531481556565.jpg);
 				background-repeat: no-repeat;
 				background-position: center;
-	@media screen and (min-width: $grid-x-large) {
-		
-		height: (($grid-x-large - 50px) * 0.2 - 20px);
-	}
-	@media screen and (min-width: $grid-large) and (max-width: $grid-x-large - 1) {
-		
-		height: (($grid-large - 50px) * 0.2 - 20px);
-	}
-	@media screen and (min-width: $grid-med) and (max-width: $grid-large - 1) {
-	
-		height: (($grid-med - 50px) * 0.2 - 10px);
-	}
-	@media screen and (min-width: $grid-small) and (max-width: $grid-med - 1) {
-
-		width: 100%;
-	}
-	@media screen and (max-width: $grid-small - 1) {
-		background-size: contain;
-		height: 250px;
-		width: 100vw;
-	}
 			}
+			
 			#grid-left-bottom-left:hover {
 			background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-2-e1532522424896.jpg);
 			background-repeat: no-repeat;
 			background-position: center;
+				box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 			}
-			/*
-			#grid-left-bottom-left::after {
-				content: "Wooden coffee table - £119";
-				position: relative;
-				top:97%;
-				Font-size: 70%;
-				text-transform: uppercase;
-			}
-			*/
-				// In centre
+
 			#grid-left-bottom-right {
 				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
 				background-size: contain;
@@ -317,55 +128,51 @@ $grid-small: 600px; // 600
 			}
 			#grid-left-bottom-right:hover {
 				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-e1531480234706.jpg);
+				box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 			}
-			/*
-			#grid-left-bottom-right::after {
-				content: "Wooden Storage stool bench - £89";
-				position: relative;
-				top:97%;
-				Font-size: 70%;
-				text-transform: uppercase;
-			}
-			*/
-// Text Overlay
 
-.grid-right-title {
-	font-size: 150%;
-	top: 5%;
-	
-}
+//Grid Extras
+	// Texts
+	.title-flexbox {
+		position: relative;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+	}
 
-.grid-right-subtitle {
-	text-transform: uppercase;
-	font-size: 230%;
-	font-weight: bold;
-	font-family: 'Bebas', sans-serif;
-	top: -105px;
-	letter-spacing: 1.5px; 
-}
+	.grid-right-title {
+		font-size: 150%;
+		top: 5%;
+		font-family: 'Lato', sans-serif;
+		color: #7a7979;
+	}
 
-.grid-right-link {
-	font-family: 'Bebas', sans-serif;
-	font-size: 110%;
-	top: -200px;
-}
+	.grid-right-subtitle {
+		text-transform: uppercase;
+		font-size: 230%;
+		font-weight: bold;
+		top: -105px;
+		letter-spacing: 1.5px; 
+		color: #000;
+		font-family: 'Lato', sans-serif;
+	}
 
-.grid-right-link:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
+	.grid-right-link {
+		font-family: 'Lato', sans-serif;
+		font-size: 110%;
+		top: -205px;
+		color: #000;
+	}
 
-.title-flexbox {
-	position: relative;
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	color: #000;
-	font-family: 'Bebas', sans-serif;
-}
+	.grid-right-link:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
 
-// Action
-
+// Actions
 #grid-action {
 	position: absolute;
 	right: 4px;
@@ -390,15 +197,14 @@ $grid-small: 600px; // 600
 	}
 }
 
- #triangle-topright { 
- position:absolute;
- top: 0;
- right: 0;
- width: 0; 
- height: 0; 
- z-index: 1;
- border-top: 60px solid #7a7979; 
- border-left: 60px solid transparent;
- opacity: 0.7;
+#triangle-topright { 
+	position:absolute;
+	top: 0;
+	right: 0;
+	width: 0; 
+	height: 0; 
+	z-index: 1;
+	border-top: 60px solid #7a7979; 
+	border-left: 60px solid transparent;
+	opacity: 0.7;
 }
-
