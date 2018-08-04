@@ -12,7 +12,7 @@
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>
 	
-	<div id="excerptblock" class="col-3">
+	<div id="excerptblock" class="col-3 hoverunderline">
 		<a href="<?php the_permalink(); ?>">
 			<div id="thumbnail">
 			<?php 

@@ -35,12 +35,15 @@ jQuery( document ).ready(function() {
  
  
  
- 
   //* hover nieuws *//
   
  jQuery('#thumbnail').hover(function() {
  jQuery('#posttitle').toggleClass('underline');
  });
+ 
+jQuery('.hoverunderline').hover(function() {
+	jQuery('#posttitle h2', this).toggleClass('underline');
+});
  
  
   
