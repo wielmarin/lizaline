@@ -7,9 +7,9 @@ Template Post Type: page
 get_header(); 
 
 
-$product1 = "/lizaline/wp-content/uploads/2018/07/Wooden-stool-bench-e1531316666346.jpg";
-$product2 = "/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-e1531316131167.jpg";
-$product3 = "/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1532522657475.jpg";
+$product1 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown.jpg";
+$product2 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front.jpg";
+$product3 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front-in-use-e1533629283899.jpg";
 
 ?>
 
@@ -46,13 +46,13 @@ jQuery( document ).ready(function() {
 		</div>
 		<div id="individual-grid-features" class="grid-box">
 			<h3>
-				Features
+				Product Features
 			</h3>
 			<div id="individual-grid-features-list">
-				<p>Large</p>
-				<p>Comfortable</p>
-				<p>Nice</p>
-				<p>Sentient</p>
+				<p><i class="fas fa-check"></i>Quality materials and neat finishing</p>
+				<p><i class="fas fa-check"></i>Modular and multi-functional</p>
+				<p><i class="fas fa-check"></i>Vintage style</p>
+				<p><i class="fas fa-check"></i>Express mounting</p>
 			</div>
 
 		</div>
@@ -60,13 +60,13 @@ jQuery( document ).ready(function() {
 
 	<div id="individual-sidebar">
 		<h1 id="individual-side-title">
-			Buy it now
+			£89.00 
 		</h1>
 		<div id="individual-side-action">
 			<a href="https://www.amazon.co.uk">Order on Amazon <i class="fab fa-amazon"></i></a>
 		</div>
 		<p id="individual-side-option">
-			If the product is out of stock, try ALTERNATIVE or ALTERNATIVE
+			If the product is out of stock, <a href="http://localhost/lizaline/wooden-storage-benches/"> check similar storage stool benches ></a>
 		</p>
 	</div>
 </div>

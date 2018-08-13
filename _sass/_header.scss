@@ -19,8 +19,8 @@ Version: 1.0
 
 .site-nav ul {
 	padding: 0;
-	font-family: 'Bebas', sans-serif;
-	
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
 }
 
 .site-nav ul:before .frontnav ul:after { content: ""; display: table; }
@@ -36,7 +36,7 @@ Version: 1.0
 	display:inline;
 	color: #000;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .site-nav li a:active {
@@ -55,28 +55,31 @@ li {
 
 #menu-item-20 {
 	border-right: 1px solid #eee;
+
 }
 
 /* hamburgermenu */
 
 #mobilemenuopen {
 	border-right: 1px solid #f8f8f8;
-	padding-top: 6px;
+	padding-top: 11px;
 	cursor: pointer;
 	width: 200px;
 	i {
 		display: inline-block;
 		font-size: 22px;
 		width: 30px;
-		margin-left: 20px;
+		margin-left: 40px;
 		color: black;
 	}
 	h4 {
 		display: inline;
 		color: black;
 		text-transform: uppercase;
-		font-size: 14px;
-		padding: 30px 15px;
+		font-size: 16px;
+		padding: 30px 28px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 200;
 	}
 }
 
@@ -106,7 +109,8 @@ li {
 }
 
 .hamburger--spring .hamburger-inner {
-    top: 10px!important;
+    top: 8px!important;
+	left:35px;
 }
 
 
@@ -115,53 +119,45 @@ li {
 .logo {
 	position: absolute;
 	left: 50%; 
-	margin: 0 0 0 -89px;
+	margin: 10px 0 0 -89px;
 }
 
 /* Search */
 
 .search-box {
 	position: absolute;
-	right: 50px;
-	height: 80px;
+	right: 20px;
+	height: 20px;
 	padding: 0 20px 0 20px;
 }
 
 .search-boxmobile .hd-search {
-	width: 90%;
+	width: 70%;
 	margin: right;
 }
 
 .hd-search #searchsubmit {
-	Display: none;
+	Background: none;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	border: none;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-right: -4px;
 }
 
 .hd-search #s {
 	vertical-align: top;
-	padding: 10px 25px;
-	margin: 20px 0px 0px 0px;
-	width: 100%;
+	padding: 5px 0px;
+	margin: 24px 0px 0px 0px;
+	width: 65%;
 	border: none;
-	background: url(http://localhost/lizaline/wp-content/uploads/2018/07/314478-32-e1531305546358.png) no-repeat;
+	border-bottom: 1px solid black;
+	background: url(/lizaline/wp-content/uploads/2018/08/if_icon-111-search_314478.png) no-repeat;
 	background-position: 95% 50%; 
-	background-color: #ebebeb;
 	font-family: 'Bebas', sans-serif;
 }
-
-.hd-search #s:hover {
-	vertical-align: top;
-	padding: 10px 25px;
-	margin: 20px 0px 0px 0px;
-	width: 100%;
-	border: none;
-	background: url(http:/lizaline/wp-content/uploads/2018/07/314478-321-e1532509716845.png) no-repeat;
-	background-position: 95% 50%; 
-	background-color: #f8f8f8;
-	font-family: 'Bebas', sans-serif;
-	
-}
-
-
 
 .hd-search #s:hover {
 	cursor: pointer

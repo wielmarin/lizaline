@@ -5,18 +5,14 @@
 
 			#grid-journal-left-top-left {
 				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-e1531481338216.jpg);
-				background-size: contain;
+		
 				background-repeat: no-repeat;
 				background-position: center;
 			}
+			
 			#grid-journal-left-top-left:hover {
-			background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-coffee-sack-e1531481383615.jpg);
-			background-repeat: no-repeat;
-			background-position: center;
-			box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 
 			#grid-journal-left-top-middle {
@@ -25,31 +21,11 @@
 				background-position: center;
 			}
 			#grid-journal-left-top-middle:hover {
-				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-2-e1532522818904.jpg);
-				background-repeat: no-repeat;
-				background-position: center;
-				box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
-				
-			#grid-journal-left-top-right {
-				background: url(/lizaline/wp-content/uploads/2018/07/Lighbox-witte-achtergrond-e1532442402469.jpg);
-				background-size: contain;
-				background-repeat: no-repeat;
 
-			}
-			#grid-journal-left-top-right:hover {
-				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-coffee-sack-e1531481383615.jpg);
-				background-size: contain;
-				background-repeat: no-repeat;
-				box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 
-			}
 
 			//Bottom
 			#grid-journal-left-bottom-left {
@@ -58,14 +34,10 @@
 				background-position: center;
 				background-size: contain;
 			}
+			
 			#grid-journal-left-bottom-left:hover {
-			background:url(/lizaline/wp-content/uploads/2018/07/Lighbox-witte-achtergrond-e1532442402469.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-			box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 			
 			#grid-journal-left-bottom-right {
@@ -118,9 +90,8 @@
 				align-self: end;
 			}
 			#grid-journal-left-bottom-left:hover {
-			background: url(/lizaline/wp-content/uploads/2018/07/Lighbox-op-wall-shelf-e1532442706763.jpg);
-			background-size: cover;
-				background-repeat: no-repeat;
+					opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 			
 // Text Overlay
@@ -129,9 +100,8 @@
 	color: #000;
 	font-size: 230%;
 	font-weight: bold;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	top: -105px;
-	letter-spacing: 1.5px; 
 	text-transform: uppercase;
 	padding: 20px 20px 0px 20px;
 }
@@ -140,7 +110,11 @@
 	color: #000;
 	padding: 5px 20px 0px 20px;
 	font-size: 110%;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Bebas', sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 80%;
+		text-transform: uppercase;
 }
 
 #grid-journal-right {
@@ -148,7 +122,7 @@
 }
 
 .grid-journal-right-link {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 100%;
 	top: -200px;
 }
@@ -176,10 +150,15 @@
 
 .grid-journal-description {
 	position: absolute;
-	bottom: -15px;
+	bottom: 2px;
+	left: 2px;
+	width: 100%;
+	color: #7a7979;
+	font-family: 'Bebas', sans-serif;
 	p {
 		font-size: 70%;
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 

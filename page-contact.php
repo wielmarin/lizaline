@@ -10,17 +10,18 @@
 
 <div class="flex-containercontact">
 	<div class="flex-itemcontactform">
-		<div class="titlecontactform"><h3><b>Contactform</b></h3></div>
+		<div class="titlecontact"><h3><b>Contact form</b></h3></div>
 		<div class="contactform"><?php echo do_shortcode('[contact-form-7 id="179" title="Contactform"]'); ?></div>
 	</div>
 		
-	<div class="flex-itemsocial">
-		<div class="titlesocialcontact"><h3><b>Follow us</b></h3></div>
-			
-			<div class="socialitem"><div class="iconcontact"><a href="https://www.facebook.com/paintingbyruta/" target="_blank"><img src="http://www.rutalu.com/wp-content/uploads/2017/09/if_yumminky-social-media-21_2082448.png" height="50" width="50" alt="Facebook" /></div><div class="connectcontact"><p>Like Liza Line on Facebook</p></a></div></div>
-			<br>
-			<div class="socialitem"><div class="iconcontact"><a href="https://www.instagram.com/rutalu/" target="_blank"><img src="http://www.rutalu.com/wp-content/uploads/2017/09/if_yumminky-social-media-26_2082452.png" height="50" width="50" alt="Instagram" /></div><div class="connectcontact"><p>Follow Liza Line on Instagram</p></a></div></div>
-			<br>
+	<div class="flex-itemcontactinfo">
+		<div class="titlecontact"><h3><b>Contact information</b></h3></div>
+		<div class="contact-info">T +3412345678</div>
+		<div class="contact-info">E info@email.es</div>
+		<div class="contact-info"><i class="fab fa-facebook-f fa-lg"></i>
+		<i class="fab fa-instagram fa-lg"></i></div>
+	
+	
 	</div>
 </div>
 

@@ -9,8 +9,9 @@
 </div>
 
 <div id="container-about">
+
+	<h1>Functional can be beautiful</h1>
 	<p>Liza Line specialises in design and production of functional and elegant wooden furniture with a vintage look. Most of our products are made from natural and local material. Our collection includes wooden decorative storage, like shoe racks and stool benches, wooden decorative shelves, burlap floor pillows, light boxes and more.</p>
-<h1>This is Liza Line</h1>
 	<div id="usp">
 		<div id="usp-text1">
 		<h3>Handmade furniture</h3>
@@ -24,8 +25,8 @@
 		<div id="usp-img2">
 		</div>
 		<div id="usp-text2">
-		<h3>Functional can be beautiful</h3>
-		<p>Liza Line designs and produces functional & beautiful wooden furniture. Its functionality will help put an end to the mess in your house or office. Its careful finish and its vintage look give any space a fashionable, trendy and warm touch. 
+		<h3>Functional & elegant</h3>
+		<p>Liza Line designs and produces functional & elegant wooden furniture. Its functionality will help put an end to the mess in your house or office. Its careful finish and its vintage look give any space a fashionable, trendy and warm touch. 
 		</div>
 	</div>
 	

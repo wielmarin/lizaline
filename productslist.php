@@ -14,14 +14,14 @@ get_header();
 <script>
 
  jQuery(document).ready(function( $ ) { 
-  	$("#product-1").backstretch([<?php the_field('product_list_1_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-		$("#product-2").backstretch([<?php the_field('product_list_2_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-	$("#product-3").backstretch([<?php the_field('product_list_3_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-		$("#product-4").backstretch([<?php the_field('product_list_4_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-	$("#product-5").backstretch([<?php the_field('product_list_5_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-		$("#product-6").backstretch([<?php the_field('product_list_6_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-	$("#product-7").backstretch([<?php the_field('product_list_7_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
-		$("#product-8").backstretch([<?php the_field('product_list_8_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit'});
+  	$("#product-1").backstretch([<?php the_field('product_list_1_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+		$("#product-2").backstretch([<?php the_field('product_list_2_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+	$("#product-3").backstretch([<?php the_field('product_list_3_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+		$("#product-4").backstretch([<?php the_field('product_list_4_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+	$("#product-5").backstretch([<?php the_field('product_list_5_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+		$("#product-6").backstretch([<?php the_field('product_list_6_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+	$("#product-7").backstretch([<?php the_field('product_list_7_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+		$("#product-8").backstretch([<?php the_field('product_list_8_images_array'); ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
 		
 		
 		
@@ -153,8 +153,8 @@ get_header();
 				<a href="#"><?php the_field('product_3_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev3" class="backstretchprev bsnav"><<</span>
-			<span id="next3" class="backstretchnext bsnav">>></span>
+			<span id="prev3" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next3" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>
 <?php endif; // end of if field_name logic ?>	
@@ -172,8 +172,8 @@ get_header();
 				<a href="#"><?php the_field('product_4_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev4" class="backstretchprev bsnav"><<</span>
-			<span id="next4" class="backstretchnext bsnav">>></span>
+			<span id="prev4" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next4" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>	
 <?php endif; // end of if field_name logic ?>		
@@ -191,8 +191,8 @@ get_header();
 				<a href="#"><?php the_field('product_5_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev5" class="backstretchprev bsnav"><<</span>
-			<span id="next5" class="backstretchnext bsnav">>></span>
+			<span id="prev5" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next5" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>	
 <?php endif; // end of if field_name logic ?>	
@@ -229,8 +229,8 @@ get_header();
 				<a href="#"><?php the_field('product_7_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev7" class="backstretchprev bsnav"><<</span>
-			<span id="next7" class="backstretchnext bsnav">>></span>
+			<span id="prev7" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next7" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>	
 <?php endif; // end of if field_name logic ?>	
@@ -248,8 +248,8 @@ get_header();
 				<a href="#"><?php the_field('product_8_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev8" class="backstretchprev bsnav"><<</span>
-			<span id="next8" class="backstretchnext bsnav">>></span>
+			<span id="prev8" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next8" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>	
 <?php endif; // end of if field_name logic ?>	

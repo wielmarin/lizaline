@@ -15,6 +15,7 @@
 	color: #000;
 	font-weight: bold;
 	font-size: 250%;
+	
 }
 
 #title-about h2 {
@@ -22,7 +23,6 @@
 	font-family: 'Lato', sans-serif;
 	font-size: 90%;
 	color: #000;
-
 }
 
 #container-about {
@@ -32,34 +32,25 @@
 }
 
 #container-about h1 {
+	letter-spacing: 1.5px;
+	margin-top: 40px;
 	color: black;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 }
 
 #container-about p {
-	color: black;
-	font-family: 'Lato', sans-serif;
-	padding: 40px 30px 40px 30px;
+	padding: 20px 30px 40px 30px;
 	text-align: center;
-	font-size: 120%;
+	font-size: 110%;
 }
-
-#container-about-usp h1 {
-	color: black;
-	padding-top: 60px;
-	text-align: center;
-	font-size: 150%;
-	border-top: solid 1px #f8f8f8;
-}
-
 
 //* about designer *//
 
 #container-about-designer {
 	margin: auto;
 	padding: 60px;
-	background-color: #7a7979;
+	background-color: #a9a7ab;
 	color: #fff;
 }
 
@@ -69,8 +60,6 @@
 	letter-spacing: 1.5px;
 	text-align: center;
 	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 #container-about-designer h3 {
@@ -85,7 +74,6 @@
 	color: #fff;
 	text-align: center;
 	font-size: 100%;
-	font-family: 'Lato', sans-serif;
 	width: 60%;
 	margin: auto;
 	margin-top: 20px;
@@ -103,7 +91,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	margin: auto;
-	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #usp-img1 {
@@ -128,11 +116,12 @@
 }
 
 #usp-text1 h3 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Lato', cursive;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	font-size: 150%;
+	font-size: 140%;
 	text-align: right;
+	letter-spacing: 1.5px;
 }
 
 #usp-img2 {
@@ -154,14 +143,16 @@
 #usp-text2 p {
 	text-align: left;
 	padding: 0px 0px 0px 0px;
+	font-size: 100%;
 }
 
 #usp-text2 h3 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Lato';
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	font-size: 150%;
+	font-size: 140%;
 	text-align: left;
+	letter-spacing: 1.5px;
 }
 
 

@@ -25,6 +25,14 @@
 
 </div><!-- container -->
 
+<!-- Backstretch -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/danielgindi-jquery-backstretch/2.1.15/jquery.backstretch.min.js"></script>
+
+<!-- Slick Slider JS -->
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 <?php wp_footer(); ?>
 	
 </body>

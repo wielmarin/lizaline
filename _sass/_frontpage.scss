@@ -3,76 +3,56 @@
 /* banner */
 
 .banner {
-	background-image: url(http://localhost/lizaline/wp-content/uploads/2018/07/lex-sirikiat-372115-unsplash.jpg);
+	background-image: url(http:/lizaline/wp-content/uploads/2018/08/Autumn-feelings-e1533817337202.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
 	display:block;
 	width: 100%;
-	background-position: bottom;
-	height: calc(100vh - 79px);
-	margin-bottom: 60px;
+	background-position: CENTER;
+	height: 60vh;
+	margin-bottom: 50px;
 }
 
 .banner-text {
-	display:none;
-	position: relative;
-	top: 55vh;
+	padding: 50px 0px 0px 20px;
+	width: 350px;
 }
 
 .cta-banner {
-	text-align: center;
-	color: #fff;
-	font-size: 100%;
-	margin-bottom: 10px;
+	color: #F5EFEA;
+	font-size: 43%;
+	text-align: right;
+	margin-top: 10px;
 }
 
 #explorelink {
 	display: inline;
 	position:relative;
+	margin-right: 50px;
+	font-family: 'Bebas', sans-serif;
+	text-decoration: underline;
+	letter-spacing:0.1em;
 }
-
-#explorelink:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	bottom: -4px;
-	left: 0;
-	background-color: white;
-	visibility: hidden;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-	}
 	
-.banner-text:hover #explorelink:after {
-	visibility: visible;
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-}
 
 .title-header1 {
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Bebas', sans-serif;
+	font-weight: 200;
 	text-transform: uppercase;
-	color: #fff;
+	color: #F5EFEA;
+	font-size: 65px;
+	position:relative;
+	right: 0px;
+	letter-spacing:0.1em;
 	font-weight: bold;
-	font-size: 250%;
-	padding-top: 3vh;
+	line-height: 1.3em;
 }
 
-.title-header2 {
-	text-align: center;
-	padding-top: 2vh;
-	color: #fff;
-	font-family: 'Dancing Script', cursive;
-	font-size: 250%;
-}
 
 .introduction {
 		text-align: center;
-		background-color: #7a7979;
+		background-color: #a9a7ab;
 		color: #fff;
 		padding: 60px;
 		margin-top: 60px;
@@ -89,3 +69,134 @@
 .introduction p {
 		padding: 30px 150px 0px 150px;
 	}
+	
+	
+$slidermiddle: calc((100% - 1240px) / 2);
+
+#slicktop-container {
+	width: 100%;
+	height: 70vh;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.slicktop-fade {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: $slidermiddle;
+	background: rgba(255,255,255,0.7);
+	z-index:999;
+	
+}
+
+#slicktop-leftfade {
+	left: 0;
+}
+#slicktop-rightfade {
+	right: 0;
+}
+
+#slicktop-block-1 {
+	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+}
+
+#slicktop-block-2 {
+	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+}
+
+#slicktop-block-3 {
+	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+}
+
+.slicktop-block {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:relative;
+	margin: auto;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&-textbox {
+		position:absolute;
+		z-index: 9999;
+		color: white;
+		font-size: 250%;
+	}
+	&-text {
+		text-align: right;
+		font-family: 'Bebas', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+#slicktop-block-heading-1 {
+	left: 60px;
+	top: 5vh;
+	text-transform: uppercase;
+	color: #F5EFEA;
+	font-family: 'Bebas', sans-serif!important;
+	font-size: 250%;
+	width: 300px;
+}
+
+#slicktop-block-text-1 {
+	margin-top: 30px;
+	text-decoration: underline;
+	margin-right: -60px;
+}
+
+#slicktop-block-heading-2 {
+	right: 30px;
+	top: 5vh;
+	text-transform: uppercase;
+	width: 450px;
+	color: #F5EFEA;
+	font-family: 'Oswald', sans-serif;
+	
+}
+
+#slicktop-block-text-2 {
+	margin-top: 30px;
+	text-decoration: underline;
+	text-align: left;
+	margin-left: 8px;
+}
+
+
+#slicktop-block-heading-3 {
+	left: 30px;
+	top: 5vh;
+	color: black;
+	width: 400px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+#slicktop-block-text-3 {
+	margin-top: 30px;
+	margin-right: 150px;
+	text-decoration: underline;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 28vh;
+	z-index: 9999;
+	color: #eee;
+	font-size: 500%;
+}
+
+.slick-prev {
+	left: 2px;
+}
+
+.slick-next {
+	right: 2px;
+}

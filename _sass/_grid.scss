@@ -2,14 +2,16 @@
 #grid-container {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(2, 220px);
-	grid-column-gap: 1.5rem;
-	grid-row-gap: 2rem;
+	grid-template-rows: repeat(2, 240px);
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
 	margin: auto;
 	position:relative;
-	padding: 10px 0px;
-	width:90%;
+	padding: 5px 0px;
+	width: 1240px;
 }
+
+
 
 .grid-box {
 	position:relative;
@@ -49,89 +51,86 @@
 // Grid items 
 
 #grid-right {
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/07/Shoe-rack-no-window-e1532356788313.png') no-repeat;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%), url('/lizaline/wp-content/uploads/2018/08/Lizaline-shelves-darker-e1533921237875.jpg') no-repeat;
 	background-size: contain;
 }
 
 			#grid-left-top-left {
-				background: url(/lizaline/wp-content/uploads/2018/07/Wall-shelf-green-e1532521963986.jpg);
-				background-size: cover;
+				background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.4) 100%), url(/lizaline/wp-content/uploads/2018/07/Handmade-wooden-furniture-e1532509073560.jpg);background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
 			}
-			#grid-left-top-left:hover {
-			box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
 			
-			}
+				#grid-left-top-left p {
+				margin: auto;
+				color: #323232;
+				font-size: 350%;
+					font-family: 'Oswald', sans-serif;
+					border: 2px solid #323232;
+					padding: 5px 23px 5px 23px;
+					font-weight: bold;
+				}
 
 			#grid-left-top-middle {
-				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-white-vintage-s.jpg);
-				
+				background: url(/lizaline/wp-content/uploads/2018/08/Shoe-rack-white-1-e1533821075484.jpg);
 				background-repeat: no-repeat;
-				background-position: center;
+				background-position: center 20%;
 				
 			}
 			#grid-left-top-middle:hover {
-				background: url(/lizaline/wp-content/uploads/2018/07/Shoe-rack-wood-white-e1531480419396.jpg);
-				background-repeat: no-repeat;
-				background-position: center;
-					box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				
+				opacity: 0.7;
+				border: 2px solid #cccccc;
+			}
+			
+			#cta-grid {
+				display: none;
+				color: white;
+				margin: auto;
+				background-color: black;
+				padding: 10px 10px;
 			}
 			
 			#grid-left-top-right {
-				background: url(/lizaline/wp-content/uploads/2018/07/Wooden-ladder-shelf-2.jpg);
-				background-size: contain;
+				background: url(/lizaline/wp-content/uploads/2018/08/Liza-Line-shoes-bench-e1533820338207.jpg);
 				background-repeat: no-repeat;
-				margin: auto;
+				background-position: center 20%;
+				
 			}
 			
 			#grid-left-top-right:hover {
-				background: url(/lizaline/wp-content/uploads/2018/07/wooden-ladder-shelf-front-1.jpg);
-				background-size: contain;
-				background-repeat: no-repeat;
-				margin: auto;
-				box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 
 			#grid-left-bottom-left {
-				background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-empty-2-e1531481556565.jpg);
+				background:url(/lizaline/wp-content/uploads/2018/07/Lighbox-witte-achtergrond-e1533823124225.jpg);
 				background-repeat: no-repeat;
-				background-position: center;
+				background-position: center 20%;
 			}
 			
 			#grid-left-bottom-left:hover {
-			background:url(/lizaline/wp-content/uploads/2018/07/Coffee-table-vintage-wood-2-e1532522424896.jpg);
-			background-repeat: no-repeat;
-			background-position: center;
-				box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
+			}
+			
+			#grid-left-bottom-middle {
+				background: url(/lizaline/wp-content/uploads/2018/08/Wooden-trey-1-e1533823647257.jpg);
+				background-repeat: no-repeat;
+				background-position: center 20%;
+			}
+			#grid-left-bottom-middle:hover {
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 
 			#grid-left-bottom-right {
-				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-e1531321315297.jpg);
-				background-size: contain;
+				background: url(/lizaline/wp-content/uploads/2018/08/Wooden-round-stool-e1533921728378.jpg);
 				background-repeat: no-repeat;
-				background-position: center;
-				margin: auto;
+				background-position: center 20%;
 			}
 			#grid-left-bottom-right:hover {
-				background: url(/lizaline/wp-content/uploads/2018/07/Stool-bench-soft-seat-star-e1531480234706.jpg);
-				box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-				-o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+				opacity: 0.7;
+				border: 2px solid #cccccc;
 			}
 
 //Grid Extras
@@ -144,27 +143,34 @@
 	}
 
 	.grid-right-title {
-		font-size: 150%;
-		top: 5%;
-		font-family: 'Lato', sans-serif;
-		color: #7a7979;
+		font-size: 240%;
+		top: 6%;
+		font-family: 'Oswald', sans-serif;
+		color: black;
+		font-weight: bold;
+		line-height: 0.5em; 
+		text-transform: uppercase;
+		margin-top: 15px;
 	}
 
 	.grid-right-subtitle {
 		text-transform: uppercase;
-		font-size: 230%;
+		font-size: 320%;
 		font-weight: bold;
-		top: -105px;
-		letter-spacing: 1.5px; 
-		color: #000;
-		font-family: 'Lato', sans-serif;
+		top: -100px;
+		line-height: 1.3em; 
+		font-family: 'Oswald', sans-serif;
+		color: black;
 	}
 
 	.grid-right-link {
-		font-family: 'Lato', sans-serif;
-		font-size: 110%;
-		top: -205px;
+		font-family: 'Bebas', sans-serif;
+		text-decoration: underline;
+		font-size: 80%;
+		top: -190px;
 		color: #000;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 
 	.grid-right-link:hover {
@@ -188,12 +194,15 @@
 
 .grid-description {
 	position: absolute;
-	bottom: -3px;
+	bottom: 2px;
+	left: 2px;
 	width: 100%;
-	background: white;
+	color: #7a7979;
+	font-family: 'Bebas', sans-serif;
 	p {
 		font-size: 70%;
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
@@ -207,4 +216,9 @@
 	border-top: 60px solid #7a7979; 
 	border-left: 60px solid transparent;
 	opacity: 0.7;
+}
+
+.grid-box:hover #triangle-topright { 
+
+	border-top: 60px solid #cccccc; 
 }

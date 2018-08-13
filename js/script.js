@@ -9,9 +9,32 @@ jQuery( document ).ready(function() {
 	jQuery('.hamburger').toggleClass('is-active');
  });
  
- // Banner Reveal
- jQuery('.banner-text').delay(2500).slideDown(1500);
+// Slick Slider
+	// function(){
+		var windowWidth = jQuery(window).width();
+		var gridWidth = jQuery('#grid-container').width();
+		var gridSpace = (windowWidth - gridWidth) / 2;
+		console.log(gridSpace);
+	  jQuery('.slicktopslider').slick({
+		speed: 800,
+		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
+		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
+		centerMode: true,
+		slidesToShow: 1,
+		centerPadding: gridSpace + 'px',
+		lazyLoad: 'progressive',
+	//	autoplay: true,
+		autoplaySpeed: 4000,
+	  });
+	// };
+	
+	jQuery(window).resize(function(){		
+		jQuery('.slicktopslider').slick('resize');
+	});
 
+	
+
+	
  // Journal Reveal
  jQuery('#title-journal').delay(3000).slideDown(2000);
 
@@ -58,7 +81,35 @@ jQuery('.hoverunderline').hover(function() {
  });
  
    // Product list show CTA on Hover
+ 
+ jQuery('#grid-left-top-middle').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+ jQuery('#grid-left-top-right').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
   
+ jQuery('#grid-left-bottom-left').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+  jQuery('#grid-left-bottom-middle').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+  jQuery('#grid-left-bottom-right').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+   jQuery('#grid-journal-left-top-left').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+    jQuery('#grid-journal-left-top-middle').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
  
 //END
 });

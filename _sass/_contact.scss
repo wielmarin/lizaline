@@ -1,0 +1,72 @@
+/* Contactform */
+
+div.flex-containercontact {
+	max-width: 1100px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+
+div.flex-itemcontactform {
+	width: 60%;
+}
+
+div.titlecontact {
+	font-family: 'Lato';
+	margin: 70px 0px 30px -7px; 
+	font-size: 130%;
+	letter-spacing: 1.5px;
+	color: black;
+}
+
+#wpcf7-f179-o1 input 
+{
+    width: 100%;
+	border: none;
+	background-color: #ebebeb;
+	padding: 15px 0px 15px 15px;
+	margin: 5px 0px 5px -7px;
+}
+
+#wpcf7-f179-o1 textarea
+{
+    width: 100%;
+	border: none;
+	background-color: #e6e6e6;
+	padding: 15px 0px 15px 15px;
+	margin: 5px 0px 5px -6px;
+	font-size: 80%;
+}
+
+#wpcf7-submit input  {
+	background: #000!important;
+	color: #ffffff;
+	width: 30%;
+	min-width: 75px;
+	margin-top: 10px;
+	cursor:pointer;
+	padding: 15px 15px;
+}
+
+#wpcf7-f179-o1-submit:hover {
+	background: #414141;
+}
+
+.flex-containercontact .wpcf7-submit {
+	width: 120px!important;
+	background: black!important;
+	color: #fff;
+	padding: 10px 20px!important;
+}
+
+.contact-info {
+margin-bottom: 20px;
+}
+
+.flex-itemcontactinfo i {
+margin-right: 30px;
+}

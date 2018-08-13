@@ -1,0 +1,73 @@
+$slidermiddle: calc((100% - 1240px) / 2);
+$sliderleft: calc(100% - #{$slidermiddle});
+
+#topslider {
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+	text-align:center;
+	&-leftfade {
+		position: absolute;
+		left: 0;
+		width: $slidermiddle;
+		height: 100%;
+		background: rgba(255,255,255,0.5);
+		z-index: 9999;
+	}
+	&-rightfade {
+		position: absolute;
+		right: 0;
+		width: $slidermiddle;
+		height: 100%;
+		background: rgba(255,255,255,0.5);
+		z-index: 9999;
+	}
+	&-leftarrow {
+		
+		z-index: 9999;
+		top: 40%;
+
+		left: $slidermiddle;
+	}
+	&-rightarrow {
+
+
+		top: 40%;
+		right: $slidermiddle;
+	}
+	&-block {
+		&-1 {
+			right: $sliderleft;
+		}
+		&-2 {
+			right: $slidermiddle;
+		}
+		&-3 {
+			right: calc(0px - (1240px - #{$slidermiddle}));
+		}
+	}
+}
+
+.topslider-block {
+	position: absolute;
+	height: 100%;
+	width: 1240px;
+	&-image {
+		width: 100%;
+		height: auto;
+	}
+	&-heading {
+		position: absolute;
+		left: 10%;
+		top: 30%;
+		color: white;
+		font-size: 200%;
+	}
+	&-title {
+		padding: 10px 0px;
+	}
+	&-text {
+		text-align: right;
+	}
+}
