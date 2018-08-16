@@ -6,41 +6,16 @@
 	background-position: center;
 }
 
-#title-about h1 {
-	text-align: center;
-	font-family: 'Dancing Script', cursive;
-	text-transform: uppercase;
-	padding: 10px;
-	font-size: 250%;
-	color: #000;
-	font-weight: bold;
-	font-size: 250%;
-	
-}
-
-#title-about h2 {
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-size: 90%;
-	color: #000;
-}
-
 #container-about {
-	max-width: 60%;
+	max-width: 92%;
 	margin: auto;
 	margin-bottom: 40px;
-}
-
-#container-about h1 {
-	letter-spacing: 1.5px;
-	margin-top: 40px;
-	color: black;
-	font-family: 'Lato', sans-serif;
-	text-align: center;
+	font-family: 'Bebas', sans-serif;
+	background: #ebebeb;
 }
 
 #container-about p {
-	padding: 20px 30px 40px 30px;
+	padding: 50px 100px 50px 100px;
 	text-align: center;
 	font-size: 110%;
 }

@@ -5,7 +5,7 @@
 <!----------------- THE CONTENT --------------->
 <div id="title-journal">
 	<h1>The journal.</h1>
-	<h2>By Liza Line</h2>
+	<div class="border-title"></div>
 </div>
 
 <div id="excerptcontainer">

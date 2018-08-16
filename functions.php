@@ -8,8 +8,7 @@ function lizaline_resources() {
 	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
-	wp_enqueue_script('cycle2', get_template_directory_uri() . '/js/cycle2.js');
-	wp_enqueue_script('carousel', get_template_directory_uri() . '/js/cycle2-carousel.js');
+	wp_enqueue_script('backstretch', get_template_directory_uri() . '/js/backstretch.js');
 
 
 }

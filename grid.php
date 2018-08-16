@@ -4,7 +4,9 @@
 		<!-- Boven -->
 
 			<div id="grid-left-top-left" class="grid-box smallsquare hoverunderline">
-				<p>NEW</p>
+				<div id="wordnew">
+					<span id="lettern" class="newletter">N</span><span id="lettere" class="newletter">E</span><span id="letterw" class="newletter">W</span>
+				</div>
 			</div>
 			<div id="grid-left-top-middle" class="grid-box smallsquare hoverunderline">
 
@@ -15,13 +17,13 @@
 			
 			<div id="grid-left-top-right" class="grid-box smallsquare hoverunderline">
 				<?php get_template_part('newmarker'); ?>
-				<span id="grid-ltm-description" class="grid-description"><p>Brown Shoe Rack With Soft Seat - £65.10</p></span>
+				<span id="grid-ltm-description" class="grid-description"><p>Brown Shoe Rack With Seat - £65.10</p></span>
 				<div id="cta-grid">View product</div>
 				
 			</div>		
 
 	<div id="grid-right" class="grid-box largesquare">
-		<p class="grid-right-title title-flexbox">Handmade</p>
+		<p class="grid-right-title title-flexbox">Decorative</p>
 		<p class="grid-right-subtitle title-flexbox">Wall shelves</p>
 		<p class="grid-right-link title-flexbox">Explore</p>
 	</div>

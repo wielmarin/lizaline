@@ -15,14 +15,14 @@
 			</div>
 			
 			<div id="grid-journal-left-top-middle" class="grid-box smallsquare hoverunderline">
-				<span id="grid-journal-ltm-description" class="grid-description"><p>Stool bench with soft Seat - £65.10</p></span>
+				<span id="grid-journal-ltm-description" class="grid-description"><p>Decorative wooden wall shelf - £64</p></span>
 				<div id="cta-grid">View product</div>
 				
 			</div>
 
 		<div id="grid-journal-left-bottom-left" class="grid-box smallsquare hoverunderline">
 			<?php get_template_part('salemarker'); ?>
-				<span id="grid-journal-lbl-description" class="grid-description"><p>Decorative light box - £54.90</p></span>
+				<span id="grid-journal-lbl-description" class="grid-description"><p>Storage stool bench - £89</p></span>
 				<div id="cta-grid">View product</div>
 		</div>
 		

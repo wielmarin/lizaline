@@ -26,12 +26,15 @@ jQuery( document ).ready(function() {
 	});
 });
 </script>
-
+<div id="crumble">Crumble pad here > category name > product name</div>
 <div id="individual-container">
+
 	<div id="individual-grid">
 		<h1 id="individual-grid-title" class="grid-box">
 			Product Title
+			<div class="border-product"></div>
 		</h1>
+		
 		<div id="individual-grid-small-photo-1" class="individual-grid-small-photo grid-box" style="background-image: url('<?php echo $product1 ?>')">
 			
 		</div>
@@ -44,30 +47,24 @@ jQuery( document ).ready(function() {
 		<div id="individual-grid-large-photo-1" class="individual-grid-large-photo grid-box" style="background-image: url('<?php echo $product1 ?>')">
 		
 		</div>
-		<div id="individual-grid-features" class="grid-box">
-			<h3>
-				Product Features
-			</h3>
-			<div id="individual-grid-features-list">
-				<p><i class="fas fa-check"></i>Quality materials and neat finishing</p>
-				<p><i class="fas fa-check"></i>Modular and multi-functional</p>
-				<p><i class="fas fa-check"></i>Vintage style</p>
-				<p><i class="fas fa-check"></i>Express mounting</p>
-			</div>
-
-		</div>
 	</div>
 
 	<div id="individual-sidebar">
-		<h1 id="individual-side-title">
-			£89.00 
-		</h1>
-		<div id="individual-side-action">
-			<a href="https://www.amazon.co.uk">Order on Amazon <i class="fab fa-amazon"></i></a>
+		<div id="individual-sidebar-price">
+			<h1 id="individual-side-title">
+				£89.00 
+			</h1>
+			<div id="individual-side-action">
+				<a href="https://www.amazon.co.uk">Order on Amazon<i class="fas fa-chevron-right"></i> </a>
+			</div>
 		</div>
-		<p id="individual-side-option">
-			If the product is out of stock, <a href="http://localhost/lizaline/wooden-storage-benches/"> check similar storage stool benches ></a>
-		</p>
+		<div id="individual-sidebar-other">
+			<h3>Similar products</h3>
+		</div>
+		<div id="individual-sidebar-description">
+			<p>LIZA PREMIUM WOODEN STORAGE STOOL BENCH (TAUPE) Shoes. Organiser, Pouffe, Toy Box Chest. Vintage Style Soft Seat Cushion. Solid Nordic Wood - 50 x 45 x 36 cm (Blue Stripes) </p>
+		</div>
+	
 	</div>
 </div>
 

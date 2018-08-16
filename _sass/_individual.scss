@@ -3,18 +3,31 @@
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-left: 20px;
+	padding-bottom: 50px;
 }
+
+#crumble {
+	font-family: 'Bebas', sans-serif;
+	padding: 30px 55px 0px 55px;
+	font-size: 105%;
+	color: #afaeae;
+}
+
+#crumble:hover {
+	color: #7a7979;
+}
+
 
 #individual-grid {
 	display: grid;
-	grid-template-columns: repeat(4, 150px) repeat(2, 120px);
-	grid-template-rows: 50px repeat(3, 150px);
-	grid-column-gap: 28px;
+	grid-template-columns: repeat(4, 100px) repeat(2, 120px);
+	grid-template-rows: 50px repeat(3, 100px);
+	grid-column-gap: 120px;
 	grid-row-gap: 10px;
-	width: 970px;
+	width: 670px;
 	margin: 10px auto 10px auto;
-	padding: 30px 30px;
-	border: 1px #f8f8f8 solid;
+	padding: 30px;
 	.grid-box {
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -27,6 +40,13 @@
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	font-size: 130%;
+	color: black;
+}
+
+.border-product {
+	width: 40px;
+	border-bottom: 1px solid black;
+	margin-top: 10px;
 }
 
 .individual-grid-large-photo {
@@ -69,51 +89,76 @@
 }
 
 #individual-sidebar {
-	width: 200px;
+	width: 440px;
 	display: block;
-	margin: 10px auto auto auto;
-	padding: 90px 50px 150px 50px;
-	border: 1px #f8f8f8 solid;
+	margin: 80px 70px auto auto;
+	padding: 50px 50px 50px 50px;
+	background: #ebebeb;
 	h1 {
 		line-height: 25px;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 		letter-spacing: 1.5px;
 		font-size: 110%;
 		color: black;
 		text-align: center;
 	}
 	p {
-		padding: 15px 0px;
+		padding: 10px 0px;
+		font-family: 'Bebas', sans-serif;
+		font-size: 85%;
 	}
+}
+
+#individual-sidebar-price {
+	width: 85%;
+	height: 90px;
+	background: #fff;
+	margin: auto;
+	padding: 10px 20px;
 }
 	
 #individual-side-action a {
-		background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
-		color: #000000;
-		padding: 5px 15px;
-		border-radius: 5px;
+		background:#265148; 
+		color: #fff;
+		padding: 15px 20px;
+		font-weight: bold;
+		font-family: 'Bebas', sans-serif;
+		margin-left: 25%;
 	}
+	
 #individual-side-action a:hover {	
-	background: linear-gradient(to bottom,#f5d78e,#eeb933);
+	opacity: 0.8;
 	}
 	
 #individual-side-action {
-	margin: 10px;
-	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset
+	margin: 10px 0px 10px 0px;
+	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
 }
 	
 #individual-side-option a {
-text-decoration: underline;
-color: black;
+	text-decoration: underline;
+	color: black;
 }
 
 #individual-side-option a:hover {
 text-decoration: none;
 }
 
+#individual-sidebar-other {
+	width: 85%;
+	height: 130px;
+	background: #fff;
+	margin: auto;
+	margin-top: 20px;
+	padding: 20px;
+	h3 {
+	color: black;
+	font-family: 'Bebas', sans-serif;
+	font-size: 80%;
+	text-transform: uppercase;
+	}
+}
 
-.fa-amazon {
-	font-size: 140%;
-	position:relative;
-	top: 3px;
+#individual-sidebar-description {
+	padding: 10px 20px 0px 20px;
 }

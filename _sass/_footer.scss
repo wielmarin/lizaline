@@ -1,6 +1,7 @@
 .footer {
 	width: 100%;
 	border-top: 1px solid #f8f8f8;
+	background: #f8f8f8;
 }
 
 .footer-newsletter {
@@ -10,17 +11,24 @@
 
 .newsletter-title {
 	color: #000;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	font-size: 120%;
+}
+
+.border-footer {
+	width: 40px;
+	border-bottom: 1px solid black;
+	margin: auto;
+	margin-top: 10px;
 }
 
 .newsletter-intro {
 	padding: 20px;
 	width: 450px;
 	margin: auto;
-	
+	font-family: 'Bebas', sans-serif;
 }
 
 .wpcf7-form-control {
@@ -82,4 +90,5 @@ display: inline;
 	text-align: center;
 	font-size: 80%;
 	margin-top: 20px;
+	font-family: 'Bebas', sans-serif;
 }

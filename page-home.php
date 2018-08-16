@@ -64,6 +64,7 @@
 
 <div class="introduction">
 	<h1>About Liza Line</h1>
+	<div class="border"></div>
 	<p>Liza Line specialises in design and production of functional, beautiful and unique wooden furniture with a vintage look. Most of our products are made from natural and local material. Our collection includes wooden decorative storage, like shoe racks and stool benches, wooden decorative shelves, burlap floor pillows, light boxes and more. </p>
 </div>
 

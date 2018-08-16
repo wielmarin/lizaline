@@ -16,15 +16,17 @@ jQuery( document ).ready(function() {
 		var gridSpace = (windowWidth - gridWidth) / 2;
 		console.log(gridSpace);
 	  jQuery('.slicktopslider').slick({
-		speed: 800,
+		speed: 2000,
 		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
 		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
 		centerMode: true,
 		slidesToShow: 1,
 		centerPadding: gridSpace + 'px',
-		lazyLoad: 'progressive',
-	//	autoplay: true,
-		autoplaySpeed: 4000,
+		// lazyLoad: 'progressive',
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 	  });
 	// };
 	
@@ -56,6 +58,23 @@ jQuery( document ).ready(function() {
  jQuery('#grid-journal-left-bottom-middle-action').toggleClass('underline');
  });
  
+ // Typed effect in grid
+
+function animateNew(){ 
+var seconds = 800;
+	jQuery('.newletter').css('opacity',0);
+	 setTimeout( function(){
+		jQuery('#lettern').css('opacity',1);
+		   }, seconds);
+	 setTimeout( function(){
+		jQuery('#lettere').css('opacity',1);
+		   }, seconds * 2);
+	 setTimeout( function(){
+		jQuery('#letterw').css('opacity',1);
+		   },seconds * 3);
+	setTimeout (animateNew, seconds * 4);
+}
+animateNew();
  
  
   //* hover nieuws *//
@@ -108,6 +127,10 @@ jQuery('.hoverunderline').hover(function() {
  });
  
     jQuery('#grid-journal-left-top-middle').hover(function() {
+	jQuery('#cta-grid', this).toggle();
+ });
+ 
+     jQuery('#grid-journal-left-bottom-left').hover(function() {
 	jQuery('#cta-grid', this).toggle();
  });
  

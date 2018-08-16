@@ -61,24 +61,26 @@
 				background-position: center;
 			}
 			
-				#grid-left-top-left p {
-				margin: auto;
-				color: #323232;
-				font-size: 350%;
+				#grid-left-top-left #wordnew{
+					margin: auto;
+					color: #323232;
+					font-size: 350%;
 					font-family: 'Oswald', sans-serif;
 					border: 2px solid #323232;
 					padding: 5px 23px 5px 23px;
 					font-weight: bold;
 				}
+				
+				
 
 			#grid-left-top-middle {
 				background: url(/lizaline/wp-content/uploads/2018/08/Shoe-rack-white-1-e1533821075484.jpg);
 				background-repeat: no-repeat;
-				background-position: center 20%;
+				background-position: center 23%;
 				
 			}
 			#grid-left-top-middle:hover {
-				opacity: 0.7;
+				opacity: 0.8;
 				border: 2px solid #cccccc;
 			}
 			
@@ -86,50 +88,52 @@
 				display: none;
 				color: white;
 				margin: auto;
-				background-color: black;
-				padding: 10px 10px;
+				background-color: #000;
+				padding: 10px 30px;
+				font-size: 80%;
+				text-transform: uppercase;
 			}
 			
 			#grid-left-top-right {
 				background: url(/lizaline/wp-content/uploads/2018/08/Liza-Line-shoes-bench-e1533820338207.jpg);
 				background-repeat: no-repeat;
-				background-position: center 20%;
+				background-position: center 23%;
 				
 			}
 			
 			#grid-left-top-right:hover {
-				opacity: 0.7;
+				opacity: 0.8;
 				border: 2px solid #cccccc;
 			}
 
 			#grid-left-bottom-left {
 				background:url(/lizaline/wp-content/uploads/2018/07/Lighbox-witte-achtergrond-e1533823124225.jpg);
 				background-repeat: no-repeat;
-				background-position: center 20%;
+				background-position: center 23%;
 			}
 			
 			#grid-left-bottom-left:hover {
-				opacity: 0.7;
+				opacity: 0.8;
 				border: 2px solid #cccccc;
 			}
 			
 			#grid-left-bottom-middle {
 				background: url(/lizaline/wp-content/uploads/2018/08/Wooden-trey-1-e1533823647257.jpg);
 				background-repeat: no-repeat;
-				background-position: center 20%;
+				background-position: center 23%;
 			}
 			#grid-left-bottom-middle:hover {
-				opacity: 0.7;
+				opacity: 0.8;
 				border: 2px solid #cccccc;
 			}
 
 			#grid-left-bottom-right {
 				background: url(/lizaline/wp-content/uploads/2018/08/Wooden-round-stool-e1533921728378.jpg);
 				background-repeat: no-repeat;
-				background-position: center 20%;
+				background-position: center 23%;
 			}
 			#grid-left-bottom-right:hover {
-				opacity: 0.7;
+				opacity: 0.8;
 				border: 2px solid #cccccc;
 			}
 
@@ -213,9 +217,10 @@
 	width: 0; 
 	height: 0; 
 	z-index: 1;
-	border-top: 60px solid #7a7979; 
+	border-top: 60px solid grey;
 	border-left: 60px solid transparent;
-	opacity: 0.7;
+	opacity: 0.8;
+	font-family: 'Bebas', sans-serif!important;
 }
 
 .grid-box:hover #triangle-topright { 
