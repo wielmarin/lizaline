@@ -4,7 +4,7 @@
 
 <!----------------- THE CONTENT --------------->
 <div id="title-journal">
-	<h1>The journal.</h1>
+	<h1>The journal</h1>
 	<div class="border-title"></div>
 </div>
 

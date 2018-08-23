@@ -7,44 +7,40 @@ Template Post Type: page
 get_header(); 
 
 
-$product1 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown.jpg";
-$product2 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front.jpg";
-$product3 = "/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front-in-use-e1533629283899.jpg";
-
 ?>
 
 <script>
 jQuery( document ).ready(function() {
 	jQuery('#individual-grid-small-photo-1').click(function() {
-		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php echo $product1 ?>)');
+		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_1'); ?>)');
 	});
 	jQuery('#individual-grid-small-photo-2').click(function() {
-		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php echo $product2 ?>)');
+		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_2'); ?>)');
 	});
 	jQuery('#individual-grid-small-photo-3').click(function() {
-		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php echo $product3 ?>)');
+		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_3'); ?>)');
 	});
 });
 </script>
-<div id="crumble">Crumble pad here > category name > product name</div>
+<div id="crumble"><?php breadcrumb_trail(); ?></div>
 <div id="individual-container">
 
 	<div id="individual-grid">
 		<h1 id="individual-grid-title" class="grid-box">
-			Product Title
+			<?php the_title(); ?>
 			<div class="border-product"></div>
 		</h1>
 		
-		<div id="individual-grid-small-photo-1" class="individual-grid-small-photo grid-box" style="background-image: url('<?php echo $product1 ?>')">
+		<div id="individual-grid-small-photo-1" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_1'); ?>')">
 			
 		</div>
-		<div id="individual-grid-small-photo-2" class="individual-grid-small-photo grid-box" style="background-image: url('<?php echo $product2 ?>')">
+		<div id="individual-grid-small-photo-2" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_2'); ?>')">
 		
 		</div>
-		<div id="individual-grid-small-photo-3" class="individual-grid-small-photo grid-box" style="background-image: url('<?php echo $product3 ?>')">
+		<div id="individual-grid-small-photo-3" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_3'); ?>')">
 		
 		</div>
-		<div id="individual-grid-large-photo-1" class="individual-grid-large-photo grid-box" style="background-image: url('<?php echo $product1 ?>')">
+		<div id="individual-grid-large-photo-1" class="individual-grid-large-photo grid-box" style="background-image: url('<?php the_field('product_photo_1'); ?>')">
 		
 		</div>
 	</div>
@@ -52,17 +48,69 @@ jQuery( document ).ready(function() {
 	<div id="individual-sidebar">
 		<div id="individual-sidebar-price">
 			<h1 id="individual-side-title">
-				£89.00 
+				<?php the_field('product_price'); ?>
 			</h1>
 			<div id="individual-side-action">
+			<?php if ( get_field('in_stock')) : ?>
 				<a href="https://www.amazon.co.uk">Order on Amazon<i class="fas fa-chevron-right"></i> </a>
+			<?php  else : ?>
+				<p>Sorry, this product is current out of stock.</p>	
+			<?php endif; ?>
 			</div>
 		</div>
 		<div id="individual-sidebar-other">
-			<h3>Similar products</h3>
+			<h3><?php the_field('box_title'); ?></h3>
+			<div id="similar-product-1" class="individual-sidebar-other-item">
+				<?php
+					$post_object = get_field('product-1');
+
+					if( $post_object ): 
+
+						// override $post
+						$post = $post_object;
+						setup_postdata( $post ); 
+
+						?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('similar-thumb'); ?></a>
+							
+						<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+			</div>
+			<div id="similar-product-2" class="individual-sidebar-other-item">
+				<?php
+					$post_object = get_field('product-2');
+
+					if( $post_object ): 
+
+						// override $post
+						$post = $post_object;
+						setup_postdata( $post ); 
+
+						?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('similar-thumb'); ?></a>
+							
+						<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+			</div>
+			<div id="similar-product-3" class="individual-sidebar-other-item">
+				<?php
+					$post_object = get_field('product-3');
+
+					if( $post_object ): 
+
+						// override $post
+						$post = $post_object;
+						setup_postdata( $post ); 
+
+						?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('similar-thumb'); ?></a>
+							
+						<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+			</div>
 		</div>
 		<div id="individual-sidebar-description">
-			<p>LIZA PREMIUM WOODEN STORAGE STOOL BENCH (TAUPE) Shoes. Organiser, Pouffe, Toy Box Chest. Vintage Style Soft Seat Cushion. Solid Nordic Wood - 50 x 45 x 36 cm (Blue Stripes) </p>
+			<p><?php the_field('product_description'); ?></p>
 		</div>
 	
 	</div>

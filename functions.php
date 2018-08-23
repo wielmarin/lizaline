@@ -27,7 +27,8 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'thumbnail-wide', 450, 300, true );
 add_image_size( 'excerpt-thumb', 400, 400 );
-add_image_size( 'journal-thumb', 800, 800 );
+add_image_size( 'journal-thumb', 900, 900, true );
+add_image_size( 'similar-thumb', 100, 100, true );
 
 // Categories on pages
 

@@ -74,7 +74,6 @@
 				
 
 			#grid-left-top-middle {
-				background: url(/lizaline/wp-content/uploads/2018/08/Shoe-rack-white-1-e1533821075484.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 				
@@ -95,7 +94,6 @@
 			}
 			
 			#grid-left-top-right {
-				background: url(/lizaline/wp-content/uploads/2018/08/Liza-Line-shoes-bench-e1533820338207.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 				
@@ -107,7 +105,6 @@
 			}
 
 			#grid-left-bottom-left {
-				background:url(/lizaline/wp-content/uploads/2018/07/Lighbox-witte-achtergrond-e1533823124225.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 			}
@@ -118,7 +115,6 @@
 			}
 			
 			#grid-left-bottom-middle {
-				background: url(/lizaline/wp-content/uploads/2018/08/Wooden-trey-1-e1533823647257.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 			}
@@ -189,6 +185,7 @@
 	top: 8px;
 	z-index: 2;
 	transform: rotate(45deg);
+	cursor: pointer;
 	p {
 		color: white;
 		width:auto;

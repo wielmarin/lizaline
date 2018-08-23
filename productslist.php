@@ -88,9 +88,7 @@ get_header();
 	<h1 id="product-list-title">
 		<?php the_title(); ?>
 	</h1>
-	<h2 id="product-list-subtitle">
-		<?php the_content(); ?>
-	</h2>
+	<div class="border-title"></div>
 </div>
 
 

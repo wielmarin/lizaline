@@ -4,7 +4,6 @@
 }
 
 			#grid-journal-left-top-left {
-				background: url(/lizaline/wp-content/uploads/2018/07/Cushion-burlap-e1531481338216.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 			}
@@ -15,7 +14,6 @@
 			}
 
 			#grid-journal-left-top-middle {
-				background: url(/lizaline/wp-content/uploads/2018/08/Wall-shelf-bookcase-Nordic-wood-e1534415305272.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 			}
@@ -28,7 +26,6 @@
 
 			//Bottom
 			#grid-journal-left-bottom-left {
-				background:url(/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front-e1534416617729.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 			}
@@ -73,6 +70,7 @@
 				font-size: 80%;
 				text-transform: uppercase;
 				text-decoration: underline;
+				cursor: pointer;
 			}
 			
 			#grid-journal-left-bottom-left {
@@ -107,6 +105,7 @@
 	text-decoration: underline;
 	font-size: 80%;
 		text-transform: uppercase;
+		cursor: pointer;
 }
 
 #grid-journal-right {
@@ -131,6 +130,7 @@
 #grid-journal-action {
 	position: absolute;
 	right: 0;
+	cursor: pointer;
 	p {
 		color: white;
 		background: #7a7979;

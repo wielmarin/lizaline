@@ -32,6 +32,7 @@
 	font-family: 'Bebas', sans-serif;
 	text-decoration: underline;
 	letter-spacing:0.1em;
+	cursor: pointer;
 }
 	
 
@@ -137,6 +138,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 		font-family: 'Bebas', sans-serif;
 		font-size: 14px;
 		font-weight: bold;
+		cursor: pointer;
 	}
 }
 
@@ -200,8 +202,10 @@ $slidermiddle: calc((100% - 1240px) / 2);
 
 .slick-prev {
 	left: 2px;
+	cursor: pointer;
 }
 
 .slick-next {
 	right: 2px;
+	cursor: pointer;
 }
