@@ -30,16 +30,25 @@ jQuery( document ).ready(function() {
 			<?php the_title(); ?>
 			<div class="border-product"></div>
 		</h1>
-		
+		<!--- Eerste Klein Photo ---->
+	<?php if( get_field('product_photo_1') ): ?>
 		<div id="individual-grid-small-photo-1" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_1'); ?>')">
 			
 		</div>
+	<?php endif; ?>	
+		<!--- Tweede Klein Photo ---->
+	<?php if( get_field('product_photo_2') ): ?>
 		<div id="individual-grid-small-photo-2" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_2'); ?>')">
 		
 		</div>
+	<?php endif; ?>	
+	<!--- Derde Klein Photo ---->
+	<?php if( get_field('product_photo_3') ): ?>
 		<div id="individual-grid-small-photo-3" class="individual-grid-small-photo grid-box" style="background-image: url('<?php the_field('product_photo_3'); ?>')">
 		
 		</div>
+	<?php endif; ?>
+	<!--- Grote photo, niet op mobiel --->
 		<div id="individual-grid-large-photo-1" class="individual-grid-large-photo grid-box" style="background-image: url('<?php the_field('product_photo_1'); ?>')">
 		
 		</div>

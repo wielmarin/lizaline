@@ -1,0 +1,281 @@
+@media screen and (max-width: 450px) {
+//////////////////////////////////////
+
+
+////////// Header
+
+.logo {
+	position: static;
+	order: -1;
+	margin: 0 auto;
+}
+
+.search-box {
+	position: static;
+	order: 1;
+	margin: 10px 0;
+}
+
+.hd-search #searchsubmit {
+	margin-top: 0px;
+	margin-right: -4px;
+}
+
+.hd-search #s {
+	padding: 0;
+	margin: 0;
+}
+
+.site-nav {
+	order: 3;
+	padding: 10px 0;
+	margin: auto;
+	ul {
+		display: inline-block;
+	}
+	ul li {
+		padding: 0px 6px;
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+}
+
+#mobilemenuopen {
+	order: 4;
+	padding: 0;
+	width: auto;
+	margin: auto auto auto 0;
+	.hamburger {
+		display: none;
+	}
+	h4 {
+		padding: 10px 0;
+	}
+}
+
+
+//////// Slider Banner
+#slicktop-container {
+	height: auto;
+}
+
+.slicktop-block {
+	img {
+		width:100%;
+		height: 30vh;
+	}
+	&-textbox {
+		font-size: 100%;
+		padding: 0px 15px;
+	}
+}
+
+#slicktop-block-heading-1 {
+	left: 5%;
+	top: 10%;
+	width: auto;
+}
+
+
+#slicktop-block-heading-2 {
+	right: 5%;
+	top: 10%;
+	width: auto;
+	color: #F5EFEA;
+}
+
+#slicktop-block-heading-3 {
+	left: 5%;
+	top: 10%;
+	width: auto;
+}
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	color: #eee;
+	font-size: 80%;
+}
+
+.slick-prev {
+	left: 0px;
+	cursor: pointer;
+	img {
+		width: 30px;
+		height: auto;
+	}
+}
+
+.slick-next {
+	right: 0px;
+	cursor: pointer;
+	img {
+		width: 30px;
+		height: auto;
+	}
+}
+
+////// Homepage Grid
+
+#grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.grid-box {
+  width: 100%;
+  height: auto;
+}
+
+.grid-box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#grid-left-top-left #wordnew{
+	line-height: 4.5rem;
+	padding: 15px 23px 7px;
+}
+
+#grid-right {
+	background-size: cover;
+	background-position: center;
+}
+
+.grid-right {
+	&-subtitle {
+	 top: -30px;
+	}
+	&-link {
+		top: -60px;
+	}
+}
+
+#grid-journal-left-bottom-middle-text {
+	Font-size: 200%;
+
+	Padding: 80px 30px 0px 30px;
+}
+
+#grid-journal-left-bottom-middle-action {
+	margin-top: 0px;
+	font-size: 80%;
+}
+
+.introduction {
+	width: 90%;
+	margin: auto;
+}
+
+.newsletter-intro {
+	padding: 0px;
+	width: 100%;
+}
+
+//////////////// Journal Page
+
+#excerptcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#excerptblock {
+	width: 90%;
+	margin: auto;
+	img {
+		object-fit: cover;
+	}
+	&:nth-of-type(10) img {
+		height: 250px;
+	}
+}
+
+//////////////// Product List
+
+#product-list-grid {
+	width: 90%;
+	margin: auto;
+	grid-template-columns: repeat(1, 1fr);
+	padding: 0px;
+	grid-row-gap: 5px;
+}
+
+
+////////////// Individual
+
+#crumble {
+	font-family: 'Bebas', sans-serif;
+	padding: 30px 0px 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#individual-container {
+	padding: 0px;
+}
+
+#individual-grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 20px auto;
+	padding: 0px;
+	&-title::after {
+		padding: 10px 0px;
+	}
+}
+
+.individual-grid-large-photo {
+	display: none;
+}
+
+#individual-sidebar {
+	width: 100%;
+	padding: 0px;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	&-price {
+		 width: 50%;
+		 margin: 10px auto;
+		 order: 2;
+	}
+	&-other {
+		width: 50%;
+		margin: 0px auto 10px;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		order: 3;
+		h3 {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&-description {
+		order: 1;
+	}
+}
+
+.individual-sidebar-other-item {
+	width: auto;
+	margin: auto;
+	display: block;
+	&:first-of-type {
+		margin-top: 10px;
+	}
+}
+
+#individual-side-action a {
+	margin: auto;
+}
+
+//////////////////////////////////////
+}

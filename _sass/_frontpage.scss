@@ -1,81 +1,4 @@
 /*banner */
-
-/* banner */
-
-.banner {
-	background-image: url(http:/lizaline/wp-content/uploads/2018/08/Autumn-feelings-e1533817337202.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	display:block;
-	width: 100%;
-	background-position: CENTER;
-	height: 60vh;
-	margin-bottom: 50px;
-}
-
-.banner-text {
-	padding: 50px 0px 0px 20px;
-	width: 350px;
-}
-
-.cta-banner {
-	color: #F5EFEA;
-	font-size: 43%;
-	text-align: right;
-	margin-top: 10px;
-}
-
-#explorelink {
-	display: inline;
-	position:relative;
-	margin-right: 50px;
-	font-family: 'Bebas', sans-serif;
-	text-decoration: underline;
-	letter-spacing:0.1em;
-	cursor: pointer;
-}
-	
-
-.title-header1 {
-	text-align: center;
-	font-family: 'Bebas', sans-serif;
-	font-weight: 200;
-	text-transform: uppercase;
-	color: #F5EFEA;
-	font-size: 65px;
-	position:relative;
-	right: 0px;
-	letter-spacing:0.1em;
-	font-weight: bold;
-	line-height: 1.3em;
-}
-
-
-.introduction {
-		text-align: left;
-		color: black;
-		padding: 40px 60px;
-	}
-
-.introduction h1 {
-		padding: 0px;
-		text-transform: uppercase;
-		font-family: 'Oswald', sans-serif;
-		font-weight: bold;
-		font-size: 120%;
-	}
-	
-.introduction p {
-		padding: 20px 150px 0px 0px;
-		font-family: 'Bebas', sans-serif;
-		color: #7a7979;
-	}
-
-.border {
-	width: 40px;
-	border-bottom: 1px solid black;
-	margin-top: 10px;
-}
 	
 $slidermiddle: calc((100% - 1240px) / 2);
 
@@ -95,7 +18,6 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	width: $slidermiddle;
 	background: rgba(255,255,255,0.7);
 	z-index: 9;
-	
 }
 
 #slicktop-leftfade {
@@ -123,6 +45,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	background-repeat: no-repeat;
 	position:relative;
 	margin: auto;
+	text-transform: uppercase;
 	img {
 		width: 100%;
 		height: auto;
@@ -134,43 +57,41 @@ $slidermiddle: calc((100% - 1240px) / 2);
 		font-size: 250%;
 	}
 	&-text {
-		text-align: right;
-		font-family: 'Bebas', sans-serif;
 		font-size: 14px;
 		font-weight: bold;
 		cursor: pointer;
+		text-decoration: underline;
+		font-family: 'Open sans';
+		
+	}
+	&-title {
+		text-transform: uppercase;
+		font-size: 210%;
 	}
 }
 
 #slicktop-block-heading-1 {
 	left: 60px;
 	top: 5vh;
-	text-transform: uppercase;
 	color: #F5EFEA;
-	font-family: 'Bebas', sans-serif!important;
-	font-size: 250%;
 	width: 300px;
 }
 
+
 #slicktop-block-text-1 {
-	margin-top: 30px;
-	text-decoration: underline;
-	margin-right: -60px;
+	margin-top: 30px;	
+	margin-left: 3px;
 }
 
 #slicktop-block-heading-2 {
 	right: 30px;
 	top: 5vh;
-	text-transform: uppercase;
 	width: 450px;
 	color: #F5EFEA;
-	font-family: 'Oswald', sans-serif;
-	
 }
 
 #slicktop-block-text-2 {
 	margin-top: 30px;
-	text-decoration: underline;
 	text-align: left;
 	margin-left: 8px;
 }
@@ -182,14 +103,10 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	color: black;
 	width: 400px;
 	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
 }
 
 #slicktop-block-text-3 {
 	margin-top: 30px;
-	margin-right: 150px;
-	text-decoration: underline;
 }
 
 .slick-arrow {

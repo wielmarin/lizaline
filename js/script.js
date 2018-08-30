@@ -11,6 +11,15 @@ jQuery( document ).ready(function() {
  
 // Slick Slider
 	// function(){
+		
+var x = window.matchMedia("(min-width: 481px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes 
+
+	function myFunction(x) {
+    if (x.matches) { // If media query matches
+      
+	  
 		var windowWidth = jQuery(window).width();
 		var gridWidth = jQuery('#grid-container').width();
 		var gridSpace = (windowWidth - gridWidth) / 2;
@@ -28,7 +37,39 @@ jQuery( document ).ready(function() {
 		pauseOnHover: false,
 		pauseOnFocus: false,
 	  });
+	  
+	}
+	} // End media query
 	// };
+	
+	var y = window.matchMedia("(max-width: 480px)")
+myFunction(y) // Call listener function at run time
+y.addListener(myFunction) // Attach listener function on state changes 
+
+	function myFunction(y) {
+    if (y.matches) { // If media query matches
+      
+	  
+		var windowWidth = jQuery(window).width();
+		var gridWidth = jQuery('#grid-container').width();
+		var gridSpace = (windowWidth - gridWidth) / 2;
+		console.log(gridSpace);
+	  jQuery('.slicktopslider').slick({
+		speed: 1000,
+		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
+		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
+	
+		slidesToShow: 1,
+		
+		// lazyLoad: 'progressive',
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+	  });
+	  
+	}
+	} // End media query
 	
 	jQuery(window).resize(function(){		
 		jQuery('.slicktopslider').slick('resize');

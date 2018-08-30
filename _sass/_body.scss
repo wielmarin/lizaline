@@ -9,16 +9,16 @@ Version: 1.0
 
 @font-face {
 	font-family: 'Bebas';
-	src: url('/wp-content/themes/lizaline/Fonts/BebasNeue Regular.otf') format('woff');
-	src: url('/wp-content/themes/lizaline/Fonts/BebasNeue Regular.ttf') format('truetype');
+	src: url('./Fonts/BebasNeueRegular.otf');
+	src: url('./Fonts/ttf/BebasNeueRegular.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Bebas';
-	src: url('/wp-content/themes/Promover/Fonts/BebasNeue Bold.woff') format('woff');
-	src: url('/wp-content/themes/Promover/Fonts/BebasNeue Bold.ttf') format('truetype');
+	font-family: 'Bebasb';
+	src: url('./Fonts/BebasNeueBold.otf');
+	src: url('./Fonts/ttf/BebasNeueBold.ttf');
 	font-weight: bold;
 	font-style: bold;
 }
@@ -33,7 +33,7 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Bebas', sans-serif;
 	font-weight: 200;
 	font-size: 15px;
 	color: #7a7979;
