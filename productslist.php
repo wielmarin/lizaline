@@ -110,7 +110,7 @@ get_header();
 				<?php the_field('product_1_description'); ?>
 			</div>
 			<div id="product-1-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_1_cta'); ?></a>
+				<a href="<?php the_field('product_1_link'); ?>"><?php the_field('product_1_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -128,7 +128,7 @@ get_header();
 				<?php the_field('product_2_description'); ?>
 			</div>
 			<div id="product-2-cta" class="product-list-item-cta">
-			<a href="#"><?php the_field('product_2_cta'); ?></a>
+			<a href="<?php the_field('product_2_link'); ?>"><?php the_field('product_2_cta'); ?></a>
 			</div>
 			<!-- Nav Buttons -->
 			<span id="prev2" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -148,7 +148,7 @@ get_header();
 				<?php the_field('product_3_description'); ?>
 			</div>
 			<div id="product-3-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_3_cta'); ?></a>
+				<a href="<?php the_field('product_3_link'); ?>"><?php the_field('product_3_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev3" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -167,7 +167,7 @@ get_header();
 				<?php the_field('product_4_description'); ?>
 			</div>
 			<div id="product-4-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_4_cta'); ?></a>
+				<a href="<?php the_field('product_4_link'); ?>"><?php the_field('product_4_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev4" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -186,7 +186,7 @@ get_header();
 				<?php the_field('product_5_description'); ?>
 			</div>
 			<div id="product-5-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_5_cta'); ?></a>
+				<a href="<?php the_field('product_5_link'); ?>"><?php the_field('product_5_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev5" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -205,7 +205,7 @@ get_header();
 				<?php the_field('product_6_description'); ?>
 			</div>
 			<div id="product-6-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_6_cta'); ?></a>
+				<a href="<?php the_field('product_6_link'); ?>"><?php the_field('product_6_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -224,7 +224,7 @@ get_header();
 				<?php the_field('product_7_description'); ?>
 			</div>
 			<div id="product-7-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_7_cta'); ?></a>
+				<a href="<?php the_field('product_7_link'); ?>"><?php the_field('product_7_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev7" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
@@ -243,7 +243,7 @@ get_header();
 				<?php the_field('product_8_description'); ?>
 			</div>
 			<div id="product-8-cta" class="product-list-item-cta">
-				<a href="#"><?php the_field('product_8_cta'); ?></a>
+				<a href="<?php the_field('product_8_link'); ?>"><?php the_field('product_8_cta'); ?></a>
 			</div>
 						<!-- Nav Buttons -->
 			<span id="prev8" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
