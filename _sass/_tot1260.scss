@@ -50,6 +50,14 @@
 	padding-top: 15px;
 }
 
+#grid-left-top-left #wordnew {
+	padding: 5px 5px;
+}
+
+#cta-grid {
+	padding: 5px 10px;
+}
+
 //////////////////////////////////////
 }
 
@@ -102,6 +110,12 @@
 #grid-journal-left-bottom-middle-text {
 	padding-top: 15px;
 }
+
+#grid-left-top-left, .extra-large {
+	grid-column: span 2;
+}
+
+
 
 //////////////////////////////////////
 }
