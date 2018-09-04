@@ -9,19 +9,15 @@ jQuery( document ).ready(function() {
 	jQuery('.hamburger').toggleClass('is-active');
  });
  
-// Slick Slider
-	// function(){
-		
-var x = window.matchMedia("(min-width: 481px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes 
 
-	function myFunction(x) {
-    if (x.matches) { // If media query matches
-      
 	  
+	  	function mediaSize() { 
+		/* Set the matchMedia */
+		if (window.matchMedia('(min-width: 481px)').matches) {
+			
+			
 		var windowWidth = jQuery(window).width();
-		var gridWidth = jQuery('#grid-container').width();
+		var gridWidth = jQuery('.grid-container').width();
 		var gridSpace = (windowWidth - gridWidth) / 2;
 		console.log(gridSpace);
 	  jQuery('.slicktopslider').slick({
@@ -30,28 +26,19 @@ x.addListener(myFunction) // Attach listener function on state changes
 		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
 		centerMode: true,
 		slidesToShow: 1,
-		centerPadding: gridSpace + 'px',
-		// lazyLoad: 'progressive',
+		centerPadding: '3%',
+		lazyLoad: 'progressive',
 		autoplay: true,
 		autoplaySpeed: 5000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 	  });
-	  
-	}
-	} // End media query
-	// };
-	
-	var y = window.matchMedia("(max-width: 480px)")
-myFunction(y) // Call listener function at run time
-y.addListener(myFunction) // Attach listener function on state changes 
+	 
 
-	function myFunction(y) {
-    if (y.matches) { // If media query matches
-      
-	  
+} else {
+	
 		var windowWidth = jQuery(window).width();
-		var gridWidth = jQuery('#grid-container').width();
+		var gridWidth = jQuery('.grid-container').width();
 		var gridSpace = (windowWidth - gridWidth) / 2;
 		console.log(gridSpace);
 	  jQuery('.slicktopslider').slick({
@@ -67,16 +54,57 @@ y.addListener(myFunction) // Attach listener function on state changes
 		pauseOnHover: false,
 		pauseOnFocus: false,
 	  });
-	  
-	}
-	} // End media query
 	
-	jQuery(window).resize(function(){		
+		}
+	};
+	
+	/* Call the function */
+  mediaSize();
+  /* Attach the function to the resize event listener */
+	window.addEventListener('resize', mediaSize, false);  
+	
+/*
+jQuery(window).resize(function(){		
 		jQuery('.slicktopslider').slick('resize');
 	});
+*/
 
+
+	  	function gridSize() { 
+		/* Set the matchMedia */
+		if (window.matchMedia('(min-width: 741px)').matches) {
+
+				// Keep grid blocks square
+				// Get width of block
+				var singleblockheight = jQuery('.smallsquare').width();
+				console.log(singleblockheight);
+				var gridrowheight = "repeat(2, " + singleblockheight + "px)"
+				console.log(gridrowheight);
+				// Apply to grid rows
+				jQuery('.grid-container').css(
+						"grid-template-rows", gridrowheight
+				);
+
+
+				//refresh page on browser resize
+				jQuery(window).bind('resize', function(e)
+				{
+					var singleblockheight = jQuery('.smallsquare').width();
+					console.log(singleblockheight);
+					var gridrowheight = "repeat(2, " + singleblockheight + "px)"
+					console.log(gridrowheight);
+					// Apply to grid rows
+					jQuery('.grid-container').css(
+							"grid-template-rows", gridrowheight
+					);
+				});
+		} else {}
+	};
+	gridSize();
+  /* Attach the function to the resize event listener */
+	window.addEventListener('resize', gridSize, false);	
+		
 	
-
 	
  // Journal Reveal
  jQuery('#title-journal').delay(3000).slideDown(2000);
@@ -175,5 +203,12 @@ jQuery('.hoverunderline').hover(function() {
 	jQuery('#cta-grid', this).toggle();
  });
  
+   // About
+   
+       jQuery('.button-about').click(function() {
+	jQuery('.hiddentext').show();
+	jQuery('.button-about').hide();
+ }); 
+   
 //END
 });

@@ -2,6 +2,7 @@
 	
 $slidermiddle: calc((100% - 1240px) / 2);
 
+
 #slicktop-container {
 	width: 100%;
 	height: 70vh;
@@ -15,7 +16,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	position: absolute;
 	top: 0;
 	height: 100%;
-	width: $slidermiddle;
+	width: 3%;
 	background: rgba(255,255,255,0.7);
 	z-index: 9;
 }
@@ -28,15 +29,18 @@ $slidermiddle: calc((100% - 1240px) / 2);
 }
 
 #slicktop-block-1 {
-	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+	background-image: url('/lizaline/wp-content/uploads/2018/08/Autumn-feelings-e1533817337202.jpg'); 
+	background-size: cover; 
 }
 
 #slicktop-block-2 {
-	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+	background-image: url('/lizaline/wp-content/uploads/2018/08/Colors-of-nature.jpg'); 
+	background-size: cover; 
 }
 
 #slicktop-block-3 {
-	//background-image: url(/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png);
+	background-image: url('/lizaline/wp-content/uploads/2018/08/Declutter-home-e1533918892512.jpg'); 
+	background-size: cover; 
 }
 
 .slicktop-block {
@@ -46,6 +50,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	position:relative;
 	margin: auto;
 	text-transform: uppercase;
+	height: 70vh;
 	img {
 		width: 100%;
 		height: auto;
@@ -61,7 +66,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 		font-weight: bold;
 		cursor: pointer;
 		text-decoration: underline;
-		font-family: 'Open sans';
+		font-family: sans-serif;
 		
 	}
 	&-title {
@@ -84,7 +89,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 }
 
 #slicktop-block-heading-2 {
-	right: 30px;
+	left: 10%;
 	top: 5vh;
 	width: 450px;
 	color: #F5EFEA;
@@ -98,10 +103,9 @@ $slidermiddle: calc((100% - 1240px) / 2);
 
 
 #slicktop-block-heading-3 {
-	left: 30px;
+	left: 5%;
 	top: 5vh;
 	color: black;
-	width: 400px;
 	text-align: center;
 }
 
@@ -111,10 +115,14 @@ $slidermiddle: calc((100% - 1240px) / 2);
 
 .slick-arrow {
 	position: absolute;
-	top: 28vh;
+	top: 40%;
 	z-index: 10;
 	color: #eee;
-	font-size: 500%;
+	width: 90px;
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .slick-prev {
@@ -126,3 +134,25 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	right: 2px;
 	cursor: pointer;
 }
+
+.introduction-home {
+	width: 1240px;
+	margin: auto;
+	padding: 30px 0px;
+	h1 {
+	color: black;
+	padding: 5px 0px;
+	font-size: 160%;
+	}
+	p {
+	font-family: sans-serif;
+	padding: 25px 100px 10px 0px;
+	}
+}
+
+.border {
+	width: 50px;
+	border-bottom: 2px solid black;
+}
+
+

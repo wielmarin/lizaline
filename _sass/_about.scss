@@ -1,133 +1,76 @@
-#title-about {
-	padding: 100px;
-	border-bottom: 1px solid #f8f8f8;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-}
 
 #container-about {
 	max-width: 92%;
 	margin: auto;
-	margin-bottom: 40px;
-	font-family: 'Bebas', sans-serif;
-	background: #ebebeb;
 }
 
-#container-about p {
-	padding: 50px 100px 50px 100px;
-	text-align: center;
-	font-size: 110%;
-}
-
-//* about designer *//
-
-#container-about-designer {
-	margin: auto;
-	padding: 60px;
-	background-color: #a9a7ab;
-	color: #fff;
-}
-
-#container-about-designer h1 {
+#container-about-intro {
+	margin: 30px 0px;
+	background-color: #deebe9;
+	padding: 50px 120px;
+	p {
+	font-size: 120%;
 	color: black;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1.5px;
-	text-align: center;
-	color: #fff;
+	font-family: 'Oswald';
+	}
 }
 
-#container-about-designer h3 {
-	color: black;
-	text-align: center;
-	font-size: 100%;
-	font-family: 'Lato', sans-serif;
-	color: #fff;
+.hiddentext {
+	display: none;
 }
 
-#container-about-designer p {
-	color: #fff;
-	text-align: center;
-	font-size: 100%;
-	width: 60%;
+.button-about {
+	color: white;
 	margin: auto;
-	margin-top: 20px;
-}
+	background-color: #1f9eaf;
+	width: 180px;
+	padding: 10px 0px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Oswald';
+	}
 
 //* usp *//
-
-#container-about-usp {
-	max-width: 60%;
-	margin: auto;
-}
 
 #usp {
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
-	margin: auto;
-	margin-bottom: 40px;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
-#usp-img1 {
-	width: 40%;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-image: url("/lizaline/wp-content/uploads/2018/07/Handmade-furniture.jpg");
+#usp-img {
+	right: 0px;
 }
 
 #usp-text1 {
-	width: 50%;
+	width: 65%;
+	max-width: calc(100% - 300px);
 	color: #000;
-	padding: 60px 30px 60px 30px;
-	background-color: #ebebeb;
+	height: 350px;
+	background-color: #deebe9;
 }
 
 #usp-text1 p {
-	text-align: right;
-	padding: 0px 0px 0px 0px;
-	font-size: 100%;
+	text-align: left;
+	padding: 0px 120px;
+	font-size: 120%;
+	color: black;
+	font-family: 'Oswald';
 }
 
 #usp-text1 h3 {
-	font-family: 'Lato', cursive;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	font-size: 140%;
-	text-align: right;
+	font-size: 180%;
+	text-align: left;
 	letter-spacing: 1.5px;
-}
-
-#usp-img2 {
-	width: 40%;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-image: url("/lizaline/wp-content/uploads/2018/07/Functional-can-be-beautiful.png");
+	padding: 50px 120px 0px 120px;
 }
 
 #usp-text2 {
-	width: 50%;
+	width: 35%;
 	color: #000;
-	padding: 60px 30px 60px 30px;
-	background-color: #ebebeb;
-	font-size: 100%;
+	height: 350px;
 }
-
-#usp-text2 p {
-	text-align: left;
-	padding: 0px 0px 0px 0px;
-	font-size: 100%;
-}
-
-#usp-text2 h3 {
-	font-family: 'Lato';
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	font-size: 140%;
-	text-align: left;
-	letter-spacing: 1.5px;
-}
-
 

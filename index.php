@@ -8,6 +8,8 @@
 	<div class="border-title"></div>
 </div>
 
+<div id="crumble"><?php breadcrumb_trail(); ?></div>
+
 <div id="excerptcontainer">
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>

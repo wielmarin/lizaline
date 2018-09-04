@@ -11,13 +11,13 @@ get_header();
 
 <script>
 jQuery( document ).ready(function() {
-	jQuery('#individual-grid-small-photo-1').click(function() {
+	jQuery('#individual-grid-small-photo-1').hover(function() {
 		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_1'); ?>)');
 	});
-	jQuery('#individual-grid-small-photo-2').click(function() {
+	jQuery('#individual-grid-small-photo-2').hover(function() {
 		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_2'); ?>)');
 	});
-	jQuery('#individual-grid-small-photo-3').click(function() {
+	jQuery('#individual-grid-small-photo-3').hover(function() {
 		jQuery('#individual-grid-large-photo-1').css('background-image', 'url(<?php the_field('product_photo_3'); ?>)');
 	});
 });
@@ -61,7 +61,7 @@ jQuery( document ).ready(function() {
 			</h1>
 			<div id="individual-side-action">
 			<?php if ( get_field('in_stock')) : ?>
-				<a href="https://www.amazon.co.uk">Order on Amazon<i class="fas fa-chevron-right"></i> </a>
+				<a href="https://www.amazon.co.uk">Order on Amazon <i class="fas fa-chevron-right"></i> </a>
 			<?php  else : ?>
 				<p>Sorry, this product is current out of stock.</p>	
 			<?php endif; ?>

@@ -55,9 +55,9 @@
 			#grid-journal-left-bottom-middle-text {
 				text-align: center;
 				color: #000;
-				Font-size: 200%;
-				font-weight: bold;
+				Font-size: 220%;
 				Padding: 40px 30px 0px 30px;
+				font-weight: bold;
 			}
 		
 			#grid-journal-left-bottom-middle-action {
@@ -65,14 +65,14 @@
 				color: #000;
 				font-weight: bold;
 				margin-top: -20px;
-				font-size: 80%;
+				font-size: 14px;
 				text-transform: uppercase;
 				text-decoration: underline;
 				cursor: pointer;
+				font-family: sans-serif;
 			}
 			
 			#grid-journal-left-bottom-left {
-				background: url(/lizaline/wp-content/uploads/2018/08/Liza-Line-Premium-wooden-storage-stool-bench-walnut-brown-front-e1534416617729.jpg);
 				background-repeat: no-repeat;
 				background-position: center 23%;
 				align-self: end;
@@ -86,22 +86,24 @@
 
 .grid-journal-right-title {
 	color: #000;
-	font-size: 230%;
-	font-weight: bold;
+	font-size: 340%;
+	font-family: 'Bebas', sans-serif;
+	font-weight: 200;
 	top: -105px;
 	text-transform: uppercase;
-	padding: 20px 20px 0px 20px;
+	padding: 40px 20px 20px 20px;
+	line-height: 0.5em; 
 }
 
 .grid-journal-right-action {
 	color: #000;
 	padding: 5px 20px 0px 20px;
-	font-size: 110%;
-	font-weight: bold;
 	text-decoration: underline;
-	font-size: 80%;
-		text-transform: uppercase;
-		cursor: pointer;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
 }
 
 #grid-journal-right {

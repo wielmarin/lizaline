@@ -1,11 +1,33 @@
 @media screen and (max-width: 1260px) {
 //////////////////////////////////////
 
+#slicktop-container, .slicktop-block {
+	height: 60vh;
+}
+
+.slicktop-block {
+	&-textbox {
+		font-size: 210%;
+	}
+	&-text {
+		font-size: 13px;		
+	}
+	&-title {
+		font-size: 190%;
+	}
+}
+
+.slick-arrow {
+	width: 75px;
+}
+
+/*
 #grid-container {
 	width: 1000px;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(2, 187px)
 }
+*/
 
 .grid-box {
 	background-size: contain;
@@ -28,11 +50,33 @@
 @media screen and (max-width: 1040px) {
 //////////////////////////////////////
 
+#slicktop-container, .slicktop-block {
+	height: 50vh;
+}
+
+.slicktop-block {
+	&-textbox {
+		font-size: 190%;
+	}
+	&-text {
+		font-size: 12px;		
+	}
+	&-title {
+		font-size: 160%;
+	}
+}
+
+.slick-arrow {
+	width: 60px;
+}
+
+/*
 #grid-container {
 	width: 850px;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(2, 157px)
 }
+*/
 
 .grid-box {
 	background-size: contain;
@@ -63,12 +107,33 @@
 
 @media screen and (max-width: 870px) {
 //////////////////////////////////////
+#slicktop-container, .slicktop-block {
+	height: 40vh;
+}
 
+.slicktop-block {
+	&-textbox {
+		font-size: 170%;
+	}
+	&-text {
+		font-size: 12px;		
+	}
+	&-title {
+		font-size: 140%;
+	}
+}
+
+.slick-arrow {
+	width: 55px;
+}
+
+/*
 #grid-container {
 	width: 650px;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(2, 117px)
 }
+*/
 
 .grid-box {
 	background-size: contain;
@@ -90,13 +155,42 @@
 //////////////////////////////////////
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
 //////////////////////////////////////
 
-#grid-container {
-	width: 450px;
+.slick-arrow {
+	width: 40px;
+}
+
+#slicktop-container, .slicktop-block {
+	height: 35vh;
+}
+
+.slicktop-block {
+	&-textbox {
+		font-size: 150%;
+	}
+	&-text {
+		font-size: 11px;		
+	}
+	&-title {
+		font-size: 140%;
+	}
+}
+
+.grid-container {
+	width: 94%;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(5, 217px)
+	grid-template-rows: repeat(5, 200px)
+}
+
+#grid-left-bottom-left {
+	order: -1;
+}
+
+#grid-right {
+	background-size: cover;
+	background-position-y: 70%;
 }
 
 .grid-right-subtitle {
@@ -109,10 +203,6 @@
 
 #grid-journal-left-bottom-middle-text {
 	padding-top: 15px;
-}
-
-#grid-left-top-left, .extra-large {
-	grid-column: span 2;
 }
 
 

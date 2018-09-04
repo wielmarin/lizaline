@@ -67,10 +67,10 @@ box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	width: 100%;
 	background: white;
 	text-align: center;
-	font-family: 'Bebas', sans-serif;
+	font-family: sans-serif;
 	color: #7a7979;
 	text-transform: uppercase;
-	// font-size: 70%;
+	font-size: 80%;
 	padding-bottom: 5px;
 	font-weight: bold;
 }
@@ -79,10 +79,10 @@ box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	width: 100%;
 	background: white;
 	text-align: center;
-	font-family: 'Bebas', sans-serif;
+	font-family: sans-serif;
 	color: black;
 	text-transform: uppercase;
-	// font-size: 70%;
+	font-size: 80%;
 	font-weight: bold;
 }
 
@@ -96,9 +96,9 @@ box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	margin-top: 5px;
 	a {
 		color: black;
-		// font-size: 70%;
+		font-size: 70%;
 		text-transform: uppercase;
-		font-family: 'Bebas', sans-serif;
+		font-family: sans-serif;
 	}
 }
 
@@ -118,14 +118,14 @@ box-shadow: 0 0 10px rgba(0,0,0,0.6);
 	position: absolute;
 	bottom: 190px;
 	left: 5px;
-	color: #7a7979;
+	color: black;
 }
 
 .backstretchnext {
 	position: absolute;
 	bottom: 190px;
 	right: 5px;
-	color: #7a7979;
+	color: black;
 }
 
 .opacityup {

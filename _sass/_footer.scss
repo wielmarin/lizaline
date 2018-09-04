@@ -11,10 +11,9 @@
 
 .newsletter-title {
 	color: #000;
-	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 120%;
+	font-size: 160%;
 }
 
 .border-footer {
@@ -26,9 +25,10 @@
 
 .newsletter-intro {
 	padding: 20px;
-	width: 450px;
+	max-width: 450px;
 	margin: auto;
-	font-family: 'Bebas', sans-serif;
+	font-family: Oswald;
+	font-size: 16px;
 }
 
 .wpcf7-form-control {
@@ -38,9 +38,9 @@ border: 1px solid #dfdfdf;
 }
 
 .wpcf7-text, .wpcf7-textarea {
-	font-family: 'Bebas', sans-serif;
-	font-size: 12px;
-	line-height: 1.4em;
+	font-family: Oswald;
+	font-size: 13px;
+	line-height: 1.55em;
 	vertical-align: bottom;
 }
 
@@ -58,13 +58,13 @@ display: inline;
 	margin-top: 5px;
 	margin-left: -5px;
 	text-transform: uppercase;
-	font-family: 'Bebas', sans-serif;
+	font-family: Oswald;
 	transition: background-color 0.5s linear;
 }
 
 .wpcf7-submit:hover {
 	cursor: pointer;
-	background-color: black;
+	background-color: #1f9eaf;
 	color: #fff;
 }
 .footer-social {
@@ -90,5 +90,5 @@ display: inline;
 	text-align: center;
 	font-size: 80%;
 	margin-top: 20px;
-	font-family: 'Bebas', sans-serif;
+	font-family: sans-serif;
 }

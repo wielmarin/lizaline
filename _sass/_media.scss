@@ -1,0 +1,174 @@
+//////// About & contact & footer
+
+@media screen and (max-width: 1150px) {
+
+	#container-about {
+		font-size: 90%;
+	}
+
+	#container-about-intro {
+		padding: 40px 60px;
+	}
+
+	#usp-text1 p {
+		padding: 0px 60px;
+	}
+
+	#usp-text1 h3 {
+		padding: 40px 60px 0px 60px;
+	}
+
+	#usp-text1 {
+		height: 300px;
+	}
+
+	#usp img {
+		height: 300px;
+		width: 300px;
+	}
+
+	#usp {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+
+	div.flex-containercontact {
+		font-size: 90%;
+	 p {
+		font-size: 15px;
+		}
+	}
+	
+	.newsletter-intro {
+	font-size: 15px;
+	}
+
+	#container-about {
+		font-size: 85%;
+	}
+
+	#container-about-intro {
+		padding: 30px 50px;
+	}
+	#usp-text1 {
+		width: 60%;
+	}
+
+	#usp-text1 p {
+		padding: 0px 50px;
+	}
+
+	#usp-text1 h3 {
+		padding: 30px 50px 0px 50px;
+	}
+
+	#usp-text1 {
+		height: 300px;
+	}
+
+	#usp img {
+		height: 300px;
+		width: 300px;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	div.flex-containercontact {
+		margin: 20px 40px 20px 40px;
+		font-size: 85%;
+	}
+
+	#container-about-intro {
+		padding: 20px 40px;
+	}
+	#usp-text1 {
+		width: 60%;
+	}
+
+	#usp-text1 p {
+		padding: 0px 20px 0px 40px;
+	}
+
+	#usp-text1 h3 {
+		padding: 20px 40px 0px 40px;
+	}
+
+	#usp-text1 {
+		height: 300px;
+	}
+
+	#usp img {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#container-about-intro {
+		padding: 20px;
+	}
+	
+	div.flex-containercontact {
+		margin: 20px;
+	}
+	
+	#usp-text1 {
+	order: 2;
+	width: 100%;
+	max-width: none;
+	height: auto;
+	padding-bottom: 20px;
+	}
+	#usp-img {
+		width: 100%;
+		display: block;
+		height: 350px;
+		overflow: hidden;
+		
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	#usp-text1 p {
+		padding: 0px 20px 0px 20px;
+	}
+
+	#usp-text1 h3 {
+		padding: 20px 20px 0px 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#usp-img {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#usp-img {
+		height: 260px;
+	}
+}
+
+//////// footer
+
+@media screen and (max-width: 480px) {
+
+.wpcf7-text, .wpcf7-textarea {
+	width: 95%;
+}
+
+.wpcf7-submit {
+		width: 50%;
+
+}
+
+.newsletter-intro {
+padding: 20px 0px;
+}
+}
