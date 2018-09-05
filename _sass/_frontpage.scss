@@ -136,7 +136,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 }
 
 .introduction-home {
-	width: 1240px;
+	width: calc(100% - 6%);
 	margin: auto;
 	padding: 30px 0px;
 	h1 {
@@ -145,14 +145,15 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	font-size: 160%;
 	}
 	p {
-	font-family: sans-serif;
-	padding: 25px 100px 10px 0px;
+	font-family: Oswald;
+	font-size: 16px;
+	padding: 25px 0px 10px 0px;
 	}
 }
 
 .border {
-	width: 50px;
-	border-bottom: 2px solid black;
+	width: 40px;
+	border-bottom: 1px solid black;
 }
 
 

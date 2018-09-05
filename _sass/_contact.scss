@@ -1,12 +1,14 @@
 /* Contactform */
 
 div.flex-containercontact {
-	margin: 50px 50px 60px 50px;
+	margin: auto;
 	text-align: center;
+	width: calc(100% - 40px);
 	h2 {
-	width: 100%;
+	width: calc(100% - 20px);
 	text-align: center;
 	padding: 10px;
+	margin: auto;
 	}
 	p {
 	font-family: 'Oswald';

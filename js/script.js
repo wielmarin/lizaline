@@ -69,7 +69,9 @@ jQuery(window).resize(function(){
 	});
 */
 
-
+// Keep grid blocks square
+				
+				
 	  	function gridSize() { 
 		/* Set the matchMedia */
 		if (window.matchMedia('(min-width: 741px)').matches) {
@@ -84,9 +86,9 @@ jQuery(window).resize(function(){
 				jQuery('.grid-container').css(
 						"grid-template-rows", gridrowheight
 				);
-
-
-				//refresh page on browser resize
+				
+				
+				// Refresh on window resize
 				jQuery(window).bind('resize', function(e)
 				{
 					var singleblockheight = jQuery('.smallsquare').width();
@@ -98,12 +100,63 @@ jQuery(window).resize(function(){
 							"grid-template-rows", gridrowheight
 					);
 				});
-		} else {}
+
+
+		
+				
+		} else {
+			
+			// Get width of block
+				var singleblockheight = jQuery('.smallsquare').width();
+				console.log(singleblockheight);
+				var gridrowheight = "repeat(5, " + singleblockheight + "px)"
+				console.log(gridrowheight);
+				// Apply to grid rows
+				jQuery('.grid-container').css(
+						"grid-template-rows", gridrowheight
+				);
+				
+				
+				// Refresh on window resize
+				jQuery(window).bind('resize', function(e)
+				{
+					var singleblockheight = jQuery('.smallsquare').width();
+					console.log(singleblockheight);
+					var gridrowheight = "repeat(5, " + singleblockheight + "px)"
+					console.log(gridrowheight);
+					// Apply to grid rows
+					jQuery('.grid-container').css(
+							"grid-template-rows", gridrowheight
+					);
+				});
+			
+			
+			
+		}
 	};
 	gridSize();
   /* Attach the function to the resize event listener */
 	window.addEventListener('resize', gridSize, false);	
 		
+	
+	
+	/// EXCERPT BLOK GRID
+	
+	//refresh page on browser resize
+		/*
+		jQuery(window).bind('resize', function(j)
+				{
+	var excerptblockheight = jQuery('#excerptblock:nth-of-type(2)').width();
+				console.log(excerptblockheight);
+				var excerptrowheight = "repeat(4, " + excerptblockheight + "px)"
+				console.log(excerptrowheight);
+				// Apply to grid rows
+				jQuery('#excerptcontainer').css(
+						"grid-template-rows", excerptrowheight
+				);
+	
+				}); 
+		*/
 	
 	
  // Journal Reveal

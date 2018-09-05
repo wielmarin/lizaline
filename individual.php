@@ -26,7 +26,7 @@ jQuery( document ).ready(function() {
 <div id="individual-container">
 
 	<div id="individual-grid">
-		<h1 id="individual-grid-title" class="grid-box">
+		<h1 id="individual-grid-title">
 			<?php the_title(); ?>
 			<div class="border-product"></div>
 		</h1>

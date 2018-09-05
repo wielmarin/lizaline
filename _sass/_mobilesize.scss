@@ -4,51 +4,25 @@
 
 ////////// Header
 
-.logo {
-	position: static;
-	order: -1;
-	margin: 0 auto;
-}
-
-.search-box {
-	position: static;
-	order: 1;
-	margin: 10px 0;
-}
-
-.hd-search #searchsubmit {
-	margin-top: 0px;
-	margin-right: -4px;
-}
-
-.hd-search #s {
-	padding: 0;
-	margin: 0;
+#menus-container {
+	margin: 20px auto;
 }
 
 .site-nav {
 	order: 4;
-	padding: 10px 0;
-	margin: auto;
+	padding-bottom: 5px;
 	ul {
 		display: inline-block;
 	}
 	ul li {
 		padding: 0px 6px;
-		&:first-of-type {
-			padding-left: 0;
-		}
+	
 	}
 }
 
 #mobilemenuopen {
-	order: 3;
-	padding: 0;
-	width: auto;
-	margin: auto 0 auto auto;
-	.hamburger {
-		display: none;
-	}
+	padding: 0 6px;
+	margin-top: -1px;
 	h4 {
 		padding: 10px 0;
 	}
@@ -114,6 +88,10 @@ height: 30vh;
 	}
 }
 
+.slicktop-fade {
+	display: none;
+}
+
 ////// Homepage Grid
 
 .grid-container {
@@ -165,9 +143,23 @@ height: 30vh;
 	font-size: 80%;
 }
 
+.grid-journal-right-title {
+	line-height: 3rem;
+}
+
 .introduction {
 	width: 90%;
 	margin: auto;
+}
+
+.introduction-home {
+    padding: 10px 0px;
+}
+
+.introduction-home {
+	p {
+	padding: 25px 0px;
+	}
 }
 
 .newsletter-intro {
@@ -196,13 +188,7 @@ height: 30vh;
 
 //////////////// Product List
 
-#product-list-grid {
-	width: 90%;
-	margin: auto;
-	grid-template-columns: repeat(1, 1fr);
-	padding: 0px;
-	grid-row-gap: 5px;
-}
+
 
 
 ////////////// Individual
@@ -274,7 +260,11 @@ height: 30vh;
 	margin: auto;
 }
 
-
+#post-image {
+    width: 100%;
+    margin: 10px auto 20px auto;
+    height: auto;
+}
 
 
 //////////////////////////////////////

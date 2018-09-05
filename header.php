@@ -30,7 +30,7 @@
 	<header class="site-header">
 
 	
-
+<div id="menus-container">
 	<!--- Hamburger menu --->
 	<div id="mobilemenuopen">
 		<button class="hamburger hamburger--spring" type="button">
@@ -57,7 +57,7 @@
 				<?php wp_nav_menu( $args ); ?>	
 				
 	</nav>
-	
+</div>	
 	
 	<!--- Logo --->
 	
