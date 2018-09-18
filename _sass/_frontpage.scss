@@ -12,6 +12,8 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	margin-bottom: 35px;
 }
 
+
+
 .slicktop-fade {
 	position: absolute;
 	top: 0;
@@ -29,17 +31,17 @@ $slidermiddle: calc((100% - 1240px) / 2);
 }
 
 #slicktop-block-1 {
-	background-image: url('/lizaline/wp-content/uploads/2018/08/Autumn-feelings-e1533817337202.jpg'); 
+	 
 	background-size: cover; 
 }
 
 #slicktop-block-2 {
-	background-image: url('/lizaline/wp-content/uploads/2018/08/Colors-of-nature.jpg'); 
+
 	background-size: cover; 
 }
 
 #slicktop-block-3 {
-	background-image: url('/lizaline/wp-content/uploads/2018/08/Declutter-home-e1533918892512.jpg'); 
+
 	background-size: cover; 
 }
 
@@ -54,6 +56,7 @@ $slidermiddle: calc((100% - 1240px) / 2);
 	img {
 		width: 100%;
 		height: auto;
+		min-height: 100%;
 	}
 	&-textbox {
 		position:absolute;

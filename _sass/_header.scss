@@ -15,12 +15,21 @@ Version: 1.0
 	border-bottom: 1px solid #f8f8f8;
 }
 
+.bannershift {
+	padding-bottom: 40px;
+}
+
 /* navigation */
 
 #menus-container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+.site-nav {
+	width: 100%;
+	text-align: center;
 }
 
 .site-nav ul {
@@ -33,7 +42,7 @@ Version: 1.0
 
 .site-nav ul li {
 	list-style: none;
-	padding: 30px 15px 30px 15px;
+	padding: 60px 15px 15px 15px;
 }
 
 .site-nav li a {
@@ -52,6 +61,20 @@ li {
 	text-decoration: none;
 	color:	#9b9a9a;
 }
+
+.site-nav ul li ul li {
+	padding-top: 15px;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 120px;
+}
+
 
 /* hamburgermenu */
 
@@ -113,7 +136,7 @@ li {
 .logo {
 	position: absolute;
 	left: 50%; 
-	top: 30px;
+	top: 15px;
 	transform: translateX(-50%);
 }
 
@@ -123,7 +146,7 @@ li {
 	position: absolute;
 	right: 0px;
 	height: 20px;
-	padding: 0 30px 0 30px;
+	padding: 29px 30px 0 30px;
 	width: 250px;
 }
 
@@ -166,3 +189,5 @@ li {
 	border-top: 1px solid #f6f5f5;
 	padding: 60px 100px 60px 100px;
 }
+
+

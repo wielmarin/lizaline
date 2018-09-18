@@ -32,13 +32,6 @@
 			<p class="postinfo"><?php the_time('d F Y'); ?> </p>
 		
 		</div>
-		
-		<!--
-		<div id="excerpts"><p>
-		<?php echo get_the_excerpt(''); ?>
-		<a href="<?php the_permalink(); ?>">Read more &raquo;</a>
-		</p></div>
-		-->
 	</div>
 
 	<?php

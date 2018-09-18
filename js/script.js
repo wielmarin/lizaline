@@ -9,7 +9,16 @@ jQuery( document ).ready(function() {
 	jQuery('.hamburger').toggleClass('is-active');
  });
  
-
+	//Submenu	
+	jQuery('#menu-item-294').hover(function() {
+		jQuery('.site-header').toggleClass('bannershift', 500);
+		jQuery('.sub-menu').toggle('slide',{direction:'up'}, 500); 
+	});
+	
+	
+	
+	
+// Slider
 	  
 	  	function mediaSize() { 
 		/* Set the matchMedia */
@@ -19,7 +28,6 @@ jQuery( document ).ready(function() {
 		var windowWidth = jQuery(window).width();
 		var gridWidth = jQuery('.grid-container').width();
 		var gridSpace = (windowWidth - gridWidth) / 2;
-		console.log(gridSpace);
 	  jQuery('.slicktopslider').slick({
 		speed: 2000,
 		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
@@ -40,7 +48,6 @@ jQuery( document ).ready(function() {
 		var windowWidth = jQuery(window).width();
 		var gridWidth = jQuery('.grid-container').width();
 		var gridSpace = (windowWidth - gridWidth) / 2;
-		console.log(gridSpace);
 	  jQuery('.slicktopslider').slick({
 		speed: 1000,
 		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
@@ -79,9 +86,7 @@ jQuery(window).resize(function(){
 				// Keep grid blocks square
 				// Get width of block
 				var singleblockheight = jQuery('.smallsquare').width();
-				console.log(singleblockheight);
-				var gridrowheight = "repeat(2, " + singleblockheight + "px)"
-				console.log(gridrowheight);
+				var gridrowheight = "repeat(2, " + singleblockheight + "px)";
 				// Apply to grid rows
 				jQuery('.grid-container').css(
 						"grid-template-rows", gridrowheight
@@ -92,9 +97,7 @@ jQuery(window).resize(function(){
 				jQuery(window).bind('resize', function(e)
 				{
 					var singleblockheight = jQuery('.smallsquare').width();
-					console.log(singleblockheight);
-					var gridrowheight = "repeat(2, " + singleblockheight + "px)"
-					console.log(gridrowheight);
+					var gridrowheight = "repeat(2, " + singleblockheight + "px)";
 					// Apply to grid rows
 					jQuery('.grid-container').css(
 							"grid-template-rows", gridrowheight
@@ -108,9 +111,7 @@ jQuery(window).resize(function(){
 			
 			// Get width of block
 				var singleblockheight = jQuery('.smallsquare').width();
-				console.log(singleblockheight);
 				var gridrowheight = "repeat(5, " + singleblockheight + "px)"
-				console.log(gridrowheight);
 				// Apply to grid rows
 				jQuery('.grid-container').css(
 						"grid-template-rows", gridrowheight
@@ -121,9 +122,7 @@ jQuery(window).resize(function(){
 				jQuery(window).bind('resize', function(e)
 				{
 					var singleblockheight = jQuery('.smallsquare').width();
-					console.log(singleblockheight);
 					var gridrowheight = "repeat(5, " + singleblockheight + "px)"
-					console.log(gridrowheight);
 					// Apply to grid rows
 					jQuery('.grid-container').css(
 							"grid-template-rows", gridrowheight
@@ -147,9 +146,9 @@ jQuery(window).resize(function(){
 		jQuery(window).bind('resize', function(j)
 				{
 	var excerptblockheight = jQuery('#excerptblock:nth-of-type(2)').width();
-				console.log(excerptblockheight);
+				
 				var excerptrowheight = "repeat(4, " + excerptblockheight + "px)"
-				console.log(excerptrowheight);
+				
 				// Apply to grid rows
 				jQuery('#excerptcontainer').css(
 						"grid-template-rows", excerptrowheight
@@ -199,16 +198,17 @@ var seconds = 800;
 animateNew();
  
  
-  //* hover nieuws *//
+  /* hover nieuws 
   
  jQuery('#thumbnail').hover(function() {
  jQuery('#posttitle').toggleClass('underline');
  });
- 
+*/ 
 jQuery('.hoverunderline').hover(function() {
 	jQuery('#posttitle h2', this).toggleClass('underline');
 });
  
+
  
   
   // Product list show CTA on Hover

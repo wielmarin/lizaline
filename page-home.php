@@ -15,9 +15,9 @@
 <div class="slicktopslider">
 	<div>
 		<div id="slicktop-block-1" class="slicktop-block">
-			<!--
+			
 			<img src="/lizaline/wp-content/uploads/2018/08/Autumn-feelings-e1533817337202.jpg">
-			-->
+			
 			
 			<div id="slicktop-block-heading-1" class="slicktop-block-textbox">
 				<h1 id="slicktop-block-title-1" class="slicktop-block-title">Autumn Feelings</h1>
@@ -27,9 +27,9 @@
 	</div>
 	<div>
 		<div id="slicktop-block-2" class="slicktop-block">
-			<!--
+
 			<img src="/lizaline/wp-content/uploads/2018/08/Colors-of-nature.jpg">
-			-->
+		
 			<div id="slicktop-block-heading-2" class="slicktop-block-textbox">
 				<h1 id="slicktop-block-title-2" class="slicktop-block-title">Colours of nature</h1>
 				<h3 id="slicktop-block-text-2" class="slicktop-block-text">explore</h3>
@@ -38,9 +38,9 @@
 	</div>
 	<div>
 		<div id="slicktop-block-3" class="slicktop-block">
-			<!--
+		
 			<img src="/lizaline/wp-content/uploads/2018/08/Declutter-home-e1533918892512.jpg">
-			-->
+		
 			
 			<div id="slicktop-block-heading-3" class="slicktop-block-textbox">
 				<h1 id="slicktop-block-title-3" class="slicktop-block-title">Declutter your home</h1>

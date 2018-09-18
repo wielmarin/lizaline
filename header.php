@@ -31,21 +31,15 @@
 
 	
 <div id="menus-container">
-	<!--- Hamburger menu --->
-	<div id="mobilemenuopen">
-		<button class="hamburger hamburger--spring" type="button">
-			<span class="hamburger-box">
-			<span class="hamburger-inner"></span>
-			</span>
-		</button>
-		<h4>Collection</h4>
-	</div>
-	<!--
-	<div id="mobilemenuclose">
-		<i class="fas fa-times"></i>
-	</div>
-	-->
+
+	<!--- Logo --->
 	
+	<a class="logo" href="<?php echo get_home_url(); ?>">
+		<img src="/lizaline/wp-content/uploads/2018/09/Liza-Line-logo.png" width="140px" height="true" alt="Liza line logo">
+	</a>
+	
+	<!--- Logo --->
+
 	<!--- Primary navigation --->
 	<nav class="site-nav">
 
@@ -57,15 +51,10 @@
 				<?php wp_nav_menu( $args ); ?>	
 				
 	</nav>
+	
 </div>	
 	
-	<!--- Logo --->
-	
-	<a class="logo" href="<?php echo get_home_url(); ?>">
-		<img src="http://localhost/lizaline/wp-content/uploads/2018/07/Liza-line-e1531302690749.jpg" width="140px" height="true" alt="Liza line">
-	</a>
-	
-	<!--- Logo --->
+
 	
 	<div class="search-box">
 		<div class="hd-search">
