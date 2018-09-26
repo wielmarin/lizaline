@@ -312,13 +312,13 @@
 //////////////////////////////////////
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 820px) {
 //////////////////////////////////////
 .search-box {
 	position: static;
 	right: auto;
 	height: auto;
-	padding: 0;
+	padding: 10px 0 0 0;
 	margin: auto;
 	text-align: center;
 }

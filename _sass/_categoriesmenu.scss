@@ -24,3 +24,44 @@
 		color: #9b9a9a!important;
 	}
 }
+
+#categories-menu {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .menu-categories-container {
+        width: 100%;  
+    }
+    ul {
+        display: flex;
+		flex-wrap: wrap;
+        height: auto;
+        background: #eee;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+		justify-content: center;
+		box-sizing: border-box;
+    }
+    ul li {
+        display: inline;
+        width:auto;
+        margin: 0 12px;
+        padding: 10px 0px;
+        background: #eee;
+    }
+}
+
+.mobilemenuopen h4{
+    position: relative;
+}
+
+.fa-caret-up {
+    position: absolute;
+    right: 10%;
+    top: 18px;
+    color: #eee;
+}

@@ -42,7 +42,14 @@
 
 	<!--- Primary navigation --->
 	<nav class="site-nav">
-
+	<div id="categories-menu">
+			<?php
+				$args = array(
+				'theme_location' => 'secondary'
+				);
+			?>
+			<?php wp_nav_menu( $args ); ?>	
+	</div>
 				<?php
 					$args = array(
 					'theme_location' => 'primary'
@@ -67,13 +74,6 @@
 	</header>
 <!-- /site-header -->
 	
-	<div id="categories-menu">
-			<?php
-				$args = array(
-				'theme_location' => 'secondary'
-				);
-			?>
-			<?php wp_nav_menu( $args ); ?>	
-	</div>
+	
 
 <div class="container">
