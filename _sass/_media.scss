@@ -141,6 +141,22 @@
 	#usp-text1 h3 {
 		padding: 20px 20px 0px 20px;
 	}
+	
+			// Menu mobile format, move to where appropriate
+			#categories-menu ul {
+				display: block;
+				width: 200px;
+				height: 100vh;
+				position: absolute;
+				left: 0;
+				background: white;
+				li {
+					display: block;
+					width: auto;
+					background: white;
+				}
+			}
+	
 }
 
 @media screen and (max-width: 600px) {
