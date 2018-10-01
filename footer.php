@@ -10,6 +10,7 @@
 			</p>
 		</div>
 			<?php echo do_shortcode('[contact-form-7 id="39" title="Newsletter"]'); ?>
+			<div class="note-footer"><p>By including your e-mail address, you agree to receive e-mails from Liza Line.</p></div>
 	</div>
 	
 	<div class="footer-social">

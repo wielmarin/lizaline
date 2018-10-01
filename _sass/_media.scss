@@ -72,6 +72,10 @@
 		height: 300px;
 		width: 300px;
 	}
+	
+	#blognav {
+    margin-top: 40px;
+	}
 
 }
 
@@ -104,7 +108,15 @@
 		height: 300px;
 		width: 300px;
 	}
+	
+	#categories-menu ul {
+				li {
+					font-size: 14.5px;
+				}
+			}
 }
+
+
 
 @media screen and (max-width: 750px) {
 	#container-about-intro {
@@ -141,8 +153,10 @@
 	#usp-text1 h3 {
 		padding: 20px 20px 0px 20px;
 	}
-	
-			// Menu mobile format, move to where appropriate
+}
+
+@media screen and (max-width: 670px) {
+				// Menu mobile format, move to where appropriate
 			#categories-menu ul {
 				display: block;
 				width: 200px;
@@ -154,15 +168,19 @@
 					display: block;
 					width: auto;
 					background: white;
+					text-align: left;
+					padding: 12px 0px;
+					border-bottom: 1px #f8f8f8 solid;
 				}
 			}
-	
 }
 
 @media screen and (max-width: 600px) {
 	#usp-img {
 		height: 300px;
 	}
+	
+
 }
 
 @media screen and (max-width: 480px) {

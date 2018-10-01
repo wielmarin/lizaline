@@ -46,26 +46,23 @@
 	background: white;
 	width: 100%;
 	box-sizing: border-box;
-	font-size: 80%;
+	font-size: 16px;
 	height: 58px;
-	font-family: sans-serif;
 }
 
 #posttitle h2 {
 	color: #000;
-	font-family: sans-serif;
 	text-transform: uppercase;
-	font-size: 120%;
+	font-size: 16px;
 	font-weight: 100;
 }
 
 .postinfo {
 	text-transform: uppercase;
-	font-size: 90%;
+	font-size: 80%;
 }
 
 #excerptblock {
-	overflow: hidden;
 	border-radius: 0px 5px 0px 0px;
 }
 
@@ -104,11 +101,10 @@
 	margin-top: 1rem;
 	margin-bottom: 40px;
 	font-size: 90%;
-	font-family: sans-serif;
 	a, span {
 		color: #000;
 		border: 1px solid  #dfdfdf;
-		padding: 5px 10px 5px 10px;font-family: sans-serif!important;
+		padding: 5px 10px 5px 10px;
 	}
 }
 

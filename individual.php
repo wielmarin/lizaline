@@ -61,11 +61,14 @@ jQuery( document ).ready(function() {
 			</h1>
 			<div id="individual-side-action">
 			<?php if ( get_field('in_stock')) : ?>
-				<a href="https://www.amazon.co.uk">Order on Amazon <i class="fas fa-chevron-right"></i> </a>
+				<a href="https://www.amazon.co.uk">Buy now <i class="fas fa-chevron-right"></i> </a>
 			<?php  else : ?>
 				<p>Sorry, this product is current out of stock.</p>	
 			<?php endif; ?>
 			</div>
+		</div>
+		<div id="individual-sidebar-description">
+			<p><?php the_field('product_description'); ?></p>
 		</div>
 		<div id="individual-sidebar-other">
 			<h3><?php the_field('box_title'); ?></h3>
@@ -118,9 +121,7 @@ jQuery( document ).ready(function() {
 				<?php endif; ?>
 			</div>
 		</div>
-		<div id="individual-sidebar-description">
-			<p><?php the_field('product_description'); ?></p>
-		</div>
+
 	
 	</div>
 </div>

@@ -22,7 +22,7 @@
 	<br><br>
 	Our products will be delivered to you fully assembled and are directly ready to use. You only have to unwrap it and find a good spot in your house for you new buy.  
 	</p>
-	<div class="button-about">Read more</div>
+	<div class="button-about">Read more...</div>
 	</div>
 
 	<div id="usp">
@@ -33,7 +33,7 @@
 		</div>
 		
 		<div id="usp-img">
-			<img src="/lizaline/wp-content/uploads/2018/09/photo-Sandrine-fond-points.jpg" alt="Sandrine Burgi" width="350px" height="350px">
+			<img src="/wp-content/uploads/2018/09/photo-Sandrine-fond-points.jpg" alt="Sandrine Burgi" width="350px" height="350px">
 		</div>
 		
 		

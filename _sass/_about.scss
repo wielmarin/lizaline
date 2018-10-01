@@ -6,11 +6,10 @@
 
 #container-about-intro {
 	margin: 30px 0px;
-	background-color: #deebe9;
+	background-color: #f8f8f8;
 	padding: 50px 120px;
 	p {
-	font-size: 120%;
-	color: black;
+	font-size: 16px;
 	font-family: 'Oswald';
 	}
 }
@@ -20,14 +19,8 @@
 }
 
 .button-about {
-	color: white;
-	margin: auto;
-	background-color: #1f9eaf;
-	width: 180px;
-	padding: 10px 0px;
-	text-align: center;
+	color: #1f9eaf;
 	margin-top: 10px;
-	font-family: 'Oswald';
 	}
 
 //* usp *//
@@ -46,16 +39,14 @@
 #usp-text1 {
 	width: 65%;
 	max-width: calc(100% - 300px);
-	color: #000;
 	height: 350px;
-	background-color: #deebe9;
+	background-color: #f8f8f8;
 }
 
 #usp-text1 p {
 	text-align: left;
 	padding: 0px 120px;
-	font-size: 120%;
-	color: black;
+	font-size: 16px;
 	font-family: 'Oswald';
 }
 
