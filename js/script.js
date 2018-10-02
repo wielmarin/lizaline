@@ -4,9 +4,10 @@ jQuery( document ).ready(function() {
 
  //* menu *// 
  
- jQuery('#mobilemenuopen').click(function() {
-	jQuery('#categories-menu').toggle();
-	jQuery('.hamburger').toggleClass('is-active');
+ jQuery('.mobilemenuopen').click(function() {
+	// jQuery('#categories-menu').toggle();
+	// jQuery('.hamburger').toggleClass('is-active');
+	return false;
  });
  
 	//Submenu	
@@ -14,6 +15,40 @@ jQuery( document ).ready(function() {
 		jQuery('.site-header').toggleClass('bannershift', 500);
 		jQuery('.sub-menu').toggle('slide',{direction:'up'}, 500); 
 	});
+	
+	
+	// Script to add arrow submenu
+jQuery('mobilemenuopen a').append(' <i class="fas fa-caret-up"></i>');
+
+	// First hide
+	jQuery('.fa-caret-up').hide();
+
+	// Display only on hover
+	jQuery('.mobilemenuopen').hover(function() {
+		jQuery('.fa-caret-up').show();
+	});
+
+// Script to display submenu
+	// First hide
+	jQuery('#categories-menu').hide();
+	
+	// Then show
+	jQuery('.mobilemenuopen').hover(function() {
+		jQuery('#categories-menu').show();
+	});
+	
+	// Keep it visible
+	jQuery('#categories-menu').hover(function() {
+		jQuery('#categories-menu').show();
+		jQuery('.fa-caret-up').show();
+	});
+	
+	// Hide it when hover lower
+	jQuery('.container').hover(function() {
+		jQuery('#categories-menu').hide();
+		jQuery('.fa-caret-up').hide();
+	});
+
 	
 	
 	
@@ -30,8 +65,8 @@ jQuery( document ).ready(function() {
 		var gridSpace = (windowWidth - gridWidth) / 2;
 	  jQuery('.slicktopslider').slick({
 		speed: 2000,
-		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
-		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
+		prevArrow: '<p class="slick-prev"><img src="/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
+		nextArrow: '<p class="slick-next"><img src="/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
 		centerMode: true,
 		slidesToShow: 1,
 		centerPadding: '3%',
@@ -50,8 +85,8 @@ jQuery( document ).ready(function() {
 		var gridSpace = (windowWidth - gridWidth) / 2;
 	  jQuery('.slicktopslider').slick({
 		speed: 1000,
-		prevArrow: '<p class="slick-prev"><img src="/lizaline/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
-		nextArrow: '<p class="slick-next"><img src="/lizaline/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
+		prevArrow: '<p class="slick-prev"><img src="/wp-content/uploads/2018/08/Back-1.png" width="90px" height="95px"></p>',
+		nextArrow: '<p class="slick-next"><img src="/wp-content/uploads/2018/08/Next.png" width="90px" height="95px"></p>',
 	
 		slidesToShow: 1,
 		

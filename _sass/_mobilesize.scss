@@ -133,14 +133,17 @@ height: 30vh;
 }
 
 #grid-journal-left-bottom-middle-text {
-	Font-size: 200%;
-
-	Padding: 80px 30px 0px 30px;
+	font-size: 280%;
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
 }
 
 #grid-journal-left-bottom-middle-action {
-	margin-top: 0px;
-	font-size: 80%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 60%;
 }
 
 .grid-journal-right-title {

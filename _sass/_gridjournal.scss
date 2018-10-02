@@ -63,13 +63,10 @@
 			#grid-journal-left-bottom-middle-action {
 				margin: auto;
 				color: #000;
-				font-weight: bold;
 				margin-top: -20px;
-				font-size: 14px;
-				text-transform: uppercase;
+				font-size: 16px;
 				text-decoration: underline;
 				cursor: pointer;
-				font-family: sans-serif;
 			}
 			
 			#grid-journal-left-bottom-left {
@@ -87,10 +84,7 @@
 .grid-journal-right-title {
 	color: #000;
 	font-size: 340%;
-	font-family: sans-serif;
-	font-weight: 200;
 	top: -105px;
-	text-transform: uppercase;
 	padding: 40px 20px 20px 20px;
 	line-height: 0.5em; 
 }
@@ -99,11 +93,8 @@
 	color: #000;
 	padding: 5px 20px 0px 20px;
 	text-decoration: underline;
-	text-transform: uppercase;
 	cursor: pointer;
-	font-size: 14px;
-	font-family: sans-serif;
-	font-weight: bold;
+	font-size: 16px;
 }
 
 #grid-journal-right {
