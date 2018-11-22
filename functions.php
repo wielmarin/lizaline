@@ -85,5 +85,20 @@ function new_excerpt_more( $more ) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
+// Add Custom Post Types
+function custom_post_init() {
+	  $args = array(
+	  'supports' => array('title', 'editor', 'page-attributes'),
+      'public' => true,
+      'label'  => 'Products',
+	  'menu_position' => 20,
+	  'taxonomies' => array( 'category', 'post_tag' ),
+	  'hierarchical' => true,
+    );
+    register_post_type( 'product', $args );
+}
+add_action( 'init', 'custom_post_init' );
+
+
 
 ?>

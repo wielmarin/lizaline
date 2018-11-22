@@ -1,7 +1,7 @@
 <?php
 
 /* Template Name: Individual Product
-Template Post Type: page
+Template Post Type: product
 */
 
 get_header(); 
@@ -61,7 +61,7 @@ jQuery( document ).ready(function() {
 			</h1>
 			<div id="individual-side-action">
 			<?php if ( get_field('in_stock')) : ?>
-				<a href="https://www.amazon.co.uk">Buy now <i class="fas fa-chevron-right"></i> </a>
+				<a href="<?php the_field('link_amazon'); ?>" target="_blank">Buy now <i class="fas fa-chevron-right"></i> </a>
 			<?php  else : ?>
 				<p>Sorry, this product is current out of stock.</p>	
 			<?php endif; ?>

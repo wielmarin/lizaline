@@ -1,7 +1,7 @@
 <?php
 
 /* Template Name: Products Listing
-Template Post Type: page
+Template Post Type: product
 */
 
 get_header();
@@ -96,165 +96,81 @@ get_header();
 	endwhile; else: ?>
 	<p>Sorry, no <?php the_title(); ?> available.</p>
 	<?php endif; ?>
- <?php if ( get_field( 'on/off_1' ) ): ?>
-<!--- START PRODUCT GRID --->
+	
+	
+
+ 
 <div id="product-list-grid">
+<!--- TRIAL LOOP --->
+<?php
 
-	<div id="product-1" class="product-list-item col-3">
-		<div id="product-1-info" class="product-list-item-info">
+	$my_query = new WP_Query( array(
+		'post_type'      => 'product',
+		'posts_per_page' => -1,
+		'post_parent'    => $post->ID,
+		'order'          => 'ASC',
+		'orderby'        => 'menu_order'
+	));
+	
+	if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); 
+	
+	$post_id = get_the_ID();
+
+?>
+	<div id="product-<?php echo $post_id; ?>" class="product-list-item col-3">
+		<div id="product-<?php echo $post_id; ?>-info" class="product-list-item-info">
 			
-			<div id="product-1-title" class="product-list-item-title">
-				<?php the_field('product_1_name'); ?>
+			<div id="product-<?php echo $post_id; ?>-title" class="product-list-item-title">
+				<?php 
+				if (!empty(get_field('short_description'))) :
+				the_field('short_description');
+				else :
+				the_title(); 
+				endif;
+				?>
 			</div>
-			<div id="product-1-description" class="product-list-item-description">
-				<?php the_field('product_1_description'); ?>
+			<div id="product-<?php echo $post_id; ?>-description" class="product-list-item-description">
+				<?php the_field('product_price'); ?>
 			</div>
-			<div id="product-1-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_1_link'); ?>"><?php the_field('product_1_cta'); ?></a>
+			<div id="product-<?php echo $post_id; ?>-cta" class="product-list-item-cta">
+				<a href="<?php the_permalink(); ?>">More Information</a>
 			</div>
 						<!-- Nav Buttons -->
-			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next1" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-	
-<?php if ( get_field( 'on/off_2' ) ): ?>
-	<div id="product-2" class="product-list-item col-3">
-		<div id="product-2-info" class="product-list-item-info">
-			<div id="product-2-title" class="product-list-item-title">
-				<?php the_field('product_2_name'); ?>
-			</div>
-			<div id="product-2-description" class="product-list-item-description">
-				<?php the_field('product_2_description'); ?>
-			</div>
-			<div id="product-2-cta" class="product-list-item-cta">
-			<a href="<?php the_field('product_2_link'); ?>"><?php the_field('product_2_cta'); ?></a>
-			</div>
-			<!-- Nav Buttons -->
-			<span id="prev2" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next2" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
+			<span id="prev<?php echo $post_id; ?>" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
+			<span id="next<?php echo $post_id; ?>" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>
-<?php endif; // end of if field_name logic ?>	
-	
-<?php if ( get_field( 'on/off_3' ) ): ?>
-	<div id="product-3" class="product-list-item col-3">
-		<div id="product-3-info" class="product-list-item-info">
-			
-			<div id="product-3-title" class="product-list-item-title">
-				<?php the_field('product_3_name'); ?>
-			</div>
-			<div id="product-3-description" class="product-list-item-description">
-				<?php the_field('product_3_description'); ?>
-			</div>
-			<div id="product-3-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_3_link'); ?>"><?php the_field('product_3_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev3" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next3" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>
-<?php endif; // end of if field_name logic ?>	
-	
-<?php if ( get_field( 'on/off_4' ) ): ?>
-	<div id="product-4" class="product-list-item col-3">
-		<div id="product-4-info" class="product-list-item-info">
-			<div id="product-4-title" class="product-list-item-title">
-				<?php the_field('product_4_name'); ?>
-			</div>
-			<div id="product-4-description" class="product-list-item-description">
-				<?php the_field('product_4_description'); ?>
-			</div>
-			<div id="product-4-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_4_link'); ?>"><?php the_field('product_4_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev4" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next4" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-<?php endif; // end of if field_name logic ?>		
-	
-<?php if ( get_field( 'on/off_5' ) ): ?>
-	<div id="product-5" class="product-list-item col-3">
-		<div id="product-5-info" class="product-list-item-info">
-			<div id="product-5-title" class="product-list-item-title">
-				<?php the_field('product_5_name'); ?>
-			</div>
-			<div id="product-5-description" class="product-list-item-description">
-				<?php the_field('product_5_description'); ?>
-			</div>
-			<div id="product-5-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_5_link'); ?>"><?php the_field('product_5_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev5" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next5" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-<?php endif; // end of if field_name logic ?>	
 
-<?php if ( get_field( 'on/off_6' ) ): ?>
-	<div id="product-6" class="product-list-item col-3">
-		<div id="product-6-info" class="product-list-item-info">
-			<div id="product-6-title" class="product-list-item-title">
-				<?php the_field('product_6_name'); ?>
-			</div>
-			<div id="product-6-description" class="product-list-item-description">
-				<?php the_field('product_6_description'); ?>
-			</div>
-			<div id="product-6-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_6_link'); ?>"><?php the_field('product_6_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev1" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next1" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-<?php endif; // end of if field_name logic ?>	
+	<script>
+	jQuery(document).ready(function( $ ) { 
+	
+	$("#product-<?php echo $post_id; ?>").backstretch(["<?php if( get_field('product_photo_1') ):
+	the_field('product_photo_1');
+	endif;
+	if( get_field('product_photo_2') ):
+	?>","<?php
+	the_field('product_photo_2');
+	endif;
+	if( get_field('product_photo_3') ):
+	?>","<?php
+	the_field('product_photo_3');
+	endif;	?>"], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+	
+	$('#prev<?php echo $post_id; ?>').click(function() {
+		$('#product-<?php echo $post_id; ?>').backstretch("prev");
+	});
+	
+	$('#next<?php echo $post_id; ?>').click(function() {
+		$('#product-<?php echo $post_id; ?>').backstretch("next");
+	});
+	
+	});
+	</script>
 
-<?php if ( get_field( 'on/off_7' ) ): ?>
-	<div id="product-7" class="product-list-item col-3">
-		<div id="product-7-info" class="product-list-item-info">
-			<div id="product-7-title" class="product-list-item-title">
-				<?php the_field('product_7_name'); ?>
-			</div>
-			<div id="product-7-description" class="product-list-item-description">
-				<?php the_field('product_7_description'); ?>
-			</div>
-			<div id="product-7-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_7_link'); ?>"><?php the_field('product_7_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev7" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next7" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-<?php endif; // end of if field_name logic ?>	
-
-<?php if ( get_field( 'on/off_8' ) ): ?>
-	<div id="product-8" class="product-list-item col-3">
-		<div id="product-8-info" class="product-list-item-info">
-			<div id="product-8-title" class="product-list-item-title">
-				<?php the_field('product_8_name'); ?>
-			</div>
-			<div id="product-8-description" class="product-list-item-description">
-				<?php the_field('product_8_description'); ?>
-			</div>
-			<div id="product-8-cta" class="product-list-item-cta">
-				<a href="<?php the_field('product_8_link'); ?>"><?php the_field('product_8_cta'); ?></a>
-			</div>
-						<!-- Nav Buttons -->
-			<span id="prev8" class="backstretchprev bsnav"><i class="fas fa-chevron-left"></i></span>
-			<span id="next8" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
-		</div>
-	</div>	
-<?php endif; // end of if field_name logic ?>	
-</div>
-<!--- END PRODUCT GRID --->
-<?php else : ?>
- 	<h2 id="no-product">Sorry, no <?php the_title(); ?> available.</h2>
-<?php endif; // end of if field_name logic ?>	
+<?php endwhile;
+else: ?> <!--- When no products with this category as head --->
+	<h2 id="no-product">Sorry, no <?php the_title(); ?> available.</h2>
+<?php endif; ?>	<!---- End WP Query loop --->
+</div>				
 
 <?php get_footer() ?>
