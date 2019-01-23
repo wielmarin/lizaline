@@ -20,6 +20,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	background-size: 85%;
+	a {
+		color: black;
+	}
 }
 
 // Box sizes
@@ -52,12 +55,11 @@
 // Grid items 
 
 #grid-right {
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100%), url('/wp-content/uploads/2018/08/Lizaline-shelves-darker-e1533921237875.jpg') no-repeat;
 	background-size: contain;
 }
 
 			#grid-left-top-left {
-				background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.4) 100%), url(/wp-content/uploads/2018/07/Handmade-wooden-furniture-e1532509073560.jpg);background-size: cover;
+				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
 			}

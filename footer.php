@@ -14,8 +14,8 @@
 	</div>
 	
 	<div class="footer-social">
-		<i class="fab fa-facebook-f fa-lg"></i>
-		<i class="fab fa-instagram fa-lg"></i>
+		<a href="https://www.facebook.com/pages/Liza-Line-Sl/555853004589975" target="blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+		<a href="https://www.instagram.com/liza.line/?hl=nl" target="blank"><i class="fab fa-instagram fa-lg"></i></a>
 	</div>
 
 	<div class="copyright">

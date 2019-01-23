@@ -140,21 +140,78 @@ get_header();
 			<span id="next<?php echo $post_id; ?>" class="backstretchnext bsnav"><i class="fas fa-chevron-right"></i></span>
 		</div>
 	</div>
-
-	<script>
-	jQuery(document).ready(function( $ ) { 
+	<!---- Make variables for Backstretch Script below ---->
+	<?php 
 	
-	$("#product-<?php echo $post_id; ?>").backstretch(["<?php if( get_field('product_photo_1') ):
-	the_field('product_photo_1');
-	endif;
-	if( get_field('product_photo_2') ):
-	?>","<?php
-	the_field('product_photo_2');
-	endif;
-	if( get_field('product_photo_3') ):
-	?>","<?php
-	the_field('product_photo_3');
-	endif;	?>"], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
+	$productPhotoArray;
+	
+	// Using photos from product page (default)
+	if( get_field('product_photo_1') ) {
+		$productPhoto1 = get_field('product_photo_1');
+	} else {
+		$productPhoto1 = "";
+	}
+	if( get_field('product_photo_2') ) {
+		$productPhoto2 = "','" . get_field('product_photo_2');
+	} else {
+		$productPhoto2 = "";
+	}
+	if( get_field('product_photo_3') ) {
+		$productPhoto3 = "','" . get_field('product_photo_3');
+	} else {
+		$productPhoto3 = "";
+	};
+	
+	// Category photos
+	if( get_field('photo_1') ) {
+		$categoryPhoto1 = get_field('photo_1');
+	} else {
+		$categoryPhoto1 = "";
+	}
+	if( get_field('photo_2') ) {
+		$categoryPhoto2 = "','" . get_field('photo_2');
+	} else {
+		$categoryPhoto2 = "";
+	}
+	if( get_field('photo_3') ) {
+		$categoryPhoto3 = "','" . get_field('photo_3');
+	} else {
+		$categoryPhoto3 = "";
+	}
+	if( get_field('photo_4') ) {
+		$categoryPhoto4 = "','" . get_field('photo_4');
+	} else {
+		$categoryPhoto4 = "";
+	};
+
+
+	
+		/// From Product Page Photos
+	if (!$categoryPhoto1 && !$categoryPhoto2 && !$categoryPhoto3){
+		$productPhotoArray = "'" . $productPhoto1 . $productPhoto2 . $productPhoto3 . "'";
+	} else {
+		$productPhotoArray = "'" . $categoryPhoto1 . $categoryPhoto2 . $categoryPhoto3 . $categoryPhoto4 . "'";
+	};
+		
+	?>
+	
+	<!---- Fill category page photos using Backstretch and ACF PHP from above ---->
+<script>
+jQuery(document).ready(function( $ ) { 
+	var catStretch;
+	var catArray = jQuery('#backstretch-array-<?php echo $post_id; ?>').html();
+	console.log(catArray);
+	
+	if(typeof catArray === 'undefined') {
+		var catStretch = "<?php echo $productPhotoArray; ?>";
+	} else {
+		var catStretch = catArray;
+	};
+	
+	console.log(catStretch); //THIS VARIABLE NOT WORKING IN BACKSTRETCH - ADDS EXTRA QUOTATION MARKS, DOESN'T HAPPEN FROM PHP VARIABLE
+
+	
+	$("#product-<?php echo $post_id; ?>").backstretch([<?php echo $productPhotoArray; ?>], {duration: 3000, fade: 750, paused: true, scale: 'fit', alignY: '0.2'});
 	
 	$('#prev<?php echo $post_id; ?>').click(function() {
 		$('#product-<?php echo $post_id; ?>').backstretch("prev");
@@ -163,9 +220,9 @@ get_header();
 	$('#next<?php echo $post_id; ?>').click(function() {
 		$('#product-<?php echo $post_id; ?>').backstretch("next");
 	});
-	
-	});
-	</script>
+});
+
+</script>
 
 <?php endwhile;
 else: ?> <!--- When no products with this category as head --->

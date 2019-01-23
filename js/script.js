@@ -243,6 +243,25 @@ jQuery('.hoverunderline').hover(function() {
 	jQuery('#posttitle h2', this).toggleClass('underline');
 });
  
+ 
+// Product page main image zoom
+
+jQuery("#individual-grid-large-photo-1").mouseenter(function(){
+	//Enlarge
+	jQuery("#individual-grid-large-photo-1").css('background-size','150%');
+	// Move
+	const el = document.querySelector("#individual-grid-large-photo-1");
+
+	el.addEventListener("mousemove", (e) => {
+	  el.style.backgroundPositionX = -e.offsetX + 80 + "px";
+	  el.style.backgroundPositionY = -e.offsetY + 80 + "px";
+	});
+});
+
+	// Reset after zoom
+	jQuery("#individual-grid-large-photo-1").mouseleave(function(){
+		jQuery("#individual-grid-large-photo-1").css({'background-size':'contain', "background-position":"center"});
+	});
 
  
   

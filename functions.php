@@ -3,16 +3,11 @@
 
 
 function lizaline_resources() {
-
 	wp_enqueue_style('style', get_stylesheet_uri());
-	
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
 	wp_enqueue_script('backstretch', get_template_directory_uri() . '/js/backstretch.js');
-
-
 }
-
 add_action('wp_enqueue_scripts', 'lizaline_resources');
 
 // Navigation Menus
@@ -40,35 +35,6 @@ function myplugin_settings() {
 }
  // Add to the admin_init hook of your theme functions.php file 
 add_action( 'init', 'myplugin_settings' );
-
-// Widgets
-register_sidebar( array(
-'name' => 'Footer Sidebar 1',
-'id' => 'footer-sidebar-1',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
-register_sidebar( array(
-'name' => 'Footer Sidebar 2',
-'id' => 'footer-sidebar-2',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
-register_sidebar( array(
-'name' => 'Footer Sidebar 3',
-'id' => 'footer-sidebar-3',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
 
 
 // Excerpts
@@ -99,6 +65,9 @@ function custom_post_init() {
 }
 add_action( 'init', 'custom_post_init' );
 
-
+// ACF Options page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
 
 ?>
