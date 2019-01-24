@@ -60,6 +60,27 @@
 	cursor: zoom-in;
 }
 
+.zoom {
+	position: absolute;
+	left: 50px;
+	width: 600px;
+	height: 600px;
+	background-color: white;
+	border: 3px solid black;
+	border-radius: 5px;
+	cursor: zoom-out;
+}
+
+	// Button to hide large version
+	#large-photo-close {
+		display: none;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		color: black;
+		background: white;
+		cursor: pointer;
+	}
 
 .individual-grid-small-photo {
 	grid-column: 1 / span 1;

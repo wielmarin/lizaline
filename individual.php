@@ -50,7 +50,7 @@ jQuery( document ).ready(function() {
 	<?php endif; ?>
 	<!--- Grote photo, niet op mobiel --->
 		<div id="individual-grid-large-photo-1" class="individual-grid-large-photo grid-box" style="background-image: url('<?php the_field('product_photo_1'); ?>')">
-		
+			<i id="large-photo-close" class="far fa-window-close"></i>
 		</div>
 	</div>
 

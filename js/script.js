@@ -139,8 +139,7 @@ jQuery(window).resize(function(){
 					);
 				});
 
-
-		
+				
 				
 		} else {
 			
@@ -163,15 +162,47 @@ jQuery(window).resize(function(){
 							"grid-template-rows", gridrowheight
 					);
 				});
-			
-			
-			
-		}
+			}
 	};
 	gridSize();
   /* Attach the function to the resize event listener */
 	window.addEventListener('resize', gridSize, false);	
-		
+	
+
+// Zoom individual product image on click
+function zoomProduct() { 
+		/* Set the matchMedia */
+		if (window.matchMedia('(min-width: 741px)').matches) {
+			
+			//// EXTRA! Enlarge main product photo on click and show close button
+				jQuery('#individual-grid-large-photo-1').click(function() {
+					jQuery('#individual-grid-large-photo-1').toggleClass('zoom');
+					//css({'position':'absolute', 'width':'600px', 'height':'600px', 'border':'3px solid black', 'border-radius':'5px', 'left':'50px', 'background-color':'white'});
+					jQuery('#large-photo-close').toggle();
+				});
+				
+		}	
+};
+zoomProduct();	
+
+	// Zoom individual product image on hover
+
+	jQuery("#individual-grid-large-photo-1").mouseenter(function(){
+		//Enlarge
+		jQuery("#individual-grid-large-photo-1").css('background-size','150%');
+		// Move
+		const el = document.querySelector("#individual-grid-large-photo-1");
+
+		el.addEventListener("mousemove", (e) => {
+		  el.style.backgroundPositionX = -e.offsetX + 80 + "px";
+		  el.style.backgroundPositionY = -e.offsetY + 80 + "px";
+		});
+	});
+
+		// Reset after zoom
+		jQuery("#individual-grid-large-photo-1").mouseleave(function(){
+			jQuery("#individual-grid-large-photo-1").css({'background-size':'contain', "background-position":"center"});
+		});
 	
 	
 	/// EXCERPT BLOK GRID
@@ -243,27 +274,7 @@ jQuery('.hoverunderline').hover(function() {
 	jQuery('#posttitle h2', this).toggleClass('underline');
 });
  
- 
-// Product page main image zoom
-
-jQuery("#individual-grid-large-photo-1").mouseenter(function(){
-	//Enlarge
-	jQuery("#individual-grid-large-photo-1").css('background-size','150%');
-	// Move
-	const el = document.querySelector("#individual-grid-large-photo-1");
-
-	el.addEventListener("mousemove", (e) => {
-	  el.style.backgroundPositionX = -e.offsetX + 80 + "px";
-	  el.style.backgroundPositionY = -e.offsetY + 80 + "px";
-	});
-});
-
-	// Reset after zoom
-	jQuery("#individual-grid-large-photo-1").mouseleave(function(){
-		jQuery("#individual-grid-large-photo-1").css({'background-size':'contain', "background-position":"center"});
-	});
-
- 
+  
   
   // Product list show CTA on Hover
   
